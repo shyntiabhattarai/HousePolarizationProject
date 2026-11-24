@@ -1,0 +1,453 @@
+icpsr,bioname,state_abbrev,district_code,party_code,party,nominate_dim1,nominate_number_of_votes,flags,bioguide_id,in_baseline,in_party_means,moderate,baseline_status
+20301,"ROGERS, Mike Dennis",AL,3.0,200.0,Republican,0.379,569.0,,R000575,True,True,yes,held_seat_nov3
+21102,"SEWELL, Terri",AL,7.0,100.0,Democrat,-0.403,570.0,,S001185,True,True,no,held_seat_nov3
+21500,"PALMER, Gary James",AL,6.0,200.0,Republican,0.671,576.0,,P000609,True,True,no,held_seat_nov3
+22140,"MOORE, Barry",AL,1.0,200.0,Republican,0.647,570.0,,M001212,True,True,no,held_seat_nov3
+22366,"STRONG, Dale",AL,5.0,200.0,Republican,0.61,569.0,,S001220,True,True,no,held_seat_nov3
+22515,"FIGURES, Shomari",AL,2.0,100.0,Democrat,-0.413,570.0,,F000481,True,True,no,held_seat_nov3
+29701,"ADERHOLT, Robert",AL,4.0,200.0,Republican,0.405,570.0,,A000055,True,True,yes,held_seat_nov3
+22503,"BEGICH, Nicholas J., III",AK,1.0,200.0,Republican,0.593,578.0,,B001323,True,True,no,held_seat_nov3
+21995,"RADEWAGEN, Aumua Amata Coleman",AS,0.0,200.0,Republican,0.327,13.0,low_votes;delegate,R000600,True,False,,held_seat_nov3
+20305,"GRIJALVA, Raúl M.",AZ,7.0,100.0,Democrat,-0.598,1.0,low_votes;left_midterm;shared_seat;left_before_nov3,G000551,False,False,,left_before_nov3
+21103,"GOSAR, Paul",AZ,9.0,200.0,Republican,0.701,542.0,,G000565,True,True,no,held_seat_nov3
+21105,"SCHWEIKERT, David",AZ,1.0,200.0,Republican,0.554,574.0,,S001183,True,True,no,held_seat_nov3
+21705,"BIGGS, Andrew S.",AZ,5.0,200.0,Republican,0.818,531.0,,B001302,True,True,no,held_seat_nov3
+21968,"STANTON, Greg",AZ,4.0,100.0,Democrat,-0.281,568.0,,S001211,True,True,yes,held_seat_nov3
+22309,"CISCOMANI, Juan",AZ,6.0,200.0,Republican,0.295,561.0,,C001133,True,True,yes,held_seat_nov3
+22311,"CRANE, Eli",AZ,2.0,200.0,Republican,0.753,573.0,,C001132,True,True,no,held_seat_nov3
+22500,"ANSARI, Yassamin",AZ,3.0,100.0,Democrat,-0.43,575.0,,A000381,True,True,no,held_seat_nov3
+22522,"HAMADEH, Abraham J.",AZ,8.0,200.0,Republican,0.677,577.0,,H001098,True,True,no,held_seat_nov3
+22565,"GRIJALVA, Adelita S.",AZ,7.0,100.0,Democrat,-0.498,350.0,shared_seat,G000606,True,True,no,held_seat_nov3
+21106,"CRAWFORD, Rick",AR,1.0,200.0,Republican,0.462,572.0,,C001087,True,True,no,held_seat_nov3
+21108,"WOMACK, Steve",AR,3.0,200.0,Republican,0.347,520.0,,W000809,True,True,yes,held_seat_nov3
+21503,"HILL, French",AR,2.0,200.0,Republican,0.435,577.0,,H001072,True,True,yes,held_seat_nov3
+21563,"WESTERMAN, Bruce",AR,4.0,200.0,Republican,0.543,579.0,,W000821,True,True,no,held_seat_nov3
+15448,"PELOSI, Nancy",CA,11.0,100.0,Democrat,-0.489,536.0,,P000197,True,True,no,held_seat_nov3
+20107,"ISSA, Darrell",CA,48.0,200.0,Republican,0.476,575.0,,I000056,True,True,no,held_seat_nov3
+20310,"SÁNCHEZ, Linda T.",CA,38.0,100.0,Democrat,-0.507,571.0,,S001156,True,True,no,held_seat_nov3
+20501,"COSTA, Jim",CA,21.0,100.0,Democrat,-0.199,561.0,,C001059,True,True,yes,held_seat_nov3
+20538,"MATSUI, Doris",CA,7.0,100.0,Democrat,-0.433,581.0,,M001163,True,True,no,held_seat_nov3
+20903,"McCLINTOCK, Tom",CA,5.0,200.0,Republican,0.671,566.0,,M001177,True,True,no,held_seat_nov3
+20955,"CHU, Judy",CA,28.0,100.0,Democrat,-0.479,581.0,,C001080,True,True,no,held_seat_nov3
+20958,"GARAMENDI, John",CA,8.0,100.0,Democrat,-0.312,509.0,,G000559,True,True,yes,held_seat_nov3
+21302,"LAMALFA, Doug",CA,1.0,200.0,Republican,0.542,291.0,left_midterm;shared_seat;left_before_nov3,L000578,False,False,,left_before_nov3
+21303,"HUFFMAN, Jared",CA,2.0,100.0,Democrat,-0.433,573.0,,H001068,True,True,no,held_seat_nov3
+21304,"BERA, Ami",CA,6.0,100.0,Democrat,-0.247,570.0,,B001287,True,True,yes,held_seat_nov3
+21306,"SWALWELL, Eric",CA,14.0,100.0,Democrat,-0.355,259.0,shared_seat;left_before_nov3,S001193,False,False,,left_before_nov3
+21307,"VALADAO, David G.",CA,22.0,200.0,Republican,0.256,568.0,,V000129,True,True,yes,held_seat_nov3
+21308,"BROWNLEY, Julia",CA,26.0,100.0,Democrat,-0.306,564.0,,B001285,True,True,yes,held_seat_nov3
+21311,"RUIZ, Raul",CA,25.0,100.0,Democrat,-0.262,576.0,,R000599,True,True,yes,held_seat_nov3
+21312,"TAKANO, Mark",CA,39.0,100.0,Democrat,-0.457,579.0,,T000472,True,True,no,held_seat_nov3
+21314,"VARGAS, Juan",CA,52.0,100.0,Democrat,-0.396,572.0,,V000130,True,True,no,held_seat_nov3
+21315,"PETERS, Scott",CA,50.0,100.0,Democrat,-0.194,576.0,,P000608,True,True,yes,held_seat_nov3
+21504,"DESAULNIER, Mark James",CA,10.0,100.0,Democrat,-0.507,571.0,,D000623,True,True,no,held_seat_nov3
+21506,"AGUILAR, Peter Rey",CA,33.0,100.0,Democrat,-0.328,577.0,,A000371,True,True,yes,held_seat_nov3
+21507,"LIEU, Ted",CA,36.0,100.0,Democrat,-0.37,567.0,,L000582,True,True,no,held_seat_nov3
+21508,"TORRES, Norma Judith",CA,35.0,100.0,Democrat,-0.366,574.0,,T000474,True,True,no,held_seat_nov3
+21703,"BARRAGÁN, Nanette Diaz",CA,44.0,100.0,Democrat,-0.496,568.0,,B001300,True,True,no,held_seat_nov3
+21709,"CARBAJAL, Salud",CA,24.0,100.0,Democrat,-0.323,578.0,,C001112,True,True,yes,held_seat_nov3
+21711,"CORREA, Jose Luis",CA,46.0,100.0,Democrat,-0.285,546.0,,C001110,True,True,yes,held_seat_nov3
+21728,"KHANNA, Ro",CA,17.0,100.0,Democrat,-0.458,573.0,,K000389,True,True,no,held_seat_nov3
+21740,"PANETTA, James Varni",CA,19.0,100.0,Democrat,-0.279,582.0,,P000613,True,True,yes,held_seat_nov3
+21754,"GOMEZ, Jimmy",CA,34.0,100.0,Democrat,-0.532,554.0,,G000585,True,True,no,held_seat_nov3
+21907,"CISNEROS, Gil",CA,31.0,100.0,Democrat,-0.456,580.0,,C001123,True,True,no,held_seat_nov3
+21930,"HARDER, Josh",CA,9.0,100.0,Democrat,-0.295,578.0,,H001090,True,True,yes,held_seat_nov3
+21939,"LEVIN, Mike",CA,49.0,100.0,Democrat,-0.323,578.0,,L000593,True,True,yes,held_seat_nov3
+22126,"JACOBS, Sara",CA,51.0,100.0,Democrat,-0.419,580.0,,J000305,True,True,no,held_seat_nov3
+22129,"KIM, Young",CA,40.0,200.0,Republican,0.264,579.0,,K000397,True,True,yes,held_seat_nov3
+22145,"OBERNOLTE, Jay",CA,23.0,200.0,Republican,0.317,568.0,,O000019,True,True,yes,held_seat_nov3
+22323,"GARCIA, Robert",CA,42.0,100.0,Democrat,-0.373,561.0,,G000598,True,True,no,held_seat_nov3
+22333,"KAMLAGER-DOVE, Sydney",CA,37.0,100.0,Democrat,-0.519,565.0,,K000400,True,True,no,held_seat_nov3
+22336,"KILEY, Kevin",CA,3.0,200.0,Republican,0.253,386.0,duplicate_resolved;shared_seat,K000401,True,True,yes,held_seat_nov3
+22354,"MULLIN, Kevin",CA,15.0,100.0,Democrat,-0.48,555.0,,M001225,True,True,no,held_seat_nov3
+22378,"FONG, Vince",CA,20.0,200.0,Republican,0.452,568.0,,F000480,True,True,no,held_seat_nov3
+22516,"FRIEDMAN, Laura",CA,30.0,100.0,Democrat,-0.358,578.0,,F000483,True,True,no,held_seat_nov3
+22521,"GRAY, Adam",CA,13.0,100.0,Democrat,-0.235,550.0,,G000605,True,True,yes,held_seat_nov3
+22532,"LICCARDO, Sam T.",CA,16.0,100.0,Democrat,-0.344,578.0,,L000607,True,True,no,held_seat_nov3
+22541,"MIN, Dave",CA,47.0,100.0,Democrat,-0.208,580.0,,M001241,True,True,yes,held_seat_nov3
+22550,"RIVAS, Luz M.",CA,29.0,100.0,Democrat,-0.522,575.0,,R000620,True,True,no,held_seat_nov3
+22553,"SIMON, Lateefah",CA,12.0,100.0,Democrat,-0.603,573.0,,S001231,True,True,no,held_seat_nov3
+22556,"TRAN, Derek",CA,45.0,100.0,Democrat,-0.232,578.0,,T000491,True,True,yes,held_seat_nov3
+22559,"WHITESIDES, George",CA,27.0,100.0,Democrat,-0.204,571.0,,W000830,True,True,yes,held_seat_nov3
+22570,"GALLAGHER, James",CA,1.0,200.0,Republican,0.332,86.0,low_votes;shared_seat,G000607,True,True,yes,held_seat_nov3
+22572,"WAHAB, Aisha",CA,14.0,100.0,Democrat,-0.596,26.0,low_votes;shared_seat,W000832,True,True,no,held_seat_nov3
+29106,"WATERS, Maxine",CA,43.0,100.0,Democrat,-0.656,559.0,,W000187,True,True,no,held_seat_nov3
+29323,"CALVERT, Ken",CA,41.0,200.0,Republican,0.34,580.0,,C000059,True,True,yes,held_seat_nov3
+29504,"LOFGREN, Zoe",CA,18.0,100.0,Democrat,-0.396,569.0,,L000397,True,True,no,held_seat_nov3
+29707,"SHERMAN, Brad",CA,32.0,100.0,Democrat,-0.344,569.0,,S000344,True,True,no,held_seat_nov3
+29901,"THOMPSON, Michael",CA,4.0,100.0,Democrat,-0.392,578.0,,T000460,True,True,no,held_seat_nov3
+92336,"KILEY, Kevin",CA,3.0,328.0,Other (code 328),0.153,189.0,duplicate_dropped;shared_seat;non_dr_party,K000401,False,False,,held_seat_nov3
+21912,"CROW, Jason",CO,6.0,100.0,Democrat,-0.361,580.0,,C001121,True,True,no,held_seat_nov3
+21948,"NEGUSE, Joseph",CO,2.0,100.0,Democrat,-0.432,581.0,,N000191,True,True,no,held_seat_nov3
+22103,"BOEBERT, Lauren",CO,4.0,200.0,Republican,0.712,558.0,,B000825,True,True,no,held_seat_nov3
+22359,"PETTERSEN, Brittany",CO,7.0,100.0,Democrat,-0.375,511.0,,P000620,True,True,no,held_seat_nov3
+22509,"CRANK, Jeff",CO,5.0,200.0,Republican,0.665,581.0,,C001137,True,True,no,held_seat_nov3
+22513,"EVANS, Gabe",CO,8.0,200.0,Republican,0.343,582.0,,E000300,True,True,yes,held_seat_nov3
+22526,"HURD, Jeff",CO,3.0,200.0,Republican,0.32,579.0,,H001100,True,True,yes,held_seat_nov3
+29710,"DEGETTE, Diana",CO,1.0,100.0,Democrat,-0.431,571.0,,D000197,True,True,no,held_seat_nov3
+20706,"COURTNEY, Joe",CT,2.0,100.0,Democrat,-0.336,552.0,,C001069,True,True,no,held_seat_nov3
+20907,"HIMES, James A.",CT,4.0,100.0,Democrat,-0.241,577.0,,H001047,True,True,yes,held_seat_nov3
+21931,"HAYES, Jahana",CT,5.0,100.0,Democrat,-0.341,572.0,,H001081,True,True,no,held_seat_nov3
+29109,"DeLAURO, Rosa L.",CT,3.0,100.0,Democrat,-0.414,577.0,,D000216,True,True,no,held_seat_nov3
+29908,"LARSON, John B.",CT,1.0,100.0,Democrat,-0.396,567.0,,L000557,True,True,no,held_seat_nov3
+22535,"MCBRIDE, Sarah",DE,1.0,100.0,Democrat,-0.266,578.0,,M001238,True,True,yes,held_seat_nov3
+21993,"NORTON, Eleanor Holmes",DC,0.0,100.0,Democrat,-0.493,72.0,low_votes;delegate,N000147,True,False,,held_seat_nov3
+20316,"DIAZ-BALART, Mario",FL,26.0,200.0,Republican,0.282,558.0,,D000600,True,True,yes,held_seat_nov3
+20504,"WASSERMAN SCHULTZ, Debbie",FL,25.0,100.0,Democrat,-0.412,571.0,,W000797,True,True,no,held_seat_nov3
+20708,"CASTOR, Kathy",FL,14.0,100.0,Democrat,-0.435,570.0,,C001066,True,True,no,held_seat_nov3
+20709,"BUCHANAN, Vernon G.",FL,16.0,200.0,Republican,0.361,537.0,,B001260,True,True,yes,held_seat_nov3
+20758,"BILIRAKIS, Gus",FL,12.0,200.0,Republican,0.423,569.0,,B001257,True,True,yes,held_seat_nov3
+21116,"WEBSTER, Daniel A.",FL,11.0,200.0,Republican,0.525,575.0,,W000806,True,True,no,held_seat_nov3
+21118,"WILSON, Frederica",FL,24.0,100.0,Democrat,-0.476,423.0,,W000808,True,True,no,held_seat_nov3
+21321,"FRANKEL, Lois",FL,22.0,100.0,Democrat,-0.394,556.0,,F000462,True,True,no,held_seat_nov3
+21714,"DUNN, Neal Patrick",FL,2.0,200.0,Republican,0.508,481.0,,D000628,True,True,no,held_seat_nov3
+21735,"MAST, Brian Jeffrey",FL,21.0,200.0,Republican,0.461,568.0,,M001199,True,True,no,held_seat_nov3
+21744,"RUTHERFORD, John Henry",FL,5.0,200.0,Republican,0.432,525.0,,R000609,True,True,yes,held_seat_nov3
+21746,"SOTO, Darren Michael",FL,9.0,100.0,Democrat,-0.339,581.0,,S001200,True,True,no,held_seat_nov3
+21971,"STEUBE, W. Greg",FL,17.0,200.0,Republican,0.687,564.0,,S001214,True,True,no,held_seat_nov3
+21981,"WALTZ, Michael",FL,6.0,200.0,Republican,0.452,6.0,low_votes;shared_seat;left_before_nov3,W000823,False,False,,left_before_nov3
+22107,"CAMMACK, Kat",FL,3.0,200.0,Republican,0.589,574.0,,C001039,True,True,no,held_seat_nov3
+22111,"DONALDS, Byron",FL,19.0,200.0,Republican,0.636,518.0,,D000032,True,True,no,held_seat_nov3
+22116,"FRANKLIN, C. Scott",FL,18.0,200.0,Republican,0.627,579.0,,F000472,True,True,no,held_seat_nov3
+22118,"GIMENEZ, Carlos A.",FL,28.0,200.0,Republican,0.328,545.0,,G000593,True,True,yes,held_seat_nov3
+22150,"SALAZAR, Maria Elvira",FL,27.0,200.0,Republican,0.274,509.0,,S000168,True,True,yes,held_seat_nov3
+22163,"CHERFILUS-MCCORMICK, Sheila",FL,20.0,100.0,Democrat,-0.429,408.0,left_before_nov3,C001127,False,False,,left_before_nov3
+22302,"BEAN, Aaron",FL,4.0,200.0,Republican,0.698,582.0,,B001314,True,True,no,held_seat_nov3
+22321,"FROST, Maxwell",FL,10.0,100.0,Democrat,-0.442,580.0,,F000476,True,True,no,held_seat_nov3
+22341,"LEE, Laurel",FL,15.0,200.0,Republican,0.424,554.0,,L000597,True,True,yes,held_seat_nov3
+22343,"LUNA, Anna",FL,13.0,200.0,Republican,0.56,526.0,,L000596,True,True,no,held_seat_nov3
+22350,"MILLS, Cory",FL,7.0,200.0,Republican,0.599,543.0,,M001216,True,True,no,held_seat_nov3
+22353,"MOSKOWITZ, Jared",FL,23.0,100.0,Democrat,-0.227,562.0,,M001217,True,True,yes,held_seat_nov3
+22523,"HARIDOPOLOS, Mike",FL,8.0,200.0,Republican,0.468,575.0,,H001099,True,True,no,held_seat_nov3
+22562,"FINE, Randy",FL,6.0,200.0,Republican,0.641,495.0,shared_seat,F000484,True,True,no,held_seat_nov3
+22563,"PATRONIS, Jimmy",FL,1.0,200.0,Republican,0.505,521.0,,P000622,True,True,no,held_seat_nov3
+20321,"SCOTT, David",GA,13.0,100.0,Democrat,-0.305,414.0,shared_seat;left_before_nov3,S001157,False,False,,left_before_nov3
+20712,"JOHNSON, Hank",GA,4.0,100.0,Democrat,-0.479,573.0,,J000288,True,True,no,held_seat_nov3
+21123,"SCOTT, Austin",GA,8.0,200.0,Republican,0.538,580.0,,S001189,True,True,no,held_seat_nov3
+21513,"CARTER, Buddy",GA,1.0,200.0,Republican,0.552,553.0,,C001103,True,True,no,held_seat_nov3
+21515,"LOUDERMILK, Barry D.",GA,11.0,200.0,Republican,0.676,547.0,,L000583,True,True,no,held_seat_nov3
+21516,"ALLEN, Rick W.",GA,12.0,200.0,Republican,0.687,576.0,,A000372,True,True,no,held_seat_nov3
+21944,"McBATH, Lucy",GA,6.0,100.0,Democrat,-0.372,554.0,,M001208,True,True,no,held_seat_nov3
+22110,"CLYDE, Andrew S.",GA,9.0,200.0,Republican,0.829,556.0,,C001116,True,True,no,held_seat_nov3
+22121,"GREENE, Marjorie Taylor",GA,14.0,200.0,Republican,0.8,275.0,shared_seat;left_before_nov3,G000596,False,False,,left_before_nov3
+22156,"WILLIAMS, Nikema",GA,5.0,100.0,Democrat,-0.443,559.0,,W000788,True,True,no,held_seat_nov3
+22310,"COLLINS, Mike",GA,10.0,200.0,Republican,0.681,572.0,,C001129,True,True,no,held_seat_nov3
+22346,"MCCORMICK, Rich",GA,7.0,200.0,Republican,0.891,579.0,,M001218,True,True,no,held_seat_nov3
+22527,"JACK, Brian",GA,3.0,200.0,Republican,0.597,582.0,,J000311,True,True,no,held_seat_nov3
+22568,"FULLER, Clay",GA,14.0,200.0,Republican,0.675,180.0,shared_seat,F000485,True,True,no,held_seat_nov3
+22571,"BLAIR, Everton",GA,13.0,100.0,Democrat,-0.681,32.0,low_votes;shared_seat,B001328,True,True,no,held_seat_nov3
+29339,"BISHOP, Sanford Dixon, Jr.",GA,2.0,100.0,Democrat,-0.289,571.0,,B000490,True,True,yes,held_seat_nov3
+22373,"MOYLAN, James",GU,0.0,200.0,Republican,0.33,68.0,low_votes;delegate,M001219,True,False,,held_seat_nov3
+20322,"CASE, Ed",HI,1.0,100.0,Democrat,-0.207,577.0,,C001055,True,True,yes,held_seat_nov3
+22369,"TOKUDA, Jill",HI,2.0,100.0,Democrat,-0.455,580.0,,T000487,True,True,no,held_seat_nov3
+21920,"FULCHER, Russell",ID,1.0,200.0,Republican,0.642,575.0,,F000469,True,True,no,held_seat_nov3
+29910,"SIMPSON, Michael K.",ID,2.0,200.0,Republican,0.296,573.0,,S001148,True,True,yes,held_seat_nov3
+20749,"FOSTER, Bill",IL,11.0,100.0,Democrat,-0.238,578.0,,F000454,True,True,yes,held_seat_nov3
+20954,"QUIGLEY, Mike",IL,5.0,100.0,Democrat,-0.324,559.0,,Q000023,True,True,yes,held_seat_nov3
+21326,"SCHNEIDER, Brad",IL,10.0,100.0,Democrat,-0.199,569.0,,S001190,True,True,yes,held_seat_nov3
+21371,"KELLY, Robin L.",IL,2.0,100.0,Democrat,-0.474,570.0,,K000385,True,True,no,held_seat_nov3
+21519,"BOST, Mike",IL,12.0,200.0,Republican,0.402,577.0,,B001295,True,True,yes,held_seat_nov3
+21562,"LAHOOD, Darin",IL,16.0,200.0,Republican,0.459,548.0,,L000585,True,True,no,held_seat_nov3
+21730,"KRISHNAMOORTHI, S. Raja",IL,8.0,100.0,Democrat,-0.349,568.0,,K000391,True,True,no,held_seat_nov3
+21906,"CASTEN, Sean",IL,6.0,100.0,Democrat,-0.624,577.0,,C001117,True,True,no,held_seat_nov3
+21921,"GARCÍA, Jesús",IL,4.0,100.0,Democrat,-0.439,570.0,,G000586,True,True,no,held_seat_nov3
+21979,"UNDERWOOD, Lauren",IL,14.0,100.0,Democrat,-0.597,579.0,,U000040,True,True,no,held_seat_nov3
+22138,"MILLER, Mary E.",IL,15.0,200.0,Republican,0.794,563.0,,M001211,True,True,no,held_seat_nov3
+22304,"BUDZINSKI, Nikki",IL,13.0,100.0,Democrat,-0.317,582.0,,B001315,True,True,yes,held_seat_nov3
+22330,"JACKSON, Jonathan",IL,1.0,100.0,Democrat,-0.35,542.0,,J000309,True,True,no,held_seat_nov3
+22360,"RAMIREZ, Delia",IL,3.0,100.0,Democrat,-0.496,559.0,,R000617,True,True,no,held_seat_nov3
+22365,"SORENSEN, Eric",IL,17.0,100.0,Democrat,-0.24,580.0,,S001225,True,True,yes,held_seat_nov3
+29717,"DAVIS, Danny K.",IL,7.0,100.0,Democrat,-0.487,564.0,,D000096,True,True,no,held_seat_nov3
+29911,"SCHAKOWSKY, Janice D.",IL,9.0,100.0,Democrat,-0.602,551.0,,S001145,True,True,no,held_seat_nov3
+20757,"CARSON, André",IN,7.0,100.0,Democrat,-0.434,576.0,,C001072,True,True,no,held_seat_nov3
+21100,"STUTZMAN, Marlin",IN,3.0,200.0,Republican,0.714,569.0,,S001188,True,True,no,held_seat_nov3
+21903,"BAIRD, James",IN,4.0,200.0,Republican,0.447,551.0,,B001307,True,True,yes,held_seat_nov3
+22142,"MRVAN, Frank J.",IN,1.0,100.0,Democrat,-0.299,567.0,,M001214,True,True,yes,held_seat_nov3
+22151,"SPARTZ, Victoria",IN,5.0,200.0,Republican,0.493,551.0,,S000929,True,True,no,held_seat_nov3
+22171,"YAKYM, Rudy, III",IN,2.0,200.0,Republican,0.522,581.0,,Y000067,True,True,no,held_seat_nov3
+22326,"HOUCHIN, Erin",IN,9.0,200.0,Republican,0.625,573.0,,H001093,True,True,no,held_seat_nov3
+22540,"MESSMER, Mark B.",IN,8.0,200.0,Republican,0.521,575.0,,M001233,True,True,no,held_seat_nov3
+22552,"SHREVE, Jefferson",IN,6.0,200.0,Republican,0.502,574.0,,S001229,True,True,no,held_seat_nov3
+22113,"FEENSTRA, Randy",IA,4.0,200.0,Republican,0.466,575.0,,F000446,True,True,no,held_seat_nov3
+22124,"HINSON, Ashley",IA,2.0,200.0,Republican,0.357,573.0,,H001091,True,True,yes,held_seat_nov3
+22139,"MILLER-MEEKS, Mariannette",IA,1.0,200.0,Republican,0.337,564.0,,M001215,True,True,yes,held_seat_nov3
+22356,"NUNN, Zach",IA,3.0,200.0,Republican,0.291,557.0,,N000193,True,True,yes,held_seat_nov3
+21750,"ESTES, Ron",KS,4.0,200.0,Republican,0.647,576.0,,E000298,True,True,no,held_seat_nov3
+21914,"DAVIDS, Sharice",KS,3.0,100.0,Democrat,-0.265,576.0,,D000629,True,True,yes,held_seat_nov3
+22134,"MANN, Tracey",KS,1.0,200.0,Republican,0.61,580.0,,M000871,True,True,no,held_seat_nov3
+22551,"SCHMIDT, Derek",KS,2.0,200.0,Republican,0.637,577.0,,S001228,True,True,no,held_seat_nov3
+14854,"ROGERS, Harold Dallas (Hal)",KY,5.0,200.0,Republican,0.334,572.0,,R000395,True,True,yes,held_seat_nov3
+20916,"GUTHRIE, Brett",KY,2.0,200.0,Republican,0.426,579.0,,G000558,True,True,yes,held_seat_nov3
+21333,"BARR, Garland H. (Andy), IV",KY,6.0,200.0,Republican,0.489,548.0,,B001282,True,True,no,held_seat_nov3
+21565,"COMER, James",KY,1.0,200.0,Republican,0.593,572.0,,C001108,True,True,no,held_seat_nov3
+22347,"MCGARVEY, Morgan",KY,3.0,100.0,Democrat,-0.486,581.0,,M001220,True,True,no,held_seat_nov3
+31102,"MASSIE, Thomas",KY,4.0,200.0,Republican,0.652,551.0,,M001184,True,True,no,held_seat_nov3
+20759,"SCALISE, Steve",LA,1.0,200.0,Republican,0.558,572.0,,S001176,True,True,no,held_seat_nov3
+21724,"HIGGINS, Clay",LA,3.0,200.0,Republican,0.632,571.0,,H001077,True,True,no,held_seat_nov3
+21727,"JOHNSON, Mike",LA,4.0,200.0,Republican,0.566,466.0,,J000299,True,True,no,held_seat_nov3
+22157,"LETLOW, Julia",LA,5.0,200.0,Republican,0.434,551.0,,L000595,True,True,yes,held_seat_nov3
+22158,"CARTER, Troy",LA,2.0,100.0,Democrat,-0.522,576.0,,C001125,True,True,no,held_seat_nov3
+29354,"FIELDS, Cleo",LA,6.0,100.0,Democrat,-0.457,561.0,,F000110,True,True,no,held_seat_nov3
+20920,"PINGREE, Chellie",ME,1.0,100.0,Democrat,-0.421,561.0,,P000597,True,True,no,held_seat_nov3
+21923,"GOLDEN, Jared",ME,2.0,100.0,Democrat,-0.106,566.0,,G000592,True,True,yes,held_seat_nov3
+14873,"HOYER, Steny Hamilton",MD,5.0,100.0,Democrat,-0.381,567.0,,H000874,True,True,no,held_seat_nov3
+15433,"MFUME, Kweisi",MD,7.0,100.0,Democrat,-0.441,554.0,,M000687,True,True,no,held_seat_nov3
+21139,"HARRIS, Andy",MD,1.0,200.0,Republican,0.677,568.0,,H001052,True,True,no,held_seat_nov3
+21741,"RASKIN, Jamie Ben",MD,8.0,100.0,Democrat,-0.495,578.0,,R000606,True,True,no,held_seat_nov3
+22329,"IVEY, Glenn",MD,4.0,100.0,Democrat,-0.466,574.0,,I000058,True,True,no,held_seat_nov3
+22512,"ELFRETH, Sarah",MD,3.0,100.0,Democrat,-0.374,581.0,,E000301,True,True,no,held_seat_nov3
+22536,"MCCLAIN DELANEY, April",MD,6.0,100.0,Democrat,-0.292,565.0,,M001232,True,True,yes,held_seat_nov3
+22545,"OLSZEWSKI, Johnny, Jr.",MD,2.0,100.0,Democrat,-0.379,578.0,,O000176,True,True,no,held_seat_nov3
+15616,"NEAL, Richard Edmund",MA,1.0,100.0,Democrat,-0.417,549.0,,N000015,True,True,no,held_seat_nov3
+20119,"LYNCH, Stephen F.",MA,8.0,100.0,Democrat,-0.342,558.0,,L000562,True,True,no,held_seat_nov3
+21140,"KEATING, William R.",MA,9.0,100.0,Democrat,-0.329,558.0,,K000375,True,True,yes,held_seat_nov3
+21375,"CLARK, Katherine M.",MA,5.0,100.0,Democrat,-0.478,580.0,,C001101,True,True,no,held_seat_nov3
+21525,"MOULTON, Seth",MA,6.0,100.0,Democrat,-0.286,505.0,,M001196,True,True,yes,held_seat_nov3
+21955,"PRESSLEY, Ayanna",MA,7.0,100.0,Democrat,-0.372,569.0,,P000617,True,True,no,held_seat_nov3
+21977,"TRAHAN, Lori",MA,3.0,100.0,Democrat,-0.414,562.0,,T000482,True,True,no,held_seat_nov3
+22100,"AUCHINCLOSS, Jake",MA,4.0,100.0,Democrat,-0.271,558.0,,A000148,True,True,yes,held_seat_nov3
+29729,"McGOVERN, James P.",MA,2.0,100.0,Democrat,-0.538,570.0,,M000312,True,True,no,held_seat_nov3
+20725,"WALBERG, Tim",MI,5.0,200.0,Republican,0.498,577.0,,W000798,True,True,no,held_seat_nov3
+21142,"HUIZENGA, Bill",MI,4.0,200.0,Republican,0.531,575.0,,H001058,True,True,no,held_seat_nov3
+21526,"MOOLENAAR, John",MI,2.0,200.0,Republican,0.448,580.0,,M001194,True,True,yes,held_seat_nov3
+21529,"DINGELL, Debbie",MI,6.0,100.0,Democrat,-0.397,568.0,,D000624,True,True,no,held_seat_nov3
+21704,"BERGMAN, John",MI,1.0,200.0,Republican,0.434,571.0,,B001301,True,True,yes,held_seat_nov3
+21972,"STEVENS, Haley",MI,11.0,100.0,Democrat,-0.361,575.0,,S001215,True,True,no,held_seat_nov3
+21975,"TLAIB, Rashida",MI,12.0,100.0,Democrat,-0.29,570.0,,T000481,True,True,yes,held_seat_nov3
+22136,"MCCLAIN, Lisa C.",MI,9.0,200.0,Republican,0.548,571.0,,M001136,True,True,no,held_seat_nov3
+22332,"JAMES, John",MI,10.0,200.0,Republican,0.319,536.0,,J000307,True,True,yes,held_seat_nov3
+22363,"SCHOLTEN, Hillary",MI,3.0,100.0,Democrat,-0.261,565.0,,S001221,True,True,yes,held_seat_nov3
+22368,"THANEDAR, Shri",MI,13.0,100.0,Democrat,-0.349,577.0,,T000488,True,True,no,held_seat_nov3
+22501,"BARRETT, Tom",MI,7.0,200.0,Republican,0.486,579.0,,B001321,True,True,no,held_seat_nov3
+22537,"MCDONALD RIVET, Kristen",MI,8.0,100.0,Democrat,-0.244,568.0,,M001237,True,True,yes,held_seat_nov3
+20122,"MCCOLLUM, Betty",MN,4.0,100.0,Democrat,-0.419,574.0,,M001143,True,True,no,held_seat_nov3
+21531,"EMMER, Thomas Earl, II",MN,6.0,200.0,Republican,0.469,574.0,,E000294,True,True,no,held_seat_nov3
+21910,"CRAIG, Angela",MN,2.0,100.0,Democrat,-0.272,567.0,,C001119,True,True,yes,held_seat_nov3
+21950,"OMAR, Ilhan",MN,5.0,100.0,Democrat,-0.296,572.0,,O000173,True,True,yes,held_seat_nov3
+21969,"STAUBER, Peter",MN,8.0,200.0,Republican,0.386,576.0,,S001212,True,True,yes,held_seat_nov3
+22114,"FISCHBACH, Michelle",MN,7.0,200.0,Republican,0.541,580.0,,F000470,True,True,no,held_seat_nov3
+22167,"FINSTAD, Brad",MN,1.0,200.0,Republican,0.559,576.0,,F000475,True,True,no,held_seat_nov3
+22544,"MORRISON, Kelly",MN,3.0,100.0,Democrat,-0.348,580.0,,M001234,True,True,no,held_seat_nov3
+21561,"KELLY, Trent",MS,1.0,200.0,Republican,0.634,578.0,,K000388,True,True,no,held_seat_nov3
+21927,"GUEST, Michael",MS,3.0,200.0,Republican,0.531,571.0,,G000591,True,True,no,held_seat_nov3
+22319,"EZELL, Mike",MS,4.0,200.0,Republican,0.552,574.0,,E000235,True,True,no,held_seat_nov3
+29368,"THOMPSON, Bennie",MS,2.0,100.0,Democrat,-0.52,565.0,,T000193,True,True,no,held_seat_nov3
+20124,"GRAVES, Samuel",MO,6.0,200.0,Republican,0.449,551.0,,G000546,True,True,no,held_seat_nov3
+20517,"CLEAVER, Emanuel, II",MO,5.0,100.0,Democrat,-0.454,555.0,,C001061,True,True,no,held_seat_nov3
+21337,"WAGNER, Ann",MO,2.0,200.0,Republican,0.392,574.0,,W000812,True,True,yes,held_seat_nov3
+21373,"SMITH, Jason",MO,8.0,200.0,Republican,0.578,573.0,,S001195,True,True,no,held_seat_nov3
+22300,"ALFORD, Mark",MO,4.0,200.0,Republican,0.564,573.0,,A000379,True,True,no,held_seat_nov3
+22305,"BURLISON, Eric",MO,7.0,200.0,Republican,0.736,559.0,,B001316,True,True,no,held_seat_nov3
+22504,"BELL, Wesley",MO,1.0,100.0,Democrat,-0.456,570.0,,B001324,True,True,no,held_seat_nov3
+22546,"ONDER, Robert F., Jr.",MO,3.0,200.0,Republican,0.721,568.0,,O000177,True,True,no,held_seat_nov3
+21532,"ZINKE, Ryan",MT,1.0,200.0,Republican,0.443,568.0,,Z000018,True,True,yes,held_seat_nov3
+22511,"DOWNING, Troy",MT,2.0,200.0,Republican,0.65,581.0,,D000634,True,True,no,held_seat_nov3
+20729,"SMITH, Adrian",NE,3.0,200.0,Republican,0.51,573.0,,S001172,True,True,no,held_seat_nov3
+21701,"BACON, Donald J.",NE,2.0,200.0,Republican,0.277,580.0,,B001298,True,True,yes,held_seat_nov3
+22166,"FLOOD, Mike",NE,1.0,200.0,Republican,0.442,579.0,,F000474,True,True,yes,held_seat_nov3
+20927,"TITUS, Alice (Dina)",NV,1.0,100.0,Democrat,-0.297,533.0,,T000468,True,True,yes,held_seat_nov3
+21196,"AMODEI, Mark E.",NV,2.0,200.0,Republican,0.385,566.0,,A000369,True,True,yes,held_seat_nov3
+21339,"HORSFORD, Steven",NV,4.0,100.0,Democrat,-0.311,569.0,,H001066,True,True,yes,held_seat_nov3
+21938,"LEE, Susie",NV,3.0,100.0,Democrat,-0.225,571.0,,L000590,True,True,yes,held_seat_nov3
+21951,"PAPPAS, Chris",NH,1.0,100.0,Democrat,-0.233,578.0,,P000614,True,True,yes,held_seat_nov3
+22520,"GOODLANDER, Maggie",NH,2.0,100.0,Democrat,-0.21,576.0,,G000604,True,True,yes,held_seat_nov3
+14863,"SMITH, Christopher Henry",NJ,4.0,200.0,Republican,0.184,580.0,,S000522,True,True,yes,held_seat_nov3
+15454,"PALLONE, Frank, Jr.",NJ,6.0,100.0,Democrat,-0.403,578.0,,P000034,True,True,no,held_seat_nov3
+21536,"NORCROSS, Donald",NJ,1.0,100.0,Democrat,-0.421,503.0,,N000188,True,True,no,held_seat_nov3
+21538,"WATSON COLEMAN, Bonnie",NJ,12.0,100.0,Democrat,-0.592,576.0,,W000822,True,True,no,held_seat_nov3
+21723,"GOTTHEIMER, Josh S.",NJ,5.0,100.0,Democrat,-0.165,523.0,,G000583,True,True,yes,held_seat_nov3
+21964,"SHERRILL, Mikie",NJ,11.0,100.0,Democrat,-0.234,116.0,shared_seat;left_before_nov3,S001207,False,False,,left_before_nov3
+22334,"KEAN, Thomas",NJ,7.0,200.0,Republican,0.202,459.0,,K000398,True,True,yes,held_seat_nov3
+22348,"MENENDEZ, Robert",NJ,8.0,100.0,Democrat,-0.509,582.0,,M001226,True,True,no,held_seat_nov3
+22381,"MCIVER, LaMonica",NJ,10.0,100.0,Democrat,-0.539,579.0,,M001229,True,True,no,held_seat_nov3
+22508,"CONAWAY, Herbert C., Jr.",NJ,3.0,100.0,Democrat,-0.3,569.0,,C001136,True,True,yes,held_seat_nov3
+22547,"POU, Nellie",NJ,9.0,100.0,Democrat,-0.307,578.0,,P000621,True,True,yes,held_seat_nov3
+22569,"MEJIA, Analilia",NJ,11.0,100.0,Democrat,-0.432,166.0,shared_seat,M001246,True,True,no,held_seat_nov3
+91980,"VAN DREW, Jefferson",NJ,2.0,200.0,Republican,0.384,574.0,,V000133,True,True,yes,held_seat_nov3
+22131,"LEGER FERNANDEZ, Teresa",NM,3.0,100.0,Democrat,-0.366,536.0,,L000273,True,True,no,held_seat_nov3
+22159,"STANSBURY, Melanie Ann",NM,1.0,100.0,Democrat,-0.433,568.0,,S001218,True,True,no,held_seat_nov3
+22371,"VASQUEZ, Gabriel",NM,2.0,100.0,Democrat,-0.32,577.0,,V000136,True,True,yes,held_seat_nov3
+20733,"CLARKE, Yvette Diane",NY,9.0,100.0,Democrat,-0.607,566.0,,C001067,True,True,no,held_seat_nov3
+20934,"TONKO, Paul",NY,20.0,100.0,Democrat,-0.416,575.0,,T000469,True,True,no,held_seat_nov3
+21342,"MENG, Grace",NY,6.0,100.0,Democrat,-0.371,557.0,,M001188,True,True,no,held_seat_nov3
+21343,"JEFFRIES, Hakeem",NY,8.0,100.0,Democrat,-0.483,578.0,,J000294,True,True,no,held_seat_nov3
+21541,"STEFANIK, Elise M.",NY,21.0,200.0,Republican,0.309,494.0,,S001196,True,True,yes,held_seat_nov3
+21715,"ESPAILLAT, Adriano J.",NY,13.0,100.0,Democrat,-0.526,575.0,,E000297,True,True,no,held_seat_nov3
+21747,"SUOZZI, Thomas",NY,3.0,100.0,Democrat,-0.213,569.0,,S001201,True,True,yes,held_seat_nov3
+21749,"TENNEY, Claudia",NY,24.0,200.0,Republican,0.466,579.0,,T000478,True,True,no,held_seat_nov3
+21761,"MORELLE, Joseph",NY,25.0,100.0,Democrat,-0.331,569.0,,M001206,True,True,yes,held_seat_nov3
+21949,"OCASIO-CORTEZ, Alexandria",NY,14.0,100.0,Democrat,-0.333,568.0,,O000172,True,True,yes,held_seat_nov3
+22117,"GARBARINO, Andrew R.",NY,2.0,200.0,Republican,0.244,565.0,,G000597,True,True,yes,held_seat_nov3
+22133,"MALLIOTAKIS, Nicole",NY,11.0,200.0,Republican,0.334,575.0,,M000317,True,True,yes,held_seat_nov3
+22154,"TORRES, Ritchie",NY,15.0,100.0,Democrat,-0.311,565.0,,T000486,True,True,yes,held_seat_nov3
+22169,"RYAN, Patrick",NY,18.0,100.0,Democrat,-0.225,578.0,,R000579,True,True,yes,held_seat_nov3
+22324,"GOLDMAN, Daniel",NY,10.0,100.0,Democrat,-0.449,519.0,,G000599,True,True,no,held_seat_nov3
+22337,"LALOTA, Nicholas",NY,1.0,200.0,Republican,0.252,572.0,,L000598,True,True,yes,held_seat_nov3
+22339,"LANGWORTHY, Nick",NY,23.0,200.0,Republican,0.425,574.0,,L000600,True,True,yes,held_seat_nov3
+22340,"LAWLER, Michael",NY,17.0,200.0,Republican,0.19,572.0,,L000599,True,True,yes,held_seat_nov3
+22377,"KENNEDY, Timothy M.",NY,26.0,100.0,Democrat,-0.387,581.0,,K000402,True,True,no,held_seat_nov3
+22518,"GILLEN, Laura",NY,4.0,100.0,Democrat,-0.166,568.0,,G000602,True,True,yes,held_seat_nov3
+22531,"LATIMER, George",NY,16.0,100.0,Democrat,-0.4,568.0,,L000606,True,True,no,held_seat_nov3
+22534,"MANNION, John W.",NY,22.0,100.0,Democrat,-0.237,581.0,,M001231,True,True,yes,held_seat_nov3
+22549,"RILEY, Josh",NY,19.0,100.0,Democrat,-0.202,574.0,,R000622,True,True,yes,held_seat_nov3
+29377,"NADLER, Jerrold Lewis",NY,12.0,100.0,Democrat,-0.507,523.0,,N000002,True,True,no,held_seat_nov3
+29378,"VELÁZQUEZ, Nydia M.",NY,7.0,100.0,Democrat,-0.546,554.0,,V000081,True,True,no,held_seat_nov3
+29776,"MEEKS, Gregory W.",NY,5.0,100.0,Democrat,-0.415,561.0,,M001137,True,True,no,held_seat_nov3
+20521,"FOXX, Virginia Ann",NC,5.0,200.0,Republican,0.624,579.0,,F000450,True,True,no,held_seat_nov3
+21346,"HUDSON, Richard",NC,9.0,200.0,Republican,0.523,577.0,,H001067,True,True,no,held_seat_nov3
+21544,"ROUZER, David",NC,7.0,200.0,Republican,0.567,574.0,,R000603,True,True,no,held_seat_nov3
+21545,"ADAMS, Alma",NC,12.0,100.0,Democrat,-0.464,581.0,,A000370,True,True,no,held_seat_nov3
+21987,"MURPHY, Gregory Francis",NC,3.0,200.0,Republican,0.483,503.0,,M001210,True,True,no,held_seat_nov3
+22149,"ROSS, Deborah K.",NC,2.0,100.0,Democrat,-0.389,580.0,,R000305,True,True,no,held_seat_nov3
+22314,"DAVIS, Don",NC,1.0,100.0,Democrat,-0.241,571.0,,D000230,True,True,yes,held_seat_nov3
+22318,"EDWARDS, Chuck",NC,11.0,200.0,Republican,0.373,576.0,,E000246,True,True,yes,held_seat_nov3
+22320,"FOUSHEE, Valerie",NC,4.0,100.0,Democrat,-0.501,570.0,,F000477,True,True,no,held_seat_nov3
+22524,"HARRIGAN, Pat",NC,10.0,200.0,Republican,0.971,570.0,,H001101,True,True,no,held_seat_nov3
+22525,"HARRIS, Mark",NC,8.0,200.0,Republican,0.796,582.0,,H001102,True,True,no,held_seat_nov3
+22530,"KNOTT, Brad",NC,13.0,200.0,Republican,0.811,574.0,,K000405,True,True,no,held_seat_nov3
+22538,"MCDOWELL, Addison P.",NC,6.0,200.0,Republican,0.564,577.0,,M001240,True,True,no,held_seat_nov3
+22542,"MOORE, Tim",NC,14.0,200.0,Republican,0.571,580.0,,M001236,True,True,no,held_seat_nov3
+22514,"FEDORCHAK, Julie",ND,1.0,200.0,Republican,0.623,570.0,,F000482,True,True,no,held_seat_nov3
+22561,"KING-HINDS, Kimberlyn",MP,0.0,200.0,Republican,0.163,61.0,low_votes;delegate,K000404,True,False,,held_seat_nov3
+15029,"KAPTUR, Marcia Carolyn (Marcy)",OH,9.0,100.0,Democrat,-0.34,556.0,,K000009,True,True,no,held_seat_nov3
+20342,"TURNER, Michael R.",OH,10.0,200.0,Republican,0.265,568.0,,T000463,True,True,yes,held_seat_nov3
+20738,"JORDAN, Jim",OH,4.0,200.0,Republican,0.711,561.0,,J000289,True,True,no,held_seat_nov3
+20755,"LATTA, Robert E.",OH,5.0,200.0,Republican,0.508,582.0,,L000566,True,True,no,held_seat_nov3
+21352,"BEATTY, Joyce",OH,3.0,100.0,Democrat,-0.44,549.0,,B001281,True,True,no,held_seat_nov3
+21353,"JOYCE, David",OH,14.0,200.0,Republican,0.25,565.0,,J000295,True,True,yes,held_seat_nov3
+21564,"DAVIDSON, Warren",OH,8.0,200.0,Republican,0.646,570.0,,D000626,True,True,no,held_seat_nov3
+21759,"BALDERSON, Troy",OH,12.0,200.0,Republican,0.464,574.0,,B001306,True,True,no,held_seat_nov3
+22161,"BROWN, Shontel M.",OH,11.0,100.0,Democrat,-0.476,581.0,,B001313,True,True,no,held_seat_nov3
+22162,"CAREY, Mike",OH,15.0,200.0,Republican,0.406,575.0,,C001126,True,True,yes,held_seat_nov3
+22338,"LANDSMAN, Greg",OH,1.0,100.0,Democrat,-0.226,578.0,,L000601,True,True,yes,held_seat_nov3
+22349,"MILLER, Max",OH,7.0,200.0,Republican,0.37,552.0,,M001222,True,True,yes,held_seat_nov3
+22367,"SYKES, Emilia",OH,13.0,100.0,Democrat,-0.334,564.0,,S001223,True,True,yes,held_seat_nov3
+22379,"RULLI, Michael A.",OH,6.0,200.0,Republican,0.434,553.0,,R000619,True,True,yes,held_seat_nov3
+22555,"TAYLOR, David J.",OH,2.0,200.0,Republican,0.617,582.0,,T000490,True,True,no,held_seat_nov3
+20344,"COLE, Tom",OK,4.0,200.0,Republican,0.323,575.0,,C001053,True,True,yes,held_seat_nov3
+21760,"HERN, Kevin",OK,1.0,200.0,Republican,0.677,571.0,,H001082,True,True,no,held_seat_nov3
+22102,"BICE, Stephanie I.",OK,5.0,200.0,Republican,0.412,574.0,,B000740,True,True,yes,held_seat_nov3
+22303,"BRECHEEN, Josh",OK,2.0,200.0,Republican,0.841,551.0,,B001317,True,True,no,held_seat_nov3
+29393,"LUCAS, Frank D.",OK,3.0,200.0,Republican,0.361,572.0,,L000491,True,True,yes,held_seat_nov3
+21198,"BONAMICI, Suzanne",OR,1.0,100.0,Democrat,-0.401,574.0,,B001278,True,True,no,held_seat_nov3
+22101,"BENTZ, Cliff",OR,2.0,200.0,Republican,0.476,581.0,,B000668,True,True,no,held_seat_nov3
+22327,"HOYLE, Val",OR,4.0,100.0,Democrat,-0.234,568.0,,H001094,True,True,yes,held_seat_nov3
+22361,"SALINAS, Andrea",OR,6.0,100.0,Democrat,-0.228,581.0,,S001226,True,True,yes,held_seat_nov3
+22507,"BYNUM, Janelle S.",OR,5.0,100.0,Democrat,-0.288,575.0,,B001326,True,True,yes,held_seat_nov3
+22510,"DEXTER, Maxine",OR,3.0,100.0,Democrat,-0.46,575.0,,D000635,True,True,no,held_seat_nov3
+20946,"THOMPSON, Glenn",PA,15.0,200.0,Republican,0.335,574.0,,T000467,True,True,yes,held_seat_nov3
+21167,"KELLY, Mike",PA,16.0,200.0,Republican,0.379,573.0,,K000376,True,True,yes,held_seat_nov3
+21356,"PERRY, Scott",PA,10.0,200.0,Republican,0.686,568.0,,P000605,True,True,no,held_seat_nov3
+21548,"BOYLE, Brendan Francis",PA,2.0,100.0,Democrat,-0.379,561.0,,B001296,True,True,no,held_seat_nov3
+21566,"EVANS, Dwight",PA,3.0,100.0,Democrat,-0.473,538.0,,E000296,True,True,no,held_seat_nov3
+21718,"FITZPATRICK, Brian K.",PA,1.0,200.0,Republican,0.141,576.0,,F000466,True,True,yes,held_seat_nov3
+21745,"SMUCKER, Lloyd K.",PA,11.0,200.0,Republican,0.456,566.0,,S001199,True,True,no,held_seat_nov3
+21762,"SCANLON, Mary Gay",PA,5.0,100.0,Democrat,-0.458,574.0,,S001205,True,True,no,held_seat_nov3
+21915,"DEAN, Madeleine",PA,4.0,100.0,Democrat,-0.434,575.0,,D000631,True,True,no,held_seat_nov3
+21934,"HOULAHAN, Christina",PA,6.0,100.0,Democrat,-0.257,565.0,,H001085,True,True,yes,held_seat_nov3
+21936,"JOYCE, John",PA,13.0,200.0,Republican,0.583,581.0,,J000302,True,True,no,held_seat_nov3
+21945,"MEUSER, Dan",PA,9.0,200.0,Republican,0.491,554.0,,M001204,True,True,no,held_seat_nov3
+21956,"RESCHENTHALER, Guy",PA,14.0,200.0,Republican,0.448,566.0,,R000610,True,True,yes,held_seat_nov3
+22316,"DELUZIO, Chris",PA,17.0,100.0,Democrat,-0.264,582.0,,D000530,True,True,yes,held_seat_nov3
+22342,"LEE, Summer",PA,12.0,100.0,Democrat,-0.45,582.0,,L000602,True,True,no,held_seat_nov3
+22506,"BRESNAHAN, Robert P., Jr.",PA,8.0,200.0,Republican,0.257,579.0,,B001327,True,True,yes,held_seat_nov3
+22533,"MACKENZIE, Ryan",PA,7.0,200.0,Republican,0.321,573.0,,M001230,True,True,yes,held_seat_nov3
+22560,"HERNÁNDEZ, Pablo José",PR,0.0,100.0,Democrat,-0.507,72.0,low_votes;delegate,H001103,True,False,,held_seat_nov3
+22345,"MAGAZINER, Seth",RI,2.0,100.0,Democrat,-0.304,569.0,,M001223,True,True,yes,held_seat_nov3
+22375,"AMO, Gabe",RI,1.0,100.0,Democrat,-0.427,582.0,,A000380,True,True,no,held_seat_nov3
+20138,"WILSON, Joe",SC,2.0,200.0,Republican,0.529,553.0,,W000795,True,True,no,held_seat_nov3
+21753,"NORMAN, Ralph",SC,5.0,200.0,Republican,0.857,521.0,,N000190,True,True,no,held_seat_nov3
+21974,"TIMMONS, William",SC,4.0,200.0,Republican,0.599,573.0,,T000480,True,True,no,held_seat_nov3
+22132,"MACE, Nancy",SC,1.0,200.0,Republican,0.353,492.0,,M000194,True,True,yes,held_seat_nov3
+22322,"FRY, Russell",SC,7.0,200.0,Republican,0.554,578.0,,F000478,True,True,no,held_seat_nov3
+22505,"BIGGS, Sheri",SC,3.0,200.0,Republican,0.815,582.0,,B001325,True,True,no,held_seat_nov3
+39301,"CLYBURN, James Enos",SC,6.0,100.0,Democrat,-0.466,575.0,,C000537,True,True,no,held_seat_nov3
+21935,"JOHNSON, Dustin (Dusty)",SD,1.0,200.0,Republican,0.468,559.0,,J000301,True,True,no,held_seat_nov3
+20748,"COHEN, Stephen",TN,9.0,100.0,Democrat,-0.388,553.0,,C001068,True,True,no,held_seat_nov3
+21178,"FLEISCHMANN, Chuck",TN,3.0,200.0,Republican,0.431,581.0,,F000459,True,True,yes,held_seat_nov3
+21179,"DESJARLAIS, Scott",TN,4.0,200.0,Republican,0.579,558.0,,D000616,True,True,no,held_seat_nov3
+21731,"KUSTOFF, David",TN,8.0,200.0,Republican,0.54,579.0,,K000392,True,True,no,held_seat_nov3
+21905,"BURCHETT, Timothy",TN,2.0,200.0,Republican,0.664,568.0,,B001309,True,True,no,held_seat_nov3
+21926,"GREEN, Mark E.",TN,7.0,200.0,Republican,0.671,135.0,shared_seat;left_before_nov3,G000590,False,False,,left_before_nov3
+21959,"ROSE, John",TN,6.0,200.0,Republican,0.655,556.0,,R000612,True,True,no,held_seat_nov3
+22122,"HARSHBARGER, Diana",TN,1.0,200.0,Republican,0.683,577.0,,H001086,True,True,no,held_seat_nov3
+22357,"OGLES, Andy",TN,5.0,200.0,Republican,0.747,537.0,,O000175,True,True,no,held_seat_nov3
+22566,"VAN EPPS, MATT",TN,7.0,200.0,Republican,0.512,326.0,shared_seat,V000139,True,True,no,held_seat_nov3
+20356,"CARTER, John R.",TX,31.0,200.0,Republican,0.487,573.0,,C001051,True,True,no,held_seat_nov3
+20529,"GREEN, Al",TX,9.0,100.0,Democrat,-0.448,575.0,,G000553,True,True,no,held_seat_nov3
+20530,"MCCAUL, Michael T.",TX,10.0,200.0,Republican,0.409,510.0,,M001157,True,True,yes,held_seat_nov3
+20533,"CUELLAR, Henry",TX,28.0,100.0,Democrat,-0.225,575.0,,C001063,True,True,yes,held_seat_nov3
+21360,"WEBER, Randy",TX,14.0,200.0,Republican,0.721,570.0,,W000814,True,True,no,held_seat_nov3
+21362,"CASTRO, Joaquin",TX,20.0,100.0,Democrat,-0.403,565.0,,C001091,True,True,no,held_seat_nov3
+21364,"WILLIAMS, Roger",TX,25.0,200.0,Republican,0.592,563.0,,W000816,True,True,no,held_seat_nov3
+21365,"VEASEY, Marc",TX,33.0,100.0,Democrat,-0.409,570.0,,V000131,True,True,no,held_seat_nov3
+21551,"BABIN, Brian",TX,36.0,200.0,Republican,0.707,574.0,,B001291,True,True,no,held_seat_nov3
+21700,"ARRINGTON, Jodey Cook",TX,19.0,200.0,Republican,0.647,562.0,,A000375,True,True,no,held_seat_nov3
+21722,"GONZALEZ, Vicente, Jr.",TX,34.0,100.0,Democrat,-0.385,553.0,,G000581,True,True,no,held_seat_nov3
+21758,"CLOUD, Michael",TX,27.0,200.0,Republican,0.692,576.0,,C001115,True,True,no,held_seat_nov3
+21911,"CRENSHAW, Daniel",TX,2.0,200.0,Republican,0.435,530.0,,C001120,True,True,yes,held_seat_nov3
+21917,"ESCOBAR, Veronica",TX,16.0,100.0,Democrat,-0.463,576.0,,E000299,True,True,no,held_seat_nov3
+21919,"FLETCHER, Elizabeth",TX,7.0,100.0,Democrat,-0.546,577.0,,F000468,True,True,no,held_seat_nov3
+21922,"GARCIA, Sylvia",TX,29.0,100.0,Democrat,-0.763,552.0,,G000587,True,True,no,held_seat_nov3
+21925,"GOODEN, Lance",TX,5.0,200.0,Republican,0.715,579.0,,G000589,True,True,no,held_seat_nov3
+21961,"ROY, Charles",TX,21.0,200.0,Republican,0.8,549.0,,R000614,True,True,no,held_seat_nov3
+22112,"FALLON, Pat",TX,4.0,200.0,Republican,0.709,575.0,,F000246,True,True,no,held_seat_nov3
+22119,"GONZALES, Tony",TX,23.0,200.0,Republican,0.35,367.0,left_before_nov3,G000594,False,False,,left_before_nov3
+22125,"JACKSON, Ronny",TX,13.0,200.0,Republican,0.786,567.0,,J000304,True,True,no,held_seat_nov3
+22143,"NEHLS, Troy E.",TX,22.0,200.0,Republican,0.609,547.0,,N000026,True,True,no,held_seat_nov3
+22147,"PFLUGER, August",TX,11.0,200.0,Republican,0.633,579.0,,P000048,True,True,no,held_seat_nov3
+22155,"VAN DUYNE, Beth",TX,24.0,200.0,Republican,0.606,577.0,,V000134,True,True,no,held_seat_nov3
+22160,"ELLZEY, Jake",TX,6.0,200.0,Republican,0.511,577.0,,E000071,True,True,no,held_seat_nov3
+22307,"CASAR, Greg",TX,35.0,100.0,Democrat,-0.429,505.0,,C001131,True,True,no,held_seat_nov3
+22312,"CROCKETT, Jasmine",TX,30.0,100.0,Democrat,-0.496,550.0,,C001130,True,True,no,held_seat_nov3
+22315,"DE LA CRUZ, Monica",TX,15.0,200.0,Republican,0.471,543.0,,D000594,True,True,no,held_seat_nov3
+22328,"HUNT, Wesley",TX,38.0,200.0,Republican,0.601,459.0,,H001095,True,True,no,held_seat_nov3
+22344,"LUTTRELL, Morgan",TX,8.0,200.0,Republican,0.578,573.0,,L000603,True,True,no,held_seat_nov3
+22352,"MORAN, Nathaniel",TX,1.0,200.0,Republican,0.585,572.0,,M001224,True,True,no,held_seat_nov3
+22364,"SELF, Keith",TX,3.0,200.0,Republican,0.832,573.0,,S001224,True,True,no,held_seat_nov3
+22517,"GILL, Brandon",TX,26.0,200.0,Republican,0.775,570.0,,G000603,True,True,no,held_seat_nov3
+22519,"GOLDMAN, Craig A.",TX,12.0,200.0,Republican,0.771,579.0,,G000601,True,True,no,held_seat_nov3
+22528,"JOHNSON, Julie",TX,32.0,100.0,Democrat,-0.352,564.0,,J000310,True,True,no,held_seat_nov3
+22557,"TURNER, Sylvester",TX,18.0,100.0,Democrat,-0.746,39.0,low_votes;left_midterm;shared_seat;left_before_nov3,T000489,False,False,,left_before_nov3
+22567,"MENEFEE, Christian D.",TX,18.0,100.0,Democrat,-0.569,227.0,shared_seat,M001245,True,True,no,held_seat_nov3
+29571,"DOGGETT, Lloyd Alton, II",TX,37.0,100.0,Democrat,-0.403,567.0,,D000399,True,True,no,held_seat_nov3
+29759,"SESSIONS, Pete",TX,17.0,200.0,Republican,0.583,581.0,,S000250,True,True,no,held_seat_nov3
+22141,"MOORE, Blake D.",UT,1.0,200.0,Republican,0.371,580.0,,M001213,True,True,yes,held_seat_nov3
+22146,"OWENS, Burgess",UT,4.0,200.0,Republican,0.452,569.0,,O000086,True,True,no,held_seat_nov3
+22376,"MALOY, Celeste",UT,2.0,200.0,Republican,0.421,579.0,,M001228,True,True,yes,held_seat_nov3
+22529,"KENNEDY, Mike",UT,3.0,200.0,Republican,0.653,573.0,,K000403,True,True,no,held_seat_nov3
+22301,"BALINT, Becca",VT,1.0,100.0,Democrat,-0.442,579.0,,B001318,True,True,no,held_seat_nov3
+21994,"PLASKETT, Stacey E.",VI,0.0,100.0,Democrat,-0.473,38.0,low_votes;delegate,P000610,True,False,,held_seat_nov3
+20756,"WITTMAN, Robert J.",VA,1.0,200.0,Republican,0.446,569.0,,W000804,True,True,yes,held_seat_nov3
+20952,"CONNOLLY, Gerald E. (Gerry)",VA,11.0,100.0,Democrat,-0.309,72.0,low_votes;left_midterm;shared_seat;left_before_nov3,C001078,False,False,,left_before_nov3
+21191,"GRIFFITH, H. Morgan",VA,9.0,200.0,Republican,0.51,579.0,,G000568,True,True,no,held_seat_nov3
+21554,"BEYER, Donald Sternoff Jr.",VA,8.0,100.0,Democrat,-0.392,566.0,,B001292,True,True,no,held_seat_nov3
+21908,"CLINE, Benjamin",VA,6.0,200.0,Republican,0.712,579.0,,C001118,True,True,no,held_seat_nov3
+22335,"KIGGANS, Jennifer",VA,2.0,200.0,Republican,0.263,575.0,,K000399,True,True,yes,held_seat_nov3
+22374,"MCCLELLAN, Jennifer",VA,4.0,100.0,Democrat,-0.556,578.0,,M001227,True,True,no,held_seat_nov3
+22539,"MCGUIRE, John J., III",VA,5.0,200.0,Republican,0.704,576.0,,M001239,True,True,no,held_seat_nov3
+22554,"SUBRAMANYAM, Suhas",VA,10.0,100.0,Democrat,-0.239,576.0,,S001230,True,True,yes,held_seat_nov3
+22558,"VINDMAN, Eugene Simon",VA,7.0,100.0,Democrat,-0.174,577.0,,V000138,True,True,yes,held_seat_nov3
+22564,"WALKINSHAW, James R.",VA,11.0,100.0,Democrat,-0.424,381.0,shared_seat,W000831,True,True,no,held_seat_nov3
+39307,"SCOTT, Robert C.",VA,3.0,100.0,Democrat,-0.45,581.0,,S000185,True,True,no,held_seat_nov3
+20145,"LARSEN, Richard Ray (Rick)",WA,2.0,100.0,Democrat,-0.365,564.0,,L000560,True,True,no,held_seat_nov3
+21556,"NEWHOUSE, Daniel Milton",WA,4.0,200.0,Republican,0.317,573.0,,N000189,True,True,yes,held_seat_nov3
+21726,"JAYAPAL, Pramila",WA,7.0,100.0,Democrat,-0.605,543.0,,J000298,True,True,no,held_seat_nov3
+21962,"SCHRIER, Kim",WA,8.0,100.0,Democrat,-0.275,575.0,,S001216,True,True,yes,held_seat_nov3
+22153,"STRICKLAND, Marilyn",WA,10.0,100.0,Democrat,-0.443,569.0,,S001159,True,True,no,held_seat_nov3
+22358,"PEREZ, Marie Gluesenkamp",WA,3.0,100.0,Democrat,-0.1,575.0,,G000600,True,True,yes,held_seat_nov3
+22502,"BAUMGARTNER, Michael",WA,5.0,200.0,Republican,0.602,567.0,,B001322,True,True,no,held_seat_nov3
+22548,"RANDALL, Emily",WA,6.0,100.0,Democrat,-0.573,566.0,,R000621,True,True,no,held_seat_nov3
+29768,"SMITH, Adam",WA,9.0,100.0,Democrat,-0.291,549.0,,S000510,True,True,yes,held_seat_nov3
+31101,"DELBENE, Suzan K.",WA,1.0,100.0,Democrat,-0.296,571.0,,D000617,True,True,yes,held_seat_nov3
+21946,"MILLER, Carol",WV,1.0,200.0,Republican,0.53,560.0,,M001205,True,True,no,held_seat_nov3
+22543,"MOORE, Riley M.",WV,2.0,200.0,Republican,0.546,572.0,,M001235,True,True,no,held_seat_nov3
+20537,"MOORE, Gwendolynne S. (Gwen)",WI,4.0,100.0,Democrat,-0.519,567.0,,M001160,True,True,no,held_seat_nov3
+21370,"POCAN, Mark",WI,2.0,100.0,Democrat,-0.521,576.0,,P000607,True,True,no,held_seat_nov3
+21559,"GROTHMAN, Glenn",WI,6.0,200.0,Republican,0.601,570.0,,G000576,True,True,no,held_seat_nov3
+21970,"STEIL, Bryan",WI,1.0,200.0,Republican,0.421,578.0,,S001213,True,True,yes,held_seat_nov3
+21989,"TIFFANY, Thomas P.",WI,7.0,200.0,Republican,0.642,538.0,,T000165,True,True,no,held_seat_nov3
+22115,"FITZGERALD, Scott",WI,5.0,200.0,Republican,0.598,578.0,,F000471,True,True,no,held_seat_nov3
+22370,"VAN ORDEN, Derrick",WI,3.0,200.0,Republican,0.377,533.0,,V000135,True,True,yes,held_seat_nov3
+22383,"WIED, Tony",WI,8.0,200.0,Republican,0.538,577.0,,W000829,True,True,no,held_seat_nov3
+22325,"HAGEMAN, Harriet",WY,1.0,200.0,Republican,0.637,581.0,,H001096,True,True,no,held_seat_nov3

@@ -1,0 +1,303 @@
+
+======================================================================
+STEP A: Load raw file
+======================================================================
+File: data/raw/HSall_members.csv
+Total rows: 51064
+Columns (22):
+  congress
+  chamber
+  icpsr
+  state_icpsr
+  district_code
+  state_abbrev
+  party_code
+  occupancy
+  last_means
+  bioname
+  bioguide_id
+  born
+  died
+  nominate_dim1
+  nominate_dim2
+  nominate_log_likelihood
+  nominate_geo_mean_probability
+  nominate_number_of_votes
+  nominate_number_of_errors
+  conditional
+  nokken_poole_dim1
+  nokken_poole_dim2
+
+======================================================================
+STEP B: Filter to congress == 119 and chamber == 'House'
+======================================================================
+Rows with congress == 119: 557
+  chamber values in those rows: {'House': 452, 'Senate': 104, 'President': 1}
+Rows with congress == 119 AND chamber == 'House': 452
+
+======================================================================
+STEP C: Counts by party_code
+======================================================================
+  party_code 100 = Democrat: 224
+  party_code 200 = Republican: 227
+  party_code 328 = NOT MAPPED: 1
+Members with a party_code other than 100/200: 1 (kept, NOT dropped)
+  icpsr=92336  KILEY, Kevin  (CA-3, party_code=328)
+
+======================================================================
+STEP D: icpsr values appearing more than once
+======================================================================
+Rows whose icpsr appears more than once: 0 (NOT deduplicated)
+
+======================================================================
+STEP E: Missing nominate_dim1
+======================================================================
+Rows with missing nominate_dim1: 0 (NOT imputed)
+
+======================================================================
+STEP F: nominate_number_of_votes < 100 (low-precision scores)
+======================================================================
+Rows with fewer than 100 scaled votes: 13
+  icpsr=20305  GRIJALVA, Raúl M.  (AZ-7, party_code=100)  votes=1
+  icpsr=21981  WALTZ, Michael  (FL-6, party_code=200)  votes=6
+  icpsr=21995  RADEWAGEN, Aumua Amata Coleman  (AS-0, party_code=200)  votes=13
+  icpsr=22572  WAHAB, Aisha  (CA-14, party_code=100)  votes=26
+  icpsr=22571  BLAIR, Everton  (GA-13, party_code=100)  votes=32
+  icpsr=21994  PLASKETT, Stacey E.  (VI-0, party_code=100)  votes=38
+  icpsr=22557  TURNER, Sylvester  (TX-18, party_code=100)  votes=39
+  icpsr=22561  KING-HINDS, Kimberlyn  (MP-0, party_code=200)  votes=61
+  icpsr=22373  MOYLAN, James  (GU-0, party_code=200)  votes=68
+  icpsr=21993  NORTON, Eleanor Holmes  (DC-0, party_code=100)  votes=72
+  icpsr=22560  HERNÁNDEZ, Pablo José  (PR-0, party_code=100)  votes=72
+  icpsr=20952  CONNOLLY, Gerald E. (Gerry)  (VA-11, party_code=100)  votes=72
+  icpsr=22570  GALLAGHER, James  (CA-1, party_code=200)  votes=86
+Rows with missing nominate_number_of_votes: 0
+
+======================================================================
+STEP G: Can the data identify members who left mid-Congress?
+======================================================================
+'occupancy' non-missing in 0 of 452 rows.
+  -> occupancy is empty for the 119th House, so the file CANNOT tell us
+     the order in which members held a seat.
+'died' year >= 2025 (died during the 119th): 4 rows -> flagged left_midterm
+  icpsr=20305  GRIJALVA, Raúl M.  (AZ-7, party_code=100)  died=2025
+  icpsr=21302  LAMALFA, Doug  (CA-1, party_code=200)  died=2026
+  icpsr=22557  TURNER, Sylvester  (TX-18, party_code=100)  died=2025
+  icpsr=20952  CONNOLLY, Gerald E. (Gerry)  (VA-11, party_code=100)  died=2025
+Rows in a seat (state_abbrev + district_code) held by more than one member: 22 -> flagged shared_seat
+  icpsr=20305  GRIJALVA, Raúl M.  (AZ-7, party_code=100)
+  icpsr=22565  GRIJALVA, Adelita S.  (AZ-7, party_code=100)
+  icpsr=21302  LAMALFA, Doug  (CA-1, party_code=200)
+  icpsr=22570  GALLAGHER, James  (CA-1, party_code=200)
+  icpsr=22336  KILEY, Kevin  (CA-3, party_code=200)
+  icpsr=92336  KILEY, Kevin  (CA-3, party_code=328)
+  icpsr=21306  SWALWELL, Eric  (CA-14, party_code=100)
+  icpsr=22572  WAHAB, Aisha  (CA-14, party_code=100)
+  icpsr=21981  WALTZ, Michael  (FL-6, party_code=200)
+  icpsr=22562  FINE, Randy  (FL-6, party_code=200)
+  icpsr=20321  SCOTT, David  (GA-13, party_code=100)
+  icpsr=22571  BLAIR, Everton  (GA-13, party_code=100)
+  icpsr=22121  GREENE, Marjorie Taylor  (GA-14, party_code=200)
+  icpsr=22568  FULLER, Clay  (GA-14, party_code=200)
+  icpsr=21964  SHERRILL, Mikie  (NJ-11, party_code=100)
+  icpsr=22569  MEJIA, Analilia  (NJ-11, party_code=100)
+  icpsr=21926  GREEN, Mark E.  (TN-7, party_code=200)
+  icpsr=22566  VAN EPPS, MATT  (TN-7, party_code=200)
+  icpsr=22557  TURNER, Sylvester  (TX-18, party_code=100)
+  icpsr=22567  MENEFEE, Christian D.  (TX-18, party_code=100)
+  icpsr=20952  CONNOLLY, Gerald E. (Gerry)  (VA-11, party_code=100)
+  icpsr=22564  WALKINSHAW, James R.  (VA-11, party_code=100)
+
+CONCLUSION: The file identifies DEATHS during the Congress (via 'died').
+It has NO column for resignations or end-of-service dates, so it CANNOT
+identify members who resigned. shared_seat shows a seat changed hands,
+but the file cannot say which member left or why.
+
+======================================================================
+STEP H: PHASE 1 PROVISIONAL BASELINE (before decisions; kept for comparison)
+======================================================================
+Every 119th House row with a non-missing nominate_dim1, party_code 100 or 200.
+Nothing removed for duplicates, low votes, or mid-Congress departure.
+  Democrat mean nominate_dim1:   -0.3887   (n = 224)
+  Republican mean nominate_dim1: 0.5226   (n = 227)
+  Gap (R mean - D mean):         0.9112
+
+======================================================================
+STEP K: Decision 2 -- resolve duplicate members (same icpsr or same bioguide_id)
+======================================================================
+Groups of rows sharing the same icpsr: 0
+Groups of rows sharing the same bioguide_id: 1
+  icpsr=22336  KILEY, Kevin  (CA-3, party_code=200)  votes=386  -> KEPT (duplicate_resolved)
+  icpsr=92336  KILEY, Kevin  (CA-3, party_code=328)  votes=189  -> DROPPED (duplicate_dropped)
+
+======================================================================
+STEP L: Decisions 3 and 5 + delegates -- who is in the baseline and the party means
+======================================================================
+Decision 3: rows with missing nominate_dim1, EXCLUDED from the baseline: 0
+Clarification C: delegates / resident commissioner (kept in data, EXCLUDED from party means and cutoffs): 6
+  icpsr=21995  RADEWAGEN, Aumua Amata Coleman  (AS-0, party_code=200)
+  icpsr=21993  NORTON, Eleanor Holmes  (DC-0, party_code=100)
+  icpsr=22373  MOYLAN, James  (GU-0, party_code=200)
+  icpsr=22561  KING-HINDS, Kimberlyn  (MP-0, party_code=200)
+  icpsr=22560  HERNÁNDEZ, Pablo José  (PR-0, party_code=100)
+  icpsr=21994  PLASKETT, Stacey E.  (VI-0, party_code=100)
+Decision 5: kept rows that are not Democrat/Republican (kept in data, EXCLUDED from party means): 0
+Rows in baseline: 451   Rows in party means: 445
+
+======================================================================
+STEP M: Decision 1 -- held a seat on November 3, 2026 (applied, decision 9)
+======================================================================
+Members who left office before Nov. 3, 2026 (resigned_died rows in data/interim/departures_verified.csv, VERIFIED (AI cross-check, decision 20)): 12; found in the 119th House file: 12
+  icpsr=20305  GRIJALVA, Raúl M.  (AZ-7, party_code=100)  -> EXCLUDED (left_before_nov3)
+  icpsr=21302  LAMALFA, Doug  (CA-1, party_code=200)  -> EXCLUDED (left_before_nov3)
+  icpsr=21306  SWALWELL, Eric  (CA-14, party_code=100)  -> EXCLUDED (left_before_nov3)
+  icpsr=21981  WALTZ, Michael  (FL-6, party_code=200)  -> EXCLUDED (left_before_nov3)
+  icpsr=22163  CHERFILUS-MCCORMICK, Sheila  (FL-20, party_code=100)  -> EXCLUDED (left_before_nov3)
+  icpsr=20321  SCOTT, David  (GA-13, party_code=100)  -> EXCLUDED (left_before_nov3)
+  icpsr=22121  GREENE, Marjorie Taylor  (GA-14, party_code=200)  -> EXCLUDED (left_before_nov3)
+  icpsr=21964  SHERRILL, Mikie  (NJ-11, party_code=100)  -> EXCLUDED (left_before_nov3)
+  icpsr=21926  GREEN, Mark E.  (TN-7, party_code=200)  -> EXCLUDED (left_before_nov3)
+  icpsr=22119  GONZALES, Tony  (TX-23, party_code=200)  -> EXCLUDED (left_before_nov3)
+  icpsr=22557  TURNER, Sylvester  (TX-18, party_code=100)  -> EXCLUDED (left_before_nov3)
+  icpsr=20952  CONNOLLY, Gerald E. (Gerry)  (VA-11, party_code=100)  -> EXCLUDED (left_before_nov3)
+Every other row: baseline_status = 'held_seat_nov3' (not on the left-early list).
+
+======================================================================
+STEP N: BASELINE PARTY MEANS (decision 1 applied; departures file not yet verified)
+======================================================================
+  Democrat mean nominate_dim1:   -0.3861   (n = 214)
+  Republican mean nominate_dim1: 0.5251   (n = 219)
+  Gap (R mean - D mean):         0.9111
+
+======================================================================
+STEP O: Decision 6 -- tercile cutoffs for 'moderate' (recomputed on the decision-1 baseline, decision 10)
+======================================================================
+  Republican cutoff (1/3 quantile): 0.4487  (exact 0.44866666666666666); moderate if nominate_dim1 <= cutoff: 73 of 219
+  Democrat cutoff (2/3 quantile):   -0.3340  (exact -0.334); moderate if nominate_dim1 >= cutoff: 72 of 214
+Wrote data/processed/cutoffs.csv
+
+======================================================================
+STEP I: Write processed file
+======================================================================
+Wrote 452 rows to data/processed/house119_baseline.csv
+  rows flagged duplicate_icpsr: 0
+  rows flagged duplicate_resolved: 1
+  rows flagged duplicate_dropped: 1
+  rows flagged missing_score: 0
+  rows flagged low_votes: 13
+  rows flagged left_midterm: 4
+  rows flagged shared_seat: 22
+  rows flagged non_dr_party: 1
+  rows flagged delegate: 6
+  rows flagged left_before_nov3: 12
+  rows with no flags: 422
+
+======================================================================
+STEP J: ROW ACCOUNTING
+======================================================================
+Rows in raw file:                          51064
+  removed: congress != 119:                50507
+Rows after congress == 119:                 557
+  removed: chamber != 'House' (Senate/President): 105
+Rows after chamber == 'House':              452
+Rows in data/processed/house119_baseline.csv: 452 (every row is written; see in_baseline / in_party_means)
+
+Rows in baseline (in_baseline = True): 439
+  not in baseline: duplicate_dropped (decision 2): 1
+  not in baseline: left office before Nov. 3, 2026 (decision 1): 12
+  not in baseline: missing nominate_dim1 (decision 3): 0
+Rows in party means (in_party_means = True): 433 = Democrats 214 + Republicans 219
+  in baseline but not in means: delegate (clarification C): 6
+  in baseline but not in means: not D/R (decision 5): 0
+  check: 214 + 219 + 1 + 12 + 0 + 6 + 0 = 452 (should equal 452)
+
+======================================================================
+STEP P1: departures_draft.csv -- counts by party x reason (UNVERIFIED draft)
+======================================================================
+  party               Democrat  Republican  Total
+  reason_or_uncalled                             
+  lost_general               2          35     37
+  lost_primary               7           4     11
+  pending                    0           4      4
+  ran_other_office           8          20     28
+  resigned_died              7           5     12
+  retired                   15          17     32
+  Total                     39          85    124
+
+======================================================================
+STEP P2: draft counts vs. totals stated in the saved sources
+======================================================================
+  retired: draft D=15 R=17; source D=15 R=17 -> MATCH
+      source: not-running page (as of Oct. 2, 2026): 'Thirty-two U.S. House incumbents — 15 Democrats and 17 Republicans — are retiring from public office.'
+  ran_other_office: draft D=8 R=20; source D=8 R=20 -> MATCH
+      source: not-running page: 16 for Senate (7 D, 9 R) + 10 for governor (all R) + 1 for attorney general (R) + 1 for state legislature (D)
+  resigned_died: draft D=7 R=5; source D=7 R=5 -> MATCH
+      source: not-running page: 'Twelve U.S. House incumbents—seven Democrats and five Republicans—left office early or announced resignations.'
+  lost_primary: draft D=7 R=4; source D=7 R=4 -> MATCH
+      source: not-running page: 'Eleven U.S. House incumbents—seven Democrats and four Republicans—lost re-election.' (all 11 rows are primaries)
+  lost_general: draft D=2 R=35 (total 37)
+      NO saved source states a total of general-election defeats. The results page's
+      timeline covers only 250 of 431 calls (none before 12:04 AM Nov. 4), and the
+      elections-2026 page's 'Eleven incumbents ... lost re-election in the general
+      elections' sentence sits in a paragraph about 2024 (220-215 majority), so it is
+      NOT used. lost_general rows come from the 50 state pages' winner check marks.
+      lost_general rows also confirmed by a timeline 'was defeated' line: 22 of 37; the other 15 rest on the state page alone (confidence medium).
+  Uncalled: results page (last updated Nov. 19, 2026) says '4 uncalled' and the
+      table says '4 (1 D, 3 R held before)'. The draft has 4 uncalled incumbent rows (reason = pending), all R-held; see P4.
+  Decision 11 ('called' = AP call or official/certified state result): every lost_general
+      row (37) currently rests on a Ballotpedia winner check mark only. None has a saved
+      AP or state source yet, so none yet meets decision 11's definition of 'called'.
+  Redistricting: the results page lists 9 states with new 2026 maps (CA, FL, NC, TN, TX
+      voluntarily; OH by state law; AL, LA, UT by litigation). The elections-2026 page
+      ('As of July 26, 2026') also lists Missouri. Discrepancy NOT resolved from sources.
+
+======================================================================
+STEP P3: baseline members whose 2026 status could not be determined
+======================================================================
+  Members checked (all scored, non-delegate, non-duplicate 119th members, incl. those who left early): 445; status undetermined: 1
+  icpsr=22571  BLAIR, Everton  (GA-13)
+  2026 general-election result found on the state pages (incumbents only):
+    won_general: 316
+    (not on a Nov. 3 general ballot): 82
+    lost_general: 37
+    won_outright_primary: 4
+    uncalled: 4
+    not_winner: 2
+
+======================================================================
+STEP P4: uncalled races (status = uncalled)
+======================================================================
+  icpsr=22167  FINSTAD, Brad  (Republican)  2026 ballot: MN-1 (Republican); UNCALLED (decision 12): no general-election candidate has a winner check mark on the state page; who leads per source: not shown (state page lists candidates without vote counts; no results-page timeline entry)
+  icpsr=22337  LALOTA, Nicholas  (Republican)  2026 ballot: NY-1 (Republican); UNCALLED (decision 12): no general-election candidate has a winner check mark on the state page; who leads per source: results-page timeline says 'November 19, 2026: 12:00 PM: Nicholas J. LaLota (R) won the New York U.S. House election (District 1). Republicans held the seat. Projected by NYT and AP.' -- NOT counted as called (decision 11: needs a saved AP or official state source; this is Ballotpedia reporting a projection)
+  icpsr=22117  GARBARINO, Andrew R.  (Republican)  2026 ballot: NY-2 (Republican); UNCALLED (decision 12): no general-election candidate has a winner check mark on the state page; who leads per source: results-page timeline says 'November 19, 2026: 12:00 PM: Andrew Garbarino (R) won the New York U.S. House election (District 2). Republicans held the seat. Projected by NYT and AP.' -- NOT counted as called (decision 11: needs a saved AP or official state source; this is Ballotpedia reporting a projection)
+  icpsr=21179  DESJARLAIS, Scott  (Republican)  2026 ballot: TN-4 (Republican); UNCALLED (decision 12): no general-election candidate has a winner check mark on the state page; who leads per source: results-page timeline says 'November 19, 2026: 12:00 PM: Victoria Broderick (D) won the Tennessee U.S. House election (District 4), a Democratic gain. Incumbent Scott DesJarlais (R) was defeated. Projected by CNN.' -- NOT counted as called (decision 11: needs a saved AP or official state source; this is Ballotpedia reporting a projection)
+  Also on the Louisiana page with NO winner yet: LA-5 and LA-6, both open seats
+  (Letlow ran for Senate; Fields ran for the state legislature), so no incumbent row.
+
+======================================================================
+STEP P5: row accounting for departures_draft.csv
+======================================================================
+  Rows from the not-running page's 4 House tables: 83 (source totals 32 + 28 + 12 + 11 = 83)
+  Rows from state pages (incumbents who lost or are uncalled): 41
+  Rows added by hand from a snapshot (notes start 'MANUAL'): 0
+  Rows written: 124; rows dropped: 0
+  Rows with blank icpsr: 0; icpsr appearing twice: 0; icpsr not in baseline: 0
+  Confidence: {'high': 103, 'medium': 17, 'low': 4}
+  Not searched (clarification C): the 6 delegates / resident commissioner.
+
+======================================================================
+STEP P6: resigned_died rows vs. decision 1 (left before Nov. 3 -> not in baseline)
+======================================================================
+  icpsr=20305  GRIJALVA, Raúl M.  in_baseline=False  in_party_means=False  baseline_status=left_before_nov3  -> EXCLUDED, OK
+  icpsr=21302  LAMALFA, Doug  in_baseline=False  in_party_means=False  baseline_status=left_before_nov3  -> EXCLUDED, OK
+  icpsr=21306  SWALWELL, Eric  in_baseline=False  in_party_means=False  baseline_status=left_before_nov3  -> EXCLUDED, OK
+  icpsr=21981  WALTZ, Michael  in_baseline=False  in_party_means=False  baseline_status=left_before_nov3  -> EXCLUDED, OK
+  icpsr=22163  CHERFILUS-MCCORMICK, Sheila  in_baseline=False  in_party_means=False  baseline_status=left_before_nov3  -> EXCLUDED, OK
+  icpsr=20321  SCOTT, David  in_baseline=False  in_party_means=False  baseline_status=left_before_nov3  -> EXCLUDED, OK
+  icpsr=22121  GREENE, Marjorie Taylor  in_baseline=False  in_party_means=False  baseline_status=left_before_nov3  -> EXCLUDED, OK
+  icpsr=21964  SHERRILL, Mikie  in_baseline=False  in_party_means=False  baseline_status=left_before_nov3  -> EXCLUDED, OK
+  icpsr=21926  GREEN, Mark E.  in_baseline=False  in_party_means=False  baseline_status=left_before_nov3  -> EXCLUDED, OK
+  icpsr=22557  TURNER, Sylvester  in_baseline=False  in_party_means=False  baseline_status=left_before_nov3  -> EXCLUDED, OK
+  icpsr=22119  GONZALES, Tony  in_baseline=False  in_party_means=False  baseline_status=left_before_nov3  -> EXCLUDED, OK
+  icpsr=20952  CONNOLLY, Gerald E. (Gerry)  in_baseline=False  in_party_means=False  baseline_status=left_before_nov3  -> EXCLUDED, OK
+  -> 12 of 12 resigned_died members excluded from the baseline and party means.

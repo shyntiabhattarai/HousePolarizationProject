@@ -1,0 +1,193 @@
+question,scenario,party,group,metric,n,value,notes
+validation,main,both,departures,n_rows,125,125.0,
+validation,main,both,departures,n_verified_Y,65,65.0,
+validation,main,both,departures,n_verified_N,2,2.0,
+validation,main,both,departures,n_sampled_out,57,57.0,
+validation,main,both,departures,n_unresolved,1,1.0,
+validation,main,both,departures,n_rows_state_second_source,45,45.0,
+validation,main,both,departures,n_rows_news_reporting_ap_second_source,20,20.0,
+validation,main,both,departures,n_rows_ap_second_source,0,0.0,
+validation,main,both,departures,n_rows_federal_gov_second_source,2,2.0,
+validation,main,both,departures,n_lost_general_demoted,0,0.0,
+cutoffs,main,Republican,B,cutoff,219,0.44866666666666666,
+cutoffs,main,Democrat,B,cutoff,214,-0.334,
+Q1,main,Republican,lost_general,mean_dim1,23,0.4196086956521739,MAIN TEST
+Q1,main,Republican,returning,mean_dim1,141,0.5500212765957446,MAIN TEST
+Q1,main,Republican,baseline,mean_dim1,205,0.5320682926829268,MAIN TEST
+Q1,main,Republican,lost_general,share_moderate,23,0.6086956521739131,MAIN TEST
+Q1,main,Republican,baseline,share_moderate,205,0.3170731707317073,MAIN TEST
+Q1,main,Republican,lost_general,k,23,23.0,MAIN TEST
+Q1,main,Republican,lost_general,perm_p_mean,23,0.00019998000199980003,MAIN TEST
+Q1,main,Republican,lost_general,perm_p_moderate_count,23,0.0014998500149985001,MAIN TEST
+Q1,main,Republican,lost_general,exact_p_moderate_count,23,0.0021563562235426244,MAIN TEST
+Q1,main,Republican,lost_primary,mean_dim1,4,0.60825,EXPLORATORY
+Q1,main,Republican,lost_primary,share_moderate,4,0.25,EXPLORATORY
+Q1,main,Republican,lost_primary,k,4,4.0,EXPLORATORY
+Q1,main,Republican,lost_primary,perm_p_mean,4,0.8348165183481652,EXPLORATORY
+Q1,main,Republican,lost_primary,perm_p_moderate_count,4,0.7848215178482152,EXPLORATORY
+Q1,main,Republican,lost_primary,exact_p_moderate_count,4,0.7854586279881637,EXPLORATORY
+Q1,main,Republican,retired,mean_dim1,17,0.45847058823529413,EXPLORATORY
+Q1,main,Republican,retired,share_moderate,17,0.47058823529411764,EXPLORATORY
+Q1,main,Republican,retired,k,17,17.0,EXPLORATORY
+Q1,main,Republican,retired,perm_p_mean,17,0.021097890210978902,EXPLORATORY
+Q1,main,Republican,retired,perm_p_moderate_count,17,0.12968703129687031,EXPLORATORY
+Q1,main,Republican,retired,exact_p_moderate_count,17,0.12661861336054164,EXPLORATORY
+Q1,main,Republican,ran_other_office,mean_dim1,20,0.5821500000000001,EXPLORATORY
+Q1,main,Republican,ran_other_office,share_moderate,20,0.2,EXPLORATORY
+Q1,main,Republican,ran_other_office,k,20,20.0,EXPLORATORY
+Q1,main,Republican,ran_other_office,perm_p_mean,20,0.9341065893410659,EXPLORATORY
+Q1,main,Republican,ran_other_office,perm_p_moderate_count,20,0.931006899310069,EXPLORATORY
+Q1,main,Republican,ran_other_office,exact_p_moderate_count,20,0.9298585722002045,EXPLORATORY
+Q1,main,Democrat,lost_general,mean_dim1,2,-0.462,EXPLORATORY
+Q1,main,Democrat,returning,mean_dim1,181,-0.3786077348066298,EXPLORATORY
+Q1,main,Democrat,baseline,mean_dim1,214,-0.3860560747663551,EXPLORATORY
+Q1,main,Democrat,lost_general,share_moderate,2,0.0,EXPLORATORY
+Q1,main,Democrat,baseline,share_moderate,214,0.3364485981308411,EXPLORATORY
+Q1,main,Democrat,lost_general,test,2,,too few to test
+Q1,main,Democrat,lost_primary,mean_dim1,8,-0.454,EXPLORATORY
+Q1,main,Democrat,lost_primary,share_moderate,8,0.0,EXPLORATORY
+Q1,main,Democrat,lost_primary,k,8,8.0,EXPLORATORY
+Q1,main,Democrat,lost_primary,perm_p_mean,8,0.954004599540046,EXPLORATORY
+Q1,main,Democrat,lost_primary,perm_p_moderate_count,8,1.0,EXPLORATORY
+Q1,main,Democrat,lost_primary,exact_p_moderate_count,8,1.0,EXPLORATORY
+Q1,main,Democrat,retired,mean_dim1,15,-0.44026666666666664,EXPLORATORY
+Q1,main,Democrat,retired,share_moderate,15,0.13333333333333333,EXPLORATORY
+Q1,main,Democrat,retired,k,15,15.0,EXPLORATORY
+Q1,main,Democrat,retired,perm_p_mean,15,0.9685031496850315,EXPLORATORY
+Q1,main,Democrat,retired,perm_p_moderate_count,15,0.9823017698230176,EXPLORATORY
+Q1,main,Democrat,retired,exact_p_moderate_count,15,0.9845691935854045,EXPLORATORY
+Q1,main,Democrat,ran_other_office,mean_dim1,8,-0.366,EXPLORATORY
+Q1,main,Democrat,ran_other_office,share_moderate,8,0.375,EXPLORATORY
+Q1,main,Democrat,ran_other_office,k,8,8.0,EXPLORATORY
+Q1,main,Democrat,ran_other_office,perm_p_mean,8,0.30856914308569144,EXPLORATORY
+Q1,main,Democrat,ran_other_office,perm_p_moderate_count,8,0.5403459654034597,EXPLORATORY
+Q1,main,Democrat,ran_other_office,exact_p_moderate_count,8,0.541492840617091,EXPLORATORY
+Q2,main,D,G0 (all analysed),mean_D,214,-0.3860560747663551,MAIN
+Q2,main,R,G0 (all analysed),mean_R,205,0.5320682926829268,MAIN
+Q2,main,both,G0 (all analysed),gap,419,0.9181243674492818,MAIN
+Q2,main,both,G0 (all analysed),gap_change_from_G0,419,0.0,MAIN
+Q2,main,D,without lost_general,mean_D,212,-0.38533962264150945,MAIN
+Q2,main,R,without lost_general,mean_R,182,0.5462802197802198,MAIN
+Q2,main,both,without lost_general,gap,394,0.9316198424217292,MAIN
+Q2,main,both,without lost_general,gap_change_from_G0,394,0.013495474972447408,MAIN
+Q2,main,D,without lost_primary,mean_D,206,-0.3834174757281554,MAIN
+Q2,main,R,without lost_primary,mean_R,201,0.5305522388059701,MAIN
+Q2,main,both,without lost_primary,gap,407,0.9139697145341255,MAIN
+Q2,main,both,without lost_primary,gap_change_from_G0,407,-0.004154652915156376,MAIN
+Q2,main,D,without retired,mean_D,199,-0.3819698492462312,MAIN
+Q2,main,R,without retired,mean_R,188,0.5387234042553192,MAIN
+Q2,main,both,without retired,gap,387,0.9206932535015504,MAIN
+Q2,main,both,without retired,gap_change_from_G0,387,0.002568886052268571,MAIN
+Q2,main,D,without ran_other_office,mean_D,206,-0.38683495145631075,MAIN
+Q2,main,R,without ran_other_office,mean_R,185,0.5266540540540541,MAIN
+Q2,main,both,without ran_other_office,gap,391,0.9134890055103648,MAIN
+Q2,main,both,without ran_other_office,gap_change_from_G0,391,-0.004635361938917004,MAIN
+Q2,main,D,(v) returning only (all departures removed),mean_D,181,-0.3786077348066298,MAIN
+Q2,main,R,(v) returning only (all departures removed),mean_R,141,0.5500212765957446,MAIN
+Q2,main,both,(v) returning only (all departures removed),gap,322,0.9286290114023744,MAIN
+Q2,main,both,(v) returning only (all departures removed),gap_change_from_G0,322,0.010504643953092585,MAIN
+Q1,no_low_votes,Republican,lost_general,mean_dim1,22,0.42359090909090913,no_low_votes
+Q1,no_low_votes,Republican,returning,mean_dim1,141,0.5500212765957446,no_low_votes
+Q1,no_low_votes,Republican,baseline,mean_dim1,204,0.5330490196078431,no_low_votes
+Q1,no_low_votes,Republican,lost_general,share_moderate,22,0.5909090909090909,no_low_votes
+Q1,no_low_votes,Republican,baseline,share_moderate,204,0.3137254901960784,no_low_votes
+Q1,no_low_votes,Republican,lost_general,k,22,22.0,no_low_votes
+Q1,no_low_votes,Republican,lost_general,perm_p_mean,22,0.00029997000299970003,no_low_votes
+Q2,no_low_votes,D,G0 (all analysed),mean_D,212,-0.3836745283018868,no_low_votes
+Q2,no_low_votes,R,G0 (all analysed),mean_R,204,0.5330490196078431,no_low_votes
+Q2,no_low_votes,both,G0 (all analysed),gap,416,0.91672354790973,no_low_votes
+Q2,no_low_votes,both,G0 (all analysed),gap_change_from_G0,416,0.0,no_low_votes
+Q2,no_low_votes,D,(v) returning only (all departures removed),mean_D,180,-0.37739999999999996,no_low_votes
+Q2,no_low_votes,R,(v) returning only (all departures removed),mean_R,141,0.5500212765957446,no_low_votes
+Q2,no_low_votes,both,(v) returning only (all departures removed),gap,321,0.9274212765957446,no_low_votes
+Q2,no_low_votes,both,(v) returning only (all departures removed),gap_change_from_G0,321,0.010697728686014596,no_low_votes
+Q1,no_same_party_general,Republican,lost_general,mean_dim1,22,0.4266818181818182,no_same_party_general
+Q1,no_same_party_general,Republican,returning,mean_dim1,141,0.5500212765957446,no_same_party_general
+Q1,no_same_party_general,Republican,baseline,mean_dim1,204,0.5333823529411765,no_same_party_general
+Q1,no_same_party_general,Republican,lost_general,share_moderate,22,0.5909090909090909,no_same_party_general
+Q1,no_same_party_general,Republican,baseline,share_moderate,204,0.3137254901960784,no_same_party_general
+Q1,no_same_party_general,Republican,lost_general,k,22,22.0,no_same_party_general
+Q1,no_same_party_general,Republican,lost_general,perm_p_mean,22,0.00039996000399960006,no_same_party_general
+Q2,no_same_party_general,D,G0 (all analysed),mean_D,212,-0.38533962264150945,no_same_party_general
+Q2,no_same_party_general,R,G0 (all analysed),mean_R,204,0.5333823529411765,no_same_party_general
+Q2,no_same_party_general,both,G0 (all analysed),gap,416,0.918721975582686,no_same_party_general
+Q2,no_same_party_general,both,G0 (all analysed),gap_change_from_G0,416,0.0,no_same_party_general
+Q2,no_same_party_general,D,(v) returning only (all departures removed),mean_D,181,-0.3786077348066298,no_same_party_general
+Q2,no_same_party_general,R,(v) returning only (all departures removed),mean_R,141,0.5500212765957446,no_same_party_general
+Q2,no_same_party_general,both,(v) returning only (all departures removed),gap,322,0.9286290114023744,no_same_party_general
+Q2,no_same_party_general,both,(v) returning only (all departures removed),gap_change_from_G0,322,0.009907035819688437,no_same_party_general
+Q1,scenario_A,Republican,lost_general,mean_dim1,36,0.4214444444444444,scenario_A
+Q1,scenario_A,Republican,returning,mean_dim1,141,0.5500212765957446,scenario_A
+Q1,scenario_A,Republican,baseline,mean_dim1,218,0.5256651376146789,scenario_A
+Q1,scenario_A,Republican,lost_general,share_moderate,36,0.5833333333333334,scenario_A
+Q1,scenario_A,Republican,baseline,share_moderate,218,0.3302752293577982,scenario_A
+Q1,scenario_A,Republican,lost_general,k,36,36.0,scenario_A
+Q1,scenario_A,Republican,lost_general,perm_p_mean,36,9.999000099990002e-05,scenario_A
+Q2,scenario_A,D,G0 (all analysed),mean_D,214,-0.3860560747663551,scenario_A
+Q2,scenario_A,R,G0 (all analysed),mean_R,218,0.5256651376146789,scenario_A
+Q2,scenario_A,both,G0 (all analysed),gap,432,0.9117212123810341,scenario_A
+Q2,scenario_A,both,G0 (all analysed),gap_change_from_G0,432,0.0,scenario_A
+Q2,scenario_A,D,(v) returning only (all departures removed),mean_D,181,-0.3786077348066298,scenario_A
+Q2,scenario_A,R,(v) returning only (all departures removed),mean_R,141,0.5500212765957446,scenario_A
+Q2,scenario_A,both,(v) returning only (all departures removed),gap,322,0.9286290114023744,scenario_A
+Q2,scenario_A,both,(v) returning only (all departures removed),gap_change_from_G0,322,0.01690779902134032,scenario_A
+Q1,scenario_B,Republican,lost_general,mean_dim1,23,0.4196086956521739,scenario_B
+Q1,scenario_B,Republican,returning,mean_dim1,154,0.5394415584415584,scenario_B
+Q1,scenario_B,Republican,baseline,mean_dim1,218,0.5256651376146789,scenario_B
+Q1,scenario_B,Republican,lost_general,share_moderate,23,0.6086956521739131,scenario_B
+Q1,scenario_B,Republican,baseline,share_moderate,218,0.3302752293577982,scenario_B
+Q1,scenario_B,Republican,lost_general,k,23,23.0,scenario_B
+Q1,scenario_B,Republican,lost_general,perm_p_mean,23,0.0004999500049995,scenario_B
+Q2,scenario_B,D,G0 (all analysed),mean_D,214,-0.3860560747663551,scenario_B
+Q2,scenario_B,R,G0 (all analysed),mean_R,218,0.5256651376146789,scenario_B
+Q2,scenario_B,both,G0 (all analysed),gap,432,0.9117212123810341,scenario_B
+Q2,scenario_B,both,G0 (all analysed),gap_change_from_G0,432,0.0,scenario_B
+Q2,scenario_B,D,(v) returning only (all departures removed),mean_D,181,-0.3786077348066298,scenario_B
+Q2,scenario_B,R,(v) returning only (all departures removed),mean_R,154,0.5394415584415584,scenario_B
+Q2,scenario_B,both,(v) returning only (all departures removed),gap,335,0.9180492932481882,scenario_B
+Q2,scenario_B,both,(v) returning only (all departures removed),gap_change_from_G0,335,0.0063280808671540845,scenario_B
+Q1,state_sources_only,Republican,lost_general,mean_dim1,12,0.42041666666666666,state_sources_only
+Q1,state_sources_only,Republican,returning,mean_dim1,141,0.5500212765957446,state_sources_only
+Q1,state_sources_only,Republican,baseline,mean_dim1,194,0.5384948453608247,state_sources_only
+Q1,state_sources_only,Republican,lost_general,share_moderate,12,0.5833333333333334,state_sources_only
+Q1,state_sources_only,Republican,baseline,share_moderate,194,0.29896907216494845,state_sources_only
+Q1,state_sources_only,Republican,lost_general,k,12,12.0,state_sources_only
+Q1,state_sources_only,Republican,lost_general,perm_p_mean,12,0.0034996500349965005,state_sources_only
+Q2,state_sources_only,D,G0 (all analysed),mean_D,214,-0.3860560747663551,state_sources_only
+Q2,state_sources_only,R,G0 (all analysed),mean_R,194,0.5384948453608247,state_sources_only
+Q2,state_sources_only,both,G0 (all analysed),gap,408,0.9245509201271798,state_sources_only
+Q2,state_sources_only,both,G0 (all analysed),gap_change_from_G0,408,0.0,state_sources_only
+Q2,state_sources_only,D,(v) returning only (all departures removed),mean_D,181,-0.3786077348066298,state_sources_only
+Q2,state_sources_only,R,(v) returning only (all departures removed),mean_R,141,0.5500212765957446,state_sources_only
+Q2,state_sources_only,both,(v) returning only (all departures removed),gap,322,0.9286290114023744,state_sources_only
+Q2,state_sources_only,both,(v) returning only (all departures removed),gap_change_from_G0,322,0.004078091275194651,state_sources_only
+Q1,certified_or_ap_only,Republican,lost_general,mean_dim1,11,0.4187272727272726,certified_or_ap_only
+Q1,certified_or_ap_only,Republican,returning,mean_dim1,141,0.5500212765957446,certified_or_ap_only
+Q1,certified_or_ap_only,Republican,baseline,mean_dim1,193,0.5390103626943006,certified_or_ap_only
+Q1,certified_or_ap_only,Republican,lost_general,share_moderate,11,0.6363636363636364,certified_or_ap_only
+Q1,certified_or_ap_only,Republican,baseline,share_moderate,193,0.3005181347150259,certified_or_ap_only
+Q1,certified_or_ap_only,Republican,lost_general,k,11,11.0,certified_or_ap_only
+Q1,certified_or_ap_only,Republican,lost_general,perm_p_mean,11,0.0026997300269973002,certified_or_ap_only
+Q2,certified_or_ap_only,D,G0 (all analysed),mean_D,212,-0.38533962264150945,certified_or_ap_only
+Q2,certified_or_ap_only,R,G0 (all analysed),mean_R,193,0.5390103626943006,certified_or_ap_only
+Q2,certified_or_ap_only,both,G0 (all analysed),gap,405,0.92434998533581,certified_or_ap_only
+Q2,certified_or_ap_only,both,G0 (all analysed),gap_change_from_G0,405,0.0,certified_or_ap_only
+Q2,certified_or_ap_only,D,(v) returning only (all departures removed),mean_D,181,-0.3786077348066298,certified_or_ap_only
+Q2,certified_or_ap_only,R,(v) returning only (all departures removed),mean_R,141,0.5500212765957446,certified_or_ap_only
+Q2,certified_or_ap_only,both,(v) returning only (all departures removed),gap,322,0.9286290114023744,certified_or_ap_only
+Q2,certified_or_ap_only,both,(v) returning only (all departures removed),gap_change_from_G0,322,0.004279026066564384,certified_or_ap_only
+Q1,decision17_check,Republican,lost_general,mean_dim1,23,0.4196086956521739,decision17_check
+Q1,decision17_check,Republican,returning,mean_dim1,141,0.5500212765957446,decision17_check
+Q1,decision17_check,Republican,baseline,mean_dim1,205,0.5320682926829268,decision17_check
+Q1,decision17_check,Republican,lost_general,share_moderate,23,0.6086956521739131,decision17_check
+Q1,decision17_check,Republican,baseline,share_moderate,205,0.3170731707317073,decision17_check
+Q1,decision17_check,Republican,lost_general,k,23,23.0,decision17_check
+Q1,decision17_check,Republican,lost_general,perm_p_mean,23,0.00019998000199980003,decision17_check
+Q2,decision17_check,D,G0 (all analysed),mean_D,214,-0.3860560747663551,decision17_check
+Q2,decision17_check,R,G0 (all analysed),mean_R,205,0.5320682926829268,decision17_check
+Q2,decision17_check,both,G0 (all analysed),gap,419,0.9181243674492818,decision17_check
+Q2,decision17_check,both,G0 (all analysed),gap_change_from_G0,419,0.0,decision17_check
+Q2,decision17_check,D,(v) returning only (all departures removed),mean_D,181,-0.3786077348066298,decision17_check
+Q2,decision17_check,R,(v) returning only (all departures removed),mean_R,141,0.5500212765957446,decision17_check
+Q2,decision17_check,both,(v) returning only (all departures removed),gap,322,0.9286290114023744,decision17_check
+Q2,decision17_check,both,(v) returning only (all departures removed),gap_change_from_G0,322,0.010504643953092585,decision17_check

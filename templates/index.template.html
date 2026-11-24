@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{PAGE_TITLE}}</title>
+<style>
+  :root {
+    --surface: #fcfcfb; --ink: #0b0b0b; --ink-2: #52514e; --rule: #e3e2de; --tint: #f4f3f0;
+    --dem: #2a78d6; --rep: #e34948; --pending-bg: #fff6cc; --pending-rule: #e0b400;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--surface); color: var(--ink);
+         font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 1000px; margin: 0 auto; padding: 1.5rem 1.25rem 4rem; }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0.5rem 0 0.75rem; }
+  h2 { font-size: 1.3rem; margin: 0 0 0.4rem; }
+  section { margin: 2.75rem 0; }
+  .lead { color: var(--ink-2); margin: 0 0 1rem; }
+  .question { font-size: 1.08rem; }
+  .fixture-banner { position: sticky; top: 0; z-index: 1000; background: #b00020; color: #fff;
+                    font-weight: 800; font-size: 1.35rem; text-align: center; padding: 0.7rem 1rem;
+                    letter-spacing: 0.02em; }
+  .headline { border-left: 4px solid var(--ink); background: var(--tint); padding: 0.75rem 1rem; margin: 1rem 0; }
+  .headline.pending { background: var(--pending-bg); border-left-color: var(--pending-rule); }
+  .headline .label { font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-2); }
+  .caveats { background: var(--tint); border: 1px solid var(--rule); border-radius: 6px; padding: 0.6rem 1rem;
+             font-size: 0.92rem; }
+  .caveats ul { margin: 0.25rem 0 0; padding-left: 1.2rem; }
+  .scale { display: flex; align-items: center; gap: 0.5rem; margin: 1rem 0; font-size: 0.95rem; }
+  .scale .bar { flex: 1; height: 10px; border-radius: 5px;
+                background: linear-gradient(90deg, var(--dem), #d9d8d4 50%, var(--rep)); position: relative; }
+  .scale .scale-zero { font-weight: 700; }
+  .chart { width: 100%; min-height: 340px; }
+  .controls { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; align-items: center; margin: 0.5rem 0 1rem; }
+  .controls label { white-space: nowrap; max-width: 100%; }
+  .controls label.select-label { white-space: normal; display: flex; gap: 0.4rem; align-items: center; flex-wrap: wrap; }
+  select { font: inherit; padding: 0.25rem 0.4rem; max-width: 100%; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 0.75rem; }
+  .stat { border: 1px solid var(--rule); border-radius: 6px; padding: 0.5rem 0.75rem; }
+  .stat .k { font-size: 0.8rem; color: var(--ink-2); }
+  .stat .v { font-size: 1.35rem; font-weight: 650; font-variant-numeric: tabular-nums; }
+  .reading { margin-top: 0.9rem; font-size: 1.02rem; }
+  .num { font-variant-numeric: tabular-nums; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.9rem; }
+  th, td { text-align: left; padding: 0.35rem 0.5rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  thead th { position: sticky; top: 0; background: var(--surface); }
+  th.sortable { cursor: pointer; text-decoration: underline dotted; }
+  .table-wrap { overflow-x: auto; }
+  details { margin-top: 1rem; border: 1px solid var(--rule); border-radius: 6px; padding: 0.5rem 0.9rem; }
+  summary { cursor: pointer; font-weight: 600; }
+  .tag { display: inline-block; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.05em; padding: 0 0.35rem;
+         border: 1px solid var(--ink-2); border-radius: 3px; color: var(--ink-2); }
+  .note { color: var(--ink-2); font-size: 0.92rem; }
+  footer { border-top: 1px solid var(--rule); padding-top: 1rem; font-size: 0.9rem; color: var(--ink-2); }
+  footer q { color: var(--ink); }
+  code, .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.85em; word-break: break-all; }
+  @media (max-width: 600px) { h1 { font-size: 1.5rem; } .fixture-banner { font-size: 1.05rem; } }
+</style>
+</head>
+<body>
+{{FIXTURE_BANNER}}
+<main>
+
+<header id="header">
+  <h1>Hollowing the Middle? The 2026 Wave and House Polarization</h1>
+  <p class="question"><strong>Research question:</strong> Did the November 3, 2026 U.S. House elections
+  disproportionately remove moderate Republicans? And among 119th-Congress House members who will return in
+  the 120th, does the gap between party means on DW-NOMINATE dimension 1 mechanically widen?</p>
+  {{HEADLINE}}
+</header>
+
+<aside id="caveats" class="caveats" aria-label="Caveats">
+  <strong>Read this first.</strong>
+  <ul>
+    <li>This covers 119th-Congress members who will return. Newly elected members have no scores yet, so this is not a forecast of the 120th Congress.</li>
+    <li>Races that were still pending are excluded from the main result.</li>
+    <li>Results are unofficial as of the source access dates ({{ACCESS_DATES}}).</li>
+    <li>Members who left the House before Nov 3 are excluded (decision 1).</li>
+  </ul>
+</aside>
+
+<section id="what-is">
+  <h2>What is DW-NOMINATE?</h2>
+  <p class="lead">This section explains the score used on every chart below.</p>
+  <p>DW-NOMINATE is a score that places each member of Congress on a left–right line using only how they vote on roll calls.
+  Members who vote together get similar scores; negative scores are more liberal and positive scores are more conservative.</p>
+  <div class="scale" role="img" aria-label="Scale: more liberal on the left, zero in the middle, more conservative on the right">
+    <span>more liberal ←</span><div class="bar"></div><span class="scale-zero">0</span><div class="bar"></div><span>→ more conservative</span>
+  </div>
+</section>
+
+<section id="dotplot">
+  <h2>Every member, by score</h2>
+  <p class="lead">Each dot is one House member, placed by their DW-NOMINATE score; hollow shapes are members who are leaving.</p>
+  <div id="dotplot-chart" class="chart" aria-label="Dot plot of members by DW-NOMINATE score"></div>
+  <p class="note">Filled dots: returning members (blue Democrats, red Republicans). Hollow shapes: departing members,
+  with one shape and color per reason. Shaded bands: the pre-registered moderate zones. Dashed line: party mean before
+  departures; solid line: party mean after removing the groups ticked in the panel below. Dots and lines
+  follow the scenario chosen in the panel, so they always match its numbers. Hover a dot for details;
+  click a departing member to open their source page. Vertical spread within a band is random jitter so dots don't overlap.</p>
+</section>
+
+<section id="before-after">
+  <h2>Before and after</h2>
+  <p class="lead">Tick which kinds of departures to remove and see how each party's average, and the gap between them, changes.</p>
+  <div class="controls">
+    <label class="select-label">Scenario <select id="scenario">{{SCENARIO_OPTIONS}}</select></label>
+    <label><input type="checkbox" id="cb-lost_general" checked> lost general election</label>
+    <label><input type="checkbox" id="cb-lost_primary" checked> lost primary</label>
+    <label><input type="checkbox" id="cb-retired" checked> retired</label>
+    <label><input type="checkbox" id="cb-ran_other_office" checked> ran for other office</label>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="k">Democratic mean</div><div class="v">{{CELL_MEAN_D}}</div></div>
+    <div class="stat"><div class="k">Republican mean</div><div class="v">{{CELL_MEAN_R}}</div></div>
+    <div class="stat"><div class="k">Gap (R − D)</div><div class="v">{{CELL_GAP}}</div></div>
+    <div class="stat"><div class="k">Change from G0</div><div class="v">{{CELL_DELTA}}</div></div>
+    <div class="stat"><div class="k">Democrats (n)</div><div class="v">{{CELL_N_D}}</div></div>
+    <div class="stat"><div class="k">Republicans (n)</div><div class="v">{{CELL_N_R}}</div></div>
+  </div>
+  <p class="reading" id="sentence">{{SENTENCE}}</p>
+  <p class="note">G0 is the gap before removing anyone. Every value here was computed by the Python analysis for this exact
+  combination and is only looked up by the page.</p>
+</section>
+
+<section id="moderate-test">
+  <h2>Were the losses unusually moderate?</h2>
+  <p class="lead">This asks whether the Republicans who lost their general elections were more moderate than a random group of Republicans would be.</p>
+  <p>If voters had removed Republicans at random, how often would a random group of the same size be as moderate as the ones who actually lost?
+  The computer drew {{N_DRAWS}} random groups of Republicans; the p-value is the share of groups that were at least as moderate, so a small p-value means the real losses were unusually moderate.</p>
+  {{Q1_STATUS}}
+  <div id="histogram-chart" class="chart" aria-label="Histogram of random-draw means"></div>
+  <div class="stats">
+    <div class="stat"><div class="k">Republicans who lost (k)</div><div class="v">{{Q1_K}}</div></div>
+    <div class="stat"><div class="k">Their mean score</div><div class="v">{{Q1_MEAN}}</div></div>
+    <div class="stat"><div class="k">Returning Republicans' mean</div><div class="v">{{Q1_RETURNING}}</div></div>
+    <div class="stat"><div class="k">All analysed Republicans' mean</div><div class="v">{{Q1_BASE}}</div></div>
+    <div class="stat"><div class="k">p-value (mean)</div><div class="v">{{Q1_P}}</div></div>
+  </div>
+  <p>Share moderate among those who lost: {{Q1_SHARE}}, against {{Q1_SHARE_BASE}} of all analysed Republicans.
+  Cross-check on the number of moderates: permutation p = {{Q1_P_COUNT}}; exact (hypergeometric) p = {{Q1_P_EXACT}}.</p>
+  <details>
+    <summary><span class="tag">EXPLORATORY</span> Other departure reasons, and Democrats</summary>
+    <p class="note">These were not the pre-registered test. Treat them as descriptive.</p>
+    <ul>{{EXPLORATORY}}</ul>
+  </details>
+</section>
+
+<section id="robustness">
+  <h2>Does the answer depend on choices we made?</h2>
+  <p class="lead">Each row re-runs the main numbers with one choice changed, next to the main result.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Check</th><th>Republicans who lost (k)</th><th>Their mean score</th><th>p-value (mean)</th>
+      <th>Gap, returning only</th><th>Change from G0</th></tr></thead>
+    <tbody>{{ROBUSTNESS_ROWS}}</tbody>
+  </table></div>
+</section>
+
+<section id="departures">
+  <h2>Who left, and why</h2>
+  <p class="lead">Every departure row behind this page, with links to the sources it was checked against.</p>
+  <div class="controls">
+    <label>Party <select id="filter-party"><option value="">all</option><option>Democrat</option><option>Republican</option></select></label>
+    <label>Reason <select id="filter-reason"><option value="">all</option>{{REASON_OPTIONS}}</select></label>
+    <span class="note">Click a column heading to sort.</span>
+  </div>
+  <div class="table-wrap"><table id="departures-table">
+    <thead><tr><th class="sortable">Name</th><th class="sortable">District</th><th class="sortable">Party</th>
+      <th class="sortable">Score</th><th class="sortable">Moderate</th><th class="sortable">Reason</th>
+      <th class="sortable">Status</th><th class="sortable">Verified</th><th>Source</th><th>Second source</th></tr></thead>
+    <tbody>{{DEPARTURE_ROWS}}</tbody>
+  </table></div>
+</section>
+
+<footer id="methods">
+  <h2>Methods and sources</h2>
+  <p class="lead">Where every number on this page comes from.</p>
+  <p><strong>Scores:</strong> Lewis, Poole, Rosenthal, Boche, Rudkin &amp; Sonnet, <em>Voteview: Congressional Roll-Call Votes Database</em>,
+  <a href="https://voteview.com/">voteview.com</a>. File <code>HSall_members.csv</code> downloaded {{VOTEVIEW_DATE}};
+  SHA-256 <span class="mono">{{VOTEVIEW_SHA}}</span>.</p>
+  <p><strong>Departures:</strong> drafted from {{SNAPSHOT_COUNT}} Ballotpedia pages saved as raw HTML (accessed
+  {{ACCESS_DATES}}), then checked against {{AI_SOURCE_FILES}} saved second-source files.
+  Of {{N_DEP_ROWS}} departure rows, {{N_STATE}} have a state .gov second source and {{N_NEWS_AP}} a news article
+  reporting an AP race call; {{N_UNRESOLVED}} could not be resolved and are excluded from the main result.</p>
+  <p><strong>Pre-registered definitions</strong> (quoted from the project's decision log):</p>
+  <ul>
+    <li>Moderate: {{DECISION_6}} Cutoffs: Republican {{R_CUTOFF}}, Democrat {{D_CUTOFF}}.</li>
+    <li>Baseline: {{DECISION_1}}</li>
+    <li>Counting a loss: {{DECISION_17}} Amended: {{DECISION_22}}</li>
+  </ul>
+  <p><strong>Build:</strong> {{BUILD_TIME}}, commit <span class="mono">{{GIT_COMMIT}}</span>, Plotly.js {{PLOTLY_VERSION}} (inlined).
+  Code and data: {{REPO_LINK}}.</p>
+  <p>Built with Claude Code.</p>
+</footer>
+
+</main>
+<script type="application/json" id="page-data">{{DATA_JSON}}</script>
+<script id="plotly-bundle">{{PLOTLY_JS}}</script>
+<script id="page-script">
+(function () {
+  "use strict";
+  var DATA = JSON.parse(document.getElementById("page-data").textContent);
+  var GROUPS = ["lost_general", "lost_primary", "retired", "ran_other_office"];
+  var CONFIG = { displaylogo: false, responsive: true, modeBarButtonsToRemove: ["lasso2d", "select2d"] };
+
+  // ---- dot plot (traces and layout come ready-made from Python)
+  var dot = document.getElementById("dotplot-chart");
+  Plotly.newPlot(dot, DATA.dotplot.traces.main, DATA.dotplot.layout, CONFIG);
+  if (window.innerWidth < 600) {   // phones: narrower margin; zone labels hidden (the note below names the shaded bands)
+    Plotly.relayout(dot, { "margin.l": 78, "annotations[0].visible": false, "annotations[1].visible": false });
+  }
+  dot.on("plotly_click", function (ev) {
+    var url = ev.points && ev.points.length ? ev.points[0].customdata : "";
+    if (url) { window.open(url, "_blank", "noopener"); }
+  });
+
+  // ---- before/after panel: look-ups only
+  var scenario = document.getElementById("scenario");
+  function keyFor(s) {
+    return s + "|" + GROUPS.map(function (g) { return document.getElementById("cb-" + g).checked ? "1" : "0"; }).join("");
+  }
+  function update() {
+    var row = DATA.combos[keyFor(scenario.value)];
+    var base = DATA.combos[scenario.value + "|" + GROUPS.map(function () { return "0"; }).join("")];
+    if (!row || !base) { return; }
+    ["mean_D", "mean_R", "gap", "delta_gap", "n_D", "n_R"].forEach(function (col) {
+      var el = document.getElementById("cell-" + col), cell = row.cells[col];
+      el.textContent = cell.text;
+      el.setAttribute("data-metric", cell.metric);
+    });
+    document.getElementById("sentence").innerHTML = row.cells.sentence;
+    // redraw the dots with this scenario's own groups (pre-built in Python), then move the lines
+    Plotly.react(dot, DATA.dotplot.traces[scenario.value], dot.layout, CONFIG);
+    Plotly.relayout(dot, {
+      "shapes[2].x0": base.mean_D, "shapes[2].x1": base.mean_D,
+      "shapes[3].x0": row.mean_D, "shapes[3].x1": row.mean_D,
+      "shapes[4].x0": base.mean_R, "shapes[4].x1": base.mean_R,
+      "shapes[5].x0": row.mean_R, "shapes[5].x1": row.mean_R
+    });
+  }
+  scenario.addEventListener("change", update);
+  GROUPS.forEach(function (g) { document.getElementById("cb-" + g).addEventListener("change", update); });
+
+  // ---- histogram (bins computed in Python)
+  if (!DATA.histogram.empty) {
+    Plotly.newPlot("histogram-chart", DATA.histogram.data, DATA.histogram.layout, CONFIG);
+  } else {
+    document.getElementById("histogram-chart").style.minHeight = "0";
+  }
+
+  // ---- departures table: sort and filter (no arithmetic)
+  var table = document.getElementById("departures-table");
+  var body = table.tBodies[0];
+  var dir = {};
+  Array.prototype.forEach.call(table.tHead.rows[0].cells, function (th, i) {
+    if (!th.classList.contains("sortable")) { return; }
+    th.addEventListener("click", function () {
+      dir[i] = !dir[i];
+      var rows = Array.prototype.slice.call(body.rows);
+      rows.sort(function (a, b) {
+        var x = a.cells[i], y = b.cells[i], vx = x.getAttribute("data-sort"), vy = y.getAttribute("data-sort");
+        var c = x.getAttribute("data-type") === "number" ? (parseFloat(vx) < parseFloat(vy) ? -1 : parseFloat(vx) > parseFloat(vy) ? 1 : 0)
+                                                        : vx.localeCompare(vy);
+        return dir[i] ? c : -c;
+      });
+      rows.forEach(function (r) { body.appendChild(r); });
+    });
+  });
+  function filter() {
+    var p = document.getElementById("filter-party").value, r = document.getElementById("filter-reason").value;
+    Array.prototype.forEach.call(body.rows, function (row) {
+      var show = (!p || row.getAttribute("data-party") === p) && (!r || row.getAttribute("data-reason") === r);
+      row.style.display = show ? "" : "none";
+    });
+  }
+  document.getElementById("filter-party").addEventListener("change", filter);
+  document.getElementById("filter-reason").addEventListener("change", filter);
+})();
+</script>
+</body>
+</html>

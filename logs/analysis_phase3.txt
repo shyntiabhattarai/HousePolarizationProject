@@ -1,0 +1,306 @@
+
+========================================================================
+VALIDATION: departures_verified.csv
+========================================================================
+Rows: 125. ai_verified: {'Y': 65, '(blank)': 58, 'N': 2}; ai_source_type: {'(none)': 58, 'state': 45, 'news_reporting_ap': 20, 'federal_gov': 2}
+  unverified_sampled_out: icpsr=22140 MOORE, Barry (ran_other_office) -- counted
+  unverified_sampled_out: icpsr=21105 SCHWEIKERT, David (ran_other_office) -- counted
+  unverified_sampled_out: icpsr=21705 BIGGS, Andrew S. (ran_other_office) -- counted
+  unverified_sampled_out: icpsr=20305 GRIJALVA, Raúl M. (resigned_died) -- counted
+  unverified_sampled_out: icpsr=21302 LAMALFA, Doug (resigned_died) -- counted
+  unverified_sampled_out: icpsr=15448 PELOSI, Nancy (retired) -- counted
+  unverified_sampled_out: icpsr=21306 SWALWELL, Eric (resigned_died) -- counted
+  unverified_sampled_out: icpsr=21308 BROWNLEY, Julia (retired) -- counted
+  unverified_sampled_out: icpsr=20107 ISSA, Darrell (retired) -- counted
+  unverified_sampled_out: icpsr=21714 DUNN, Neal Patrick (retired) -- counted
+  unverified_sampled_out: icpsr=21981 WALTZ, Michael (resigned_died) -- counted
+  unverified_sampled_out: icpsr=22111 DONALDS, Byron (ran_other_office) -- counted
+  unverified_sampled_out: icpsr=22163 CHERFILUS-MCCORMICK, Sheila (resigned_died) -- counted
+  unverified_sampled_out: icpsr=21118 WILSON, Frederica (retired) -- counted
+  unverified_sampled_out: icpsr=22310 COLLINS, Mike (ran_other_office) -- counted
+  unverified_sampled_out: icpsr=21515 LOUDERMILK, Barry D. (retired) -- counted
+  unverified_sampled_out: icpsr=20321 SCOTT, David (resigned_died) -- counted
+  unverified_sampled_out: icpsr=22121 GREENE, Marjorie Taylor (resigned_died) -- counted
+  unverified_sampled_out: icpsr=22124 HINSON, Ashley (ran_other_office) -- counted
+  unverified_sampled_out: icpsr=21371 KELLY, Robin L. (ran_other_office) -- counted
+  unverified_sampled_out: icpsr=21921 GARCÍA, Jesús (retired) -- counted
+  unverified_sampled_out: icpsr=29717 DAVIS, Danny K. (retired) -- counted
+  unverified_sampled_out: icpsr=21730 KRISHNAMOORTHI, S. Raja (ran_other_office) -- counted
+  unverified_sampled_out: icpsr=29911 SCHAKOWSKY, Janice D. (retired) -- counted
+  unverified_sampled_out: icpsr=22157 LETLOW, Julia (ran_other_office) -- counted
+  unverified_sampled_out: icpsr=29354 FIELDS, Cleo (ran_other_office) -- counted
+  unverified_sampled_out: icpsr=14873 HOYER, Steny Hamilton (retired) -- counted
+  unverified_sampled_out: icpsr=21923 GOLDEN, Jared (retired) -- counted
+  unverified_sampled_out: icpsr=21972 STEVENS, Haley (ran_other_office) -- counted
+  unverified_sampled_out: icpsr=21910 CRAIG, Angela (ran_other_office) -- counted
+  unverified_sampled_out: icpsr=22318 EDWARDS, Chuck (retired) -- counted
+  unverified_sampled_out: icpsr=21701 BACON, Donald J. (retired) -- counted
+  unverified_sampled_out: icpsr=21951 PAPPAS, Chris (ran_other_office) -- counted
+  unverified_sampled_out: icpsr=21964 SHERRILL, Mikie (resigned_died) -- counted
+  unverified_sampled_out: icpsr=21538 WATSON COLEMAN, Bonnie (retired) -- counted
+  unverified_sampled_out: icpsr=21196 AMODEI, Mark E. (retired) -- counted
+  unverified_sampled_out: icpsr=29378 VELÁZQUEZ, Nydia M. (retired) -- counted
+  unverified_sampled_out: icpsr=29377 NADLER, Jerrold Lewis (retired) -- counted
+  unverified_sampled_out: icpsr=21541 STEFANIK, Elise M. (retired) -- counted
+  unverified_sampled_out: icpsr=21760 HERN, Kevin (ran_other_office) -- counted
+  unverified_sampled_out: icpsr=22132 MACE, Nancy (ran_other_office) -- counted
+  unverified_sampled_out: icpsr=21753 NORMAN, Ralph (ran_other_office) -- counted
+  unverified_sampled_out: icpsr=21935 JOHNSON, Dustin (Dusty) (ran_other_office) -- counted
+  unverified_sampled_out: icpsr=21926 GREEN, Mark E. (resigned_died) -- counted
+  unverified_sampled_out: icpsr=20748 COHEN, Stephen (retired) -- counted
+  unverified_sampled_out: icpsr=22344 LUTTRELL, Morgan (retired) -- counted
+  unverified_sampled_out: icpsr=22557 TURNER, Sylvester (resigned_died) -- counted
+  unverified_sampled_out: icpsr=21700 ARRINGTON, Jodey Cook (retired) -- counted
+  unverified_sampled_out: icpsr=21961 ROY, Charles (ran_other_office) -- counted
+  unverified_sampled_out: icpsr=22143 NEHLS, Troy E. (retired) -- counted
+  unverified_sampled_out: icpsr=22312 CROCKETT, Jasmine (ran_other_office) -- counted
+  unverified_sampled_out: icpsr=21365 VEASEY, Marc (retired) -- counted
+  unverified_sampled_out: icpsr=29571 DOGGETT, Lloyd Alton, II (retired) -- counted
+  unverified_sampled_out: icpsr=22328 HUNT, Wesley (ran_other_office) -- counted
+  unverified_sampled_out: icpsr=22146 OWENS, Burgess (retired) -- counted
+  unverified_sampled_out: icpsr=21556 NEWHOUSE, Daniel Milton (retired) -- counted
+  unverified_sampled_out: icpsr=22325 HAGEMAN, Harriet (ran_other_office) -- counted
+  ai_verified = N (decision 19: did NOT leave) -> row ignored, member RETURNING: icpsr=22337 LALOTA, Nicholas (row said pending)
+  ai_verified = N (decision 19: did NOT leave) -> row ignored, member RETURNING: icpsr=22117 GARBARINO, Andrew R. (row said pending)
+  UNRESOLVED (decision 21: no second source obtained) -> removed from B: icpsr=21337 WAGNER, Ann (lost_general)
+Decision 17 as amended by 22 and 23 -- every lost_general row (counted only if ai_verified Y + ai_source_type state, ap or news_reporting_ap + ai_call_basis set):
+  icpsr=22336 KILEY, Kevin: ai_verified=Y, state / unofficial_state 'https://api.sos.ca.gov/returns/us-rep/district/6' -> COUNTED
+  icpsr=22309 CISCOMANI, Juan: ai_verified=Y, news_reporting_ap / ap_call 'https://www.kjzz.org/elections/2026-11-05/mendoza-ousts-ciscomani-in-arizonas-cd6-expanding-the-democratic-majority-in-congress-elex' -> COUNTED
+  icpsr=22570 GALLAGHER, James: ai_verified=Y, state / unofficial_state 'https://api.sos.ca.gov/returns/us-rep/district/1' -> COUNTED
+  icpsr=29901 THOMPSON, Michael: ai_verified=Y, state / unofficial_state 'https://api.sos.ca.gov/returns/us-rep/district/4' -> COUNTED
+  icpsr=21307 VALADAO, David G.: ai_verified=Y, state / unofficial_state 'https://api.sos.ca.gov/returns/us-rep/district/22' -> COUNTED
+  icpsr=21754 GOMEZ, Jimmy: ai_verified=Y, state / unofficial_state 'https://api.sos.ca.gov/returns/us-rep/district/34' -> COUNTED
+  icpsr=22129 KIM, Young: ai_verified=Y, state / unofficial_state 'https://api.sos.ca.gov/returns/us-rep/district/40' -> COUNTED
+  icpsr=22103 BOEBERT, Lauren: ai_verified=Y, news_reporting_ap / ap_call 'https://www.kunc.org/politics/2026-11-13/eileen-laubacher-wins-4th-congressional-district-seat-ousts-lauren-boebert' -> COUNTED
+  icpsr=22509 CRANK, Jeff: ai_verified=Y, news_reporting_ap / ap_call 'https://www.coloradopolitics.com/2026/11/05/ap-declares-jessica-killin-winner-in-5th-district-election/' -> COUNTED
+  icpsr=22513 EVANS, Gabe: ai_verified=Y, news_reporting_ap / ap_call 'https://www.coloradopolitics.com/2026/11/03/gabe-evans-manny-rutinel-colorado-cd8-election-results/' -> COUNTED
+  icpsr=22356 NUNN, Zach: ai_verified=Y, state / unofficial_state 'https://electionresults.iowa.gov/IA/127077/387397/json/en/summary.json' -> COUNTED
+  icpsr=21142 HUIZENGA, Bill: ai_verified=Y, news_reporting_ap / ap_call 'https://www.fox17online.com/news/national-politics/america-votes/sean-mccann-wins-election-in-4th-congressional-district-ap-projects-unseating-bill-huizenga' -> COUNTED
+  icpsr=22501 BARRETT, Tom: ai_verified=Y, news_reporting_ap / ap_call 'https://www.michiganpublic.org/politics-government/2026-11-04/barrett-concedes-to-lawrence-as-democrats-net-another-battleground-victory-in-se-michigan' -> COUNTED
+  icpsr=21337 WAGNER, Ann: ai_verified=(blank), no source / no call basis '' -> UNRESOLVED (decision 21, removed from B)
+  icpsr=22538 MCDOWELL, Addison P.: ai_verified=Y, state / unofficial_state 'https://er.ncsbe.gov/enr/20261103/data/results_0.txt' -> COUNTED
+  icpsr=21346 HUDSON, Richard: ai_verified=Y, state / unofficial_state 'https://er.ncsbe.gov/enr/20261103/data/results_0.txt' -> COUNTED
+  icpsr=22530 KNOTT, Brad: ai_verified=Y, state / unofficial_state 'https://er.ncsbe.gov/enr/20261103/data/results_0.txt' -> COUNTED
+  icpsr=22542 MOORE, Tim: ai_verified=Y, state / unofficial_state 'https://er.ncsbe.gov/enr/20261103/data/results_0.txt' -> COUNTED
+  icpsr=91980 VAN DREW, Jefferson: ai_verified=Y, news_reporting_ap / ap_call 'https://www.inquirer.com/politics/new-jersey/zack-mullock-jeff-van-drew-results-official-20261105.html' -> COUNTED
+  icpsr=22334 KEAN, Thomas: ai_verified=Y, news_reporting_ap / ap_call 'https://www.fox5ny.com/news/nj-rebecca-bennett-new-jersey-7th-congressional-district' -> COUNTED
+  icpsr=22340 LAWLER, Michael: ai_verified=Y, news_reporting_ap / ap_call 'https://www.ottumwacourier.com/news/national_news/democrat-cait-conley-wins-election-to-u-s-house-in-new-yorks-17th-congressional-district/article_e7784190-9881-5d34-bcb5-2f8943109a65.html' -> COUNTED
+  icpsr=22315 DE LA CRUZ, Monica: ai_verified=Y, state / unofficial_state 'https://electionresults.sos.state.tx.us/results.html' -> COUNTED
+  icpsr=20756 WITTMAN, Robert J.: ai_verified=Y, state / unofficial_state 'https://enr.elections.virginia.gov/results/public/api/elections/virginia/2026-November-General/data' -> COUNTED
+  icpsr=22335 KIGGANS, Jennifer: ai_verified=Y, state / unofficial_state 'https://enr.elections.virginia.gov/results/public/api/elections/virginia/2026-November-General/data' -> COUNTED
+  icpsr=21970 STEIL, Bryan: ai_verified=Y, news_reporting_ap / ap_call 'https://www.wpr.org/news/democrat-mitchell-berman-defeats-republican-bryan-steil-2026' -> COUNTED
+  icpsr=22370 VAN ORDEN, Derrick: ai_verified=Y, news_reporting_ap / ap_call 'https://www.wpr.org/news/democrat-rebecca-cooke-defeats-gop-derrick-van-orden-congress-midterms' -> COUNTED
+
+========================================================================
+BASELINE B: decision 1 re-applied from verified resigned_died rows
+========================================================================
+Members excluded under decision 1: 12
+  change vs. the draft-based exclusion in data/processed/house119_baseline.csv: newly excluded none; no longer excluded none
+B: 433 members (214 D, 219 R)
+Cutoffs recomputed from B: R 0.44866666666666666, D -0.334
+Cutoffs match cutoffs.csv (decision 18).
+VALIDATION PASSED
+Removed from B in the main analysis: 14
+  icpsr=22151 SPARTZ, Victoria: excluded_pending
+  icpsr=22139 MILLER-MEEKS, Mariannette: excluded_pending
+  icpsr=22167 FINSTAD, Brad: excluded_pending
+  icpsr=21337 WAGNER, Ann: excluded_unresolved
+  icpsr=20521 FOXX, Virginia Ann: excluded_pending
+  icpsr=21987 MURPHY, Gregory Francis: excluded_pending
+  icpsr=20342 TURNER, Michael R.: excluded_pending
+  icpsr=22162 CAREY, Mike: excluded_pending
+  icpsr=22349 MILLER, Max: excluded_pending
+  icpsr=21356 PERRY, Scott: excluded_pending
+  icpsr=21718 FITZPATRICK, Brian K.: excluded_pending
+  icpsr=22506 BRESNAHAN, Robert P., Jr.: excluded_pending
+  icpsr=22533 MACKENZIE, Ryan: excluded_pending
+  icpsr=21179 DESJARLAIS, Scott: excluded_pending
+Analysed in main: 419 (214 D, 205 R). Groups: {'returning': 322, 'retired': 32, 'ran_other_office': 28, 'lost_general': 25, 'lost_primary': 12}
+
+========================================================================
+Q1 (main): did the wave disproportionately remove moderate Republicans?
+========================================================================
+Republican lost_general members (k = 23), for averaging by hand:
+   icpsr=22340  LAWLER, Michael  NY-17  dim1=0.190  moderate=yes
+   icpsr=22334  KEAN, Thomas  NJ-7  dim1=0.202  moderate=yes
+   icpsr=22336  KILEY, Kevin  CA-3  dim1=0.253  moderate=yes
+   icpsr=21307  VALADAO, David G.  CA-22  dim1=0.256  moderate=yes
+   icpsr=22335  KIGGANS, Jennifer  VA-2  dim1=0.263  moderate=yes
+   icpsr=22129  KIM, Young  CA-40  dim1=0.264  moderate=yes
+   icpsr=22356  NUNN, Zach  IA-3  dim1=0.291  moderate=yes
+   icpsr=22309  CISCOMANI, Juan  AZ-6  dim1=0.295  moderate=yes
+   icpsr=22570  GALLAGHER, James  CA-1  dim1=0.332  moderate=yes
+   icpsr=22513  EVANS, Gabe  CO-8  dim1=0.343  moderate=yes
+   icpsr=22370  VAN ORDEN, Derrick  WI-3  dim1=0.377  moderate=yes
+   icpsr=91980  VAN DREW, Jefferson  NJ-2  dim1=0.384  moderate=yes
+   icpsr=21970  STEIL, Bryan  WI-1  dim1=0.421  moderate=yes
+   icpsr=20756  WITTMAN, Robert J.  VA-1  dim1=0.446  moderate=yes
+   icpsr=22315  DE LA CRUZ, Monica  TX-15  dim1=0.471  moderate=no
+   icpsr=22501  BARRETT, Tom  MI-7  dim1=0.486  moderate=no
+   icpsr=21346  HUDSON, Richard  NC-9  dim1=0.523  moderate=no
+   icpsr=21142  HUIZENGA, Bill  MI-4  dim1=0.531  moderate=no
+   icpsr=22538  MCDOWELL, Addison P.  NC-6  dim1=0.564  moderate=no
+   icpsr=22542  MOORE, Tim  NC-14  dim1=0.571  moderate=no
+   icpsr=22509  CRANK, Jeff  CO-5  dim1=0.665  moderate=no
+   icpsr=22103  BOEBERT, Lauren  CO-4  dim1=0.712  moderate=no
+   icpsr=22530  KNOTT, Brad  NC-13  dim1=0.811  moderate=no
+   sum = 9.651000; / 23 = 0.419609
+-- Republicans, group = lost_general   [MAIN TEST]
+   mean dim1, lost_general            :  0.4196   (n = 23)
+   mean dim1, returning               :  0.5500   (n = 141)
+   mean dim1, baseline (all analysed) :  0.5321   (n = 205)
+   share moderate, lost_general: 0.6087 (14 of 23); baseline: 0.3171 (65 of 205)
+   permutation test on the mean (10000 draws of k = 23, seed 20261103, '<= observed'): p = 0.0002
+   moderate count >= 14: permutation p = 0.0015; exact hypergeometric p = 0.0022 -> agree
+
+========================================================================
+Q1 (main), EXPLORATORY: other departure reasons, Republicans
+========================================================================
+-- Republicans, group = lost_primary   [EXPLORATORY]
+   mean dim1, lost_primary            :  0.6082   (n = 4)
+   mean dim1, returning               :  0.5500   (n = 141)
+   mean dim1, baseline (all analysed) :  0.5321   (n = 205)
+   share moderate, lost_primary: 0.2500 (1 of 4); baseline: 0.3171 (65 of 205)
+   permutation test on the mean (10000 draws of k = 4, seed 20261103, '<= observed'): p = 0.8348
+   moderate count >= 1: permutation p = 0.7848; exact hypergeometric p = 0.7855 -> agree
+-- Republicans, group = retired   [EXPLORATORY]
+   mean dim1, retired                 :  0.4585   (n = 17)
+   mean dim1, returning               :  0.5500   (n = 141)
+   mean dim1, baseline (all analysed) :  0.5321   (n = 205)
+   share moderate, retired: 0.4706 (8 of 17); baseline: 0.3171 (65 of 205)
+   permutation test on the mean (10000 draws of k = 17, seed 20261103, '<= observed'): p = 0.0211
+   moderate count >= 8: permutation p = 0.1297; exact hypergeometric p = 0.1266 -> agree
+-- Republicans, group = ran_other_office   [EXPLORATORY]
+   mean dim1, ran_other_office        :  0.5822   (n = 20)
+   mean dim1, returning               :  0.5500   (n = 141)
+   mean dim1, baseline (all analysed) :  0.5321   (n = 205)
+   share moderate, ran_other_office: 0.2000 (4 of 20); baseline: 0.3171 (65 of 205)
+   permutation test on the mean (10000 draws of k = 20, seed 20261103, '<= observed'): p = 0.9341
+   moderate count >= 4: permutation p = 0.9310; exact hypergeometric p = 0.9299 -> agree
+
+========================================================================
+Q1 (main): Democrats mirror (moderate = high dim1; tested only if k >= 5)
+========================================================================
+-- Democrats, group = lost_general   [EXPLORATORY]
+   mean dim1, lost_general            : -0.4620   (n = 2)
+   mean dim1, returning               : -0.3786   (n = 181)
+   mean dim1, baseline (all analysed) : -0.3861   (n = 214)
+   share moderate, lost_general: 0.0000 (0 of 2); baseline: 0.3364 (72 of 214)
+   k = 2 < 5: too few to test
+-- Democrats, group = lost_primary   [EXPLORATORY]
+   mean dim1, lost_primary            : -0.4540   (n = 8)
+   mean dim1, returning               : -0.3786   (n = 181)
+   mean dim1, baseline (all analysed) : -0.3861   (n = 214)
+   share moderate, lost_primary: 0.0000 (0 of 8); baseline: 0.3364 (72 of 214)
+   permutation test on the mean (10000 draws of k = 8, seed 20261103, '>= observed'): p = 0.9540
+   moderate count >= 0: permutation p = 1.0000; exact hypergeometric p = 1.0000 -> agree
+-- Democrats, group = retired   [EXPLORATORY]
+   mean dim1, retired                 : -0.4403   (n = 15)
+   mean dim1, returning               : -0.3786   (n = 181)
+   mean dim1, baseline (all analysed) : -0.3861   (n = 214)
+   share moderate, retired: 0.1333 (2 of 15); baseline: 0.3364 (72 of 214)
+   permutation test on the mean (10000 draws of k = 15, seed 20261103, '>= observed'): p = 0.9685
+   moderate count >= 2: permutation p = 0.9823; exact hypergeometric p = 0.9846 -> agree
+-- Democrats, group = ran_other_office   [EXPLORATORY]
+   mean dim1, ran_other_office        : -0.3660   (n = 8)
+   mean dim1, returning               : -0.3786   (n = 181)
+   mean dim1, baseline (all analysed) : -0.3861   (n = 214)
+   share moderate, ran_other_office: 0.3750 (3 of 8); baseline: 0.3364 (72 of 214)
+   permutation test on the mean (10000 draws of k = 8, seed 20261103, '>= observed'): p = 0.3086
+   moderate count >= 3: permutation p = 0.5403; exact hypergeometric p = 0.5415 -> agree
+
+========================================================================
+Q2 (main): does the party gap widen among returning members?
+========================================================================
+   G0 (all analysed)                              D -0.3861 (n=214)  R  0.5321 (n=205)  gap 0.9181  change +0.0000
+   without lost_general                           D -0.3853 (n=212)  R  0.5463 (n=182)  gap 0.9316  change +0.0135
+   without lost_primary                           D -0.3834 (n=206)  R  0.5306 (n=201)  gap 0.9140  change -0.0042
+   without retired                                D -0.3820 (n=199)  R  0.5387 (n=188)  gap 0.9207  change +0.0026
+   without ran_other_office                       D -0.3868 (n=206)  R  0.5267 (n=185)  gap 0.9135  change -0.0046
+   (v) returning only (all departures removed)    D -0.3786 (n=181)  R  0.5500 (n=141)  gap 0.9286  change +0.0105
+   NOTE: the one-group-at-a-time changes do not add up to the all-together change (v);
+   removing several groups changes both party means at once, so this is expected.
+   Arithmetic, G0 (all analysed):
+     D: sum -82.616000 / n 214 = mean -0.386056
+     R: sum 109.074000 / n 205 = mean 0.532068
+     gap = 0.532068 - (-0.386056) = 0.918124
+   Arithmetic, (v) returning only (all departures removed):
+     D: sum -68.528000 / n 181 = mean -0.378608
+     R: sum 77.553000 / n 141 = mean 0.550021
+     gap = 0.550021 - (-0.378608) = 0.928629
+
+========================================================================
+ROBUSTNESS (each: Q1 items 1-3 for R lost_general, and Q2 (v))
+========================================================================
+
+## no_low_votes: low_votes members removed
+-- Republicans, group = lost_general   [no_low_votes]
+   mean dim1, lost_general            :  0.4236   (n = 22)
+   mean dim1, returning               :  0.5500   (n = 141)
+   mean dim1, baseline (all analysed) :  0.5330   (n = 204)
+   share moderate, lost_general: 0.5909 (13 of 22); baseline: 0.3137 (64 of 204)
+   permutation test on the mean (10000 draws of k = 22, seed 20261103, '<= observed'): p = 0.0003
+   G0 (all analysed)                              D -0.3837 (n=212)  R  0.5330 (n=204)  gap 0.9167  change +0.0000
+   (v) returning only (all departures removed)    D -0.3774 (n=180)  R  0.5500 (n=141)  gap 0.9274  change +0.0107
+
+## no_same_party_general: same_party_general members removed: [21754, 22129, 29901]
+-- Republicans, group = lost_general   [no_same_party_general]
+   mean dim1, lost_general            :  0.4267   (n = 22)
+   mean dim1, returning               :  0.5500   (n = 141)
+   mean dim1, baseline (all analysed) :  0.5334   (n = 204)
+   share moderate, lost_general: 0.5909 (13 of 22); baseline: 0.3137 (64 of 204)
+   permutation test on the mean (10000 draws of k = 22, seed 20261103, '<= observed'): p = 0.0004
+   G0 (all analysed)                              D -0.3853 (n=212)  R  0.5334 (n=204)  gap 0.9187  change +0.0000
+   (v) returning only (all departures removed)    D -0.3786 (n=181)  R  0.5500 (n=141)  gap 0.9286  change +0.0099
+
+## scenario_A: every pending incumbent counted as lost_general
+-- Republicans, group = lost_general   [scenario_A]
+   mean dim1, lost_general            :  0.4214   (n = 36)
+   mean dim1, returning               :  0.5500   (n = 141)
+   mean dim1, baseline (all analysed) :  0.5257   (n = 218)
+   share moderate, lost_general: 0.5833 (21 of 36); baseline: 0.3303 (72 of 218)
+   permutation test on the mean (10000 draws of k = 36, seed 20261103, '<= observed'): p = 0.0001
+   G0 (all analysed)                              D -0.3861 (n=214)  R  0.5257 (n=218)  gap 0.9117  change +0.0000
+   (v) returning only (all departures removed)    D -0.3786 (n=181)  R  0.5500 (n=141)  gap 0.9286  change +0.0169
+
+## scenario_B: every pending incumbent counted as returning
+-- Republicans, group = lost_general   [scenario_B]
+   mean dim1, lost_general            :  0.4196   (n = 23)
+   mean dim1, returning               :  0.5394   (n = 154)
+   mean dim1, baseline (all analysed) :  0.5257   (n = 218)
+   share moderate, lost_general: 0.6087 (14 of 23); baseline: 0.3303 (72 of 218)
+   permutation test on the mean (10000 draws of k = 23, seed 20261103, '<= observed'): p = 0.0005
+   G0 (all analysed)                              D -0.3861 (n=214)  R  0.5257 (n=218)  gap 0.9117  change +0.0000
+   (v) returning only (all departures removed)    D -0.3786 (n=181)  R  0.5394 (n=154)  gap 0.9180  change +0.0063
+
+## state_sources_only: decision 22: lost_general counted only with a state .gov second source; rows sourced to news_reporting_ap are removed from B
+-- Republicans, group = lost_general   [state_sources_only]
+   mean dim1, lost_general            :  0.4204   (n = 12)
+   mean dim1, returning               :  0.5500   (n = 141)
+   mean dim1, baseline (all analysed) :  0.5385   (n = 194)
+   share moderate, lost_general: 0.5833 (7 of 12); baseline: 0.2990 (58 of 194)
+   permutation test on the mean (10000 draws of k = 12, seed 20261103, '<= observed'): p = 0.0035
+   G0 (all analysed)                              D -0.3861 (n=214)  R  0.5385 (n=194)  gap 0.9246  change +0.0000
+   (v) returning only (all departures removed)    D -0.3786 (n=181)  R  0.5500 (n=141)  gap 0.9286  change +0.0041
+
+## certified_or_ap_only: decision 23: lost_general counted only with a certified state result or an AP-cited call; rows resting on unofficial state results are removed from B
+-- Republicans, group = lost_general   [certified_or_ap_only]
+   mean dim1, lost_general            :  0.4187   (n = 11)
+   mean dim1, returning               :  0.5500   (n = 141)
+   mean dim1, baseline (all analysed) :  0.5390   (n = 193)
+   share moderate, lost_general: 0.6364 (7 of 11); baseline: 0.3005 (58 of 193)
+   permutation test on the mean (10000 draws of k = 11, seed 20261103, '<= observed'): p = 0.0027
+   G0 (all analysed)                              D -0.3853 (n=212)  R  0.5390 (n=193)  gap 0.9243  change +0.0000
+   (v) returning only (all departures removed)    D -0.3786 (n=181)  R  0.5500 (n=141)  gap 0.9286  change +0.0043
+
+## decision17_check: decision 17 (as amended by 22, 23) filter re-derived directly from the ai_* columns: MATCHES the main analysis
+-- Republicans, group = lost_general   [decision17_check]
+   mean dim1, lost_general            :  0.4196   (n = 23)
+   mean dim1, returning               :  0.5500   (n = 141)
+   mean dim1, baseline (all analysed) :  0.5321   (n = 205)
+   share moderate, lost_general: 0.6087 (14 of 23); baseline: 0.3171 (65 of 205)
+   permutation test on the mean (10000 draws of k = 23, seed 20261103, '<= observed'): p = 0.0002
+   G0 (all analysed)                              D -0.3861 (n=214)  R  0.5321 (n=205)  gap 0.9181  change +0.0000
+   (v) returning only (all departures removed)    D -0.3786 (n=181)  R  0.5500 (n=141)  gap 0.9286  change +0.0105
+
+Wrote data/processed/summary.csv (192 rows), data/processed/analysis_members.csv, data/processed/gap_combinations.csv, data/processed/permutation_draws_R.csv, logs/analysis_phase3.txt

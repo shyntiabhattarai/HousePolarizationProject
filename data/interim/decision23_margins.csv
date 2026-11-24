@@ -1,0 +1,38 @@
+icpsr,bioname,seat_119th,ai_source_type,ai_call_basis,margin_pp,top1,top1_votes,top2,top2_votes,count_complete,certification,recount_request,final_reason,final_status,rule
+20521,"FOXX, Virginia Ann",NC-5,state,,0.1182,Chuck Hubbard,139769,Virginia Foxx,139439,no,not_shown,True,pending,uncalled,a saved source shows a recount request
+22336,"KILEY, Kevin",CA-3,state,unofficial_state,17.6813,Richard Pan,161427,Kevin Kiley,112919,yes,not_shown,False,lost_general,called,"unofficial, count complete, margin >= 0.5 pp, no recount request"
+22309,"CISCOMANI, Juan",AZ-6,news_reporting_ap,ap_call,,,,,,,,,lost_general,called,AP-cited call
+22570,"GALLAGHER, James",CA-1,state,unofficial_state,17.9624,Mike McGuire,170937,James Gallagher,118879,yes,not_shown,False,lost_general,called,"unofficial, count complete, margin >= 0.5 pp, no recount request"
+29901,"THOMPSON, Michael",CA-4,state,unofficial_state,5.0138,Eric Jones,135357,Mike Thompson,122432,yes,not_shown,False,lost_general,called,"unofficial, count complete, margin >= 0.5 pp, no recount request"
+21307,"VALADAO, David G.",CA-22,state,unofficial_state,36.2972,Randy Villegas,103271,David G. Valadao,48267,yes,not_shown,False,lost_general,called,"unofficial, count complete, margin >= 0.5 pp, no recount request"
+21754,"GOMEZ, Jimmy",CA-34,state,unofficial_state,24.4052,Angela Gonzales-Torres,108765,Jimmy Gomez,66091,yes,not_shown,False,lost_general,called,"unofficial, count complete, margin >= 0.5 pp, no recount request"
+22129,"KIM, Young",CA-40,state,unofficial_state,5.0073,Ken Calvert,131834,Young Kim,119261,yes,not_shown,False,lost_general,called,"unofficial, count complete, margin >= 0.5 pp, no recount request"
+22103,"BOEBERT, Lauren",CO-4,news_reporting_ap,ap_call,,,,,,,,,lost_general,called,AP-cited call
+22509,"CRANK, Jeff",CO-5,news_reporting_ap,ap_call,,,,,,,,,lost_general,called,AP-cited call
+22513,"EVANS, Gabe",CO-8,news_reporting_ap,ap_call,,,,,,,,,lost_general,called,AP-cited call
+22139,"MILLER-MEEKS, Mariannette",IA-1,state,,9.9456,Christina Bohannan,184011,Mariannette Miller-Meeks,150720,no,not_shown,False,pending,uncalled,saved file shows the count is not complete
+22356,"NUNN, Zach",IA-3,state,unofficial_state,7.2915,Sarah Trone Garriott,189435,Zach Nunn,163687,yes,not_shown,False,lost_general,called,"unofficial, count complete, margin >= 0.5 pp, no recount request"
+22151,"SPARTZ, Victoria",IN-5,state,,3.313,J.D. Ford,134511,Victoria Spartz,125884,not_shown,not_shown,False,pending,uncalled,saved file does not show the reporting status
+21142,"HUIZENGA, Bill",MI-4,news_reporting_ap,ap_call,,,,,,,,,lost_general,called,AP-cited call
+22501,"BARRETT, Tom",MI-7,news_reporting_ap,ap_call,,,,,,,,,lost_general,called,AP-cited call
+21337,"WAGNER, Ann",MO-2,none,,,,,,,,,,lost_general,called,unresolved (decision 21)
+21987,"MURPHY, Gregory Francis",NC-3,state,,0.109,Raymond Smith,118434,Greg Murphy,118176,yes,not_shown,False,pending,uncalled,margin 0.109 pp is below 0.5 pp
+22538,"MCDOWELL, Addison P.",NC-6,state,unofficial_state,2.4031,Cyril Jefferson,140707,Addison McDowell,134103,yes,not_shown,False,lost_general,called,"unofficial, count complete, margin >= 0.5 pp, no recount request"
+21346,"HUDSON, Richard",NC-9,state,unofficial_state,2.2956,Richard N. Ojeda II,139456,Richard Hudson,133197,yes,not_shown,False,lost_general,called,"unofficial, count complete, margin >= 0.5 pp, no recount request"
+22530,"KNOTT, Brad",NC-13,state,unofficial_state,2.5484,Paul Barringer,160860,Brad Knott,152865,yes,not_shown,False,lost_general,called,"unofficial, count complete, margin >= 0.5 pp, no recount request"
+22542,"MOORE, Tim",NC-14,state,unofficial_state,2.2702,Lakesha Womack,147920,Tim Moore,141353,yes,not_shown,False,lost_general,called,"unofficial, count complete, margin >= 0.5 pp, no recount request"
+91980,"VAN DREW, Jefferson",NJ-2,news_reporting_ap,ap_call,,,,,,,,,lost_general,called,AP-cited call
+22334,"KEAN, Thomas",NJ-7,news_reporting_ap,ap_call,,,,,,,,,lost_general,called,AP-cited call
+22340,"LAWLER, Michael",NY-17,news_reporting_ap,ap_call,,,,,,,,,lost_general,called,AP-cited call
+22349,"MILLER, Max",OH-7,state,,9.8655,Brian Poindexter (DEM),180614,Max Miller (REP),148177,no,unofficial,False,pending,uncalled,saved file shows the count is not complete
+20342,"TURNER, Michael R.",OH-10,state,,1.6847,Kristina Knickerbocker (DEM),149024,Mike Turner (REP),144086,no,unofficial,False,pending,uncalled,saved file shows the count is not complete
+22162,"CAREY, Mike",OH-15,state,,6.8197,Don Leonard (DEM),149287,Mike Carey (REP),130225,no,unofficial,False,pending,uncalled,saved file shows the count is not complete
+21718,"FITZPATRICK, Brian K.",PA-1,state,,5.755,BOB HARVIE (DEM),189926,BRIAN FITZPATRICK (REP),169255,no,unofficial,False,pending,uncalled,saved file shows the count is not complete
+22533,"MACKENZIE, Ryan",PA-7,state,,12.5767,BOB BROOKS (DEM),166671,RYAN MACKENZIE (REP),129431,no,unofficial,False,pending,uncalled,saved file shows the count is not complete
+22506,"BRESNAHAN, Robert P., Jr.",PA-8,state,,8.9537,PAIGE COGNETTI (DEM),154060,ROB BRESNAHAN JR (REP),128739,no,unofficial,False,pending,uncalled,saved file shows the count is not complete
+21356,"PERRY, Scott",PA-10,state,,10.3715,JANELLE STELSON (DEM),175175,SCOTT PERRY (REP),142253,no,unofficial,False,pending,uncalled,saved file shows the count is not complete
+22315,"DE LA CRUZ, Monica",TX-15,state,unofficial_state,24.6404,BOBBY PULIDO (DEMOCRATIC),126204,MONICA DE LA CRUZ (I) (REPUBLICAN),76305,yes,not_shown,False,lost_general,called,"unofficial, count complete, margin >= 0.5 pp, no recount request"
+20756,"WITTMAN, Robert J.",VA-1,state,unofficial_state,2.9372,Shannon L. Taylor,212154,"Robert J. ""Rob"" Wittman",200047,yes,unofficial,False,lost_general,called,"unofficial, count complete, margin >= 0.5 pp, no recount request"
+22335,"KIGGANS, Jennifer",VA-2,state,unofficial_state,9.1932,Elaine G. Luria,182933,Jen A. Kiggans,152130,yes,unofficial,False,lost_general,called,"unofficial, count complete, margin >= 0.5 pp, no recount request"
+21970,"STEIL, Bryan",WI-1,news_reporting_ap,ap_call,,,,,,,,,lost_general,called,AP-cited call
+22370,"VAN ORDEN, Derrick",WI-3,news_reporting_ap,ap_call,,,,,,,,,lost_general,called,AP-cited call

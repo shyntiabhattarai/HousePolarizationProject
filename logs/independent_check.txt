@@ -1,0 +1,8 @@
+Independent arithmetic check (scripts/independent_check.py; does not import analyze.py)
+inputs: data/processed/analysis_members.csv and data/processed/summary.csv
+
+MATCH  Republican lost_general mean (Q1): independent 0.419608695652 vs summary.csv 0.419608695652 (diff 0.00e+00); sum 9.651000000 / n 23
+MATCH  G0 = R mean - D mean, all analysed: independent 0.918124367449 vs summary.csv 0.918124367449 (diff 0.00e+00); R 0.532068293 (n 205) - D -0.386056075 (n 214)
+MATCH  gap, returning only (all departures removed): independent 0.928629011402 vs summary.csv 0.928629011402 (diff 0.00e+00); R 0.550021277 (n 141) - D -0.378607735 (n 181)
+
+RESULT: all three match to 1e-9

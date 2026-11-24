@@ -1,0 +1,16 @@
+draw_order,icpsr,bioname,state_abbrev,district_code,reason
+1,22332,"JAMES, John",MI,10.0,ran_other_office
+2,21513,"CARTER, Buddy",GA,1.0,ran_other_office
+3,21525,"MOULTON, Seth",MA,6.0,ran_other_office
+4,21116,"WEBSTER, Daniel A.",FL,11.0,retired
+5,22113,"FEENSTRA, Randy",IA,4.0,ran_other_office
+6,22119,"GONZALES, Tony",TX,23.0,resigned_died
+7,21532,"ZINKE, Ryan",MT,1.0,retired
+8,20124,"GRAVES, Samuel",MO,6.0,retired
+9,20952,"CONNOLLY, Gerald E. (Gerry)",VA,11.0,resigned_died
+10,20530,"MCCAUL, Michael T.",TX,10.0,retired
+11,21566,"EVANS, Dwight",PA,3.0,retired
+12,21959,"ROSE, John",TN,6.0,ran_other_office
+13,21333,"BARR, Garland H. (Andy), IV",KY,6.0,ran_other_office
+14,21989,"TIFFANY, Thomas P.",WI,7.0,ran_other_office
+15,20709,"BUCHANAN, Vernon G.",FL,16.0,retired

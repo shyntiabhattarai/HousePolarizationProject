@@ -1,0 +1,152 @@
+
+======================================================================
+STEP A: Load raw file
+======================================================================
+File: data/raw/HSall_members.csv
+Total rows: 51064
+Columns (22):
+  congress
+  chamber
+  icpsr
+  state_icpsr
+  district_code
+  state_abbrev
+  party_code
+  occupancy
+  last_means
+  bioname
+  bioguide_id
+  born
+  died
+  nominate_dim1
+  nominate_dim2
+  nominate_log_likelihood
+  nominate_geo_mean_probability
+  nominate_number_of_votes
+  nominate_number_of_errors
+  conditional
+  nokken_poole_dim1
+  nokken_poole_dim2
+
+======================================================================
+STEP B: Filter to congress == 119 and chamber == 'House'
+======================================================================
+Rows with congress == 119: 557
+  chamber values in those rows: {'House': 452, 'Senate': 104, 'President': 1}
+Rows with congress == 119 AND chamber == 'House': 452
+
+======================================================================
+STEP C: Counts by party_code
+======================================================================
+  party_code 100 = Democrat: 224
+  party_code 200 = Republican: 227
+  party_code 328 = NOT MAPPED: 1
+Members with a party_code other than 100/200: 1 (kept, NOT dropped)
+  icpsr=92336  KILEY, Kevin  (CA-3, party_code=328)
+
+======================================================================
+STEP D: icpsr values appearing more than once
+======================================================================
+Rows whose icpsr appears more than once: 0 (NOT deduplicated)
+
+======================================================================
+STEP E: Missing nominate_dim1
+======================================================================
+Rows with missing nominate_dim1: 0 (NOT imputed)
+
+======================================================================
+STEP F: nominate_number_of_votes < 100 (low-precision scores)
+======================================================================
+Rows with fewer than 100 scaled votes: 13
+  icpsr=20305  GRIJALVA, Raúl M.  (AZ-7, party_code=100)  votes=1
+  icpsr=21981  WALTZ, Michael  (FL-6, party_code=200)  votes=6
+  icpsr=21995  RADEWAGEN, Aumua Amata Coleman  (AS-0, party_code=200)  votes=13
+  icpsr=22572  WAHAB, Aisha  (CA-14, party_code=100)  votes=26
+  icpsr=22571  BLAIR, Everton  (GA-13, party_code=100)  votes=32
+  icpsr=21994  PLASKETT, Stacey E.  (VI-0, party_code=100)  votes=38
+  icpsr=22557  TURNER, Sylvester  (TX-18, party_code=100)  votes=39
+  icpsr=22561  KING-HINDS, Kimberlyn  (MP-0, party_code=200)  votes=61
+  icpsr=22373  MOYLAN, James  (GU-0, party_code=200)  votes=68
+  icpsr=21993  NORTON, Eleanor Holmes  (DC-0, party_code=100)  votes=72
+  icpsr=22560  HERNÁNDEZ, Pablo José  (PR-0, party_code=100)  votes=72
+  icpsr=20952  CONNOLLY, Gerald E. (Gerry)  (VA-11, party_code=100)  votes=72
+  icpsr=22570  GALLAGHER, James  (CA-1, party_code=200)  votes=86
+Rows with missing nominate_number_of_votes: 0
+
+======================================================================
+STEP G: Can the data identify members who left mid-Congress?
+======================================================================
+'occupancy' non-missing in 0 of 452 rows.
+  -> occupancy is empty for the 119th House, so the file CANNOT tell us
+     the order in which members held a seat.
+'died' year >= 2025 (died during the 119th): 4 rows -> flagged left_midterm
+  icpsr=20305  GRIJALVA, Raúl M.  (AZ-7, party_code=100)  died=2025
+  icpsr=21302  LAMALFA, Doug  (CA-1, party_code=200)  died=2026
+  icpsr=22557  TURNER, Sylvester  (TX-18, party_code=100)  died=2025
+  icpsr=20952  CONNOLLY, Gerald E. (Gerry)  (VA-11, party_code=100)  died=2025
+Rows in a seat (state_abbrev + district_code) held by more than one member: 22 -> flagged shared_seat
+  icpsr=20305  GRIJALVA, Raúl M.  (AZ-7, party_code=100)
+  icpsr=22565  GRIJALVA, Adelita S.  (AZ-7, party_code=100)
+  icpsr=21302  LAMALFA, Doug  (CA-1, party_code=200)
+  icpsr=22570  GALLAGHER, James  (CA-1, party_code=200)
+  icpsr=22336  KILEY, Kevin  (CA-3, party_code=200)
+  icpsr=92336  KILEY, Kevin  (CA-3, party_code=328)
+  icpsr=21306  SWALWELL, Eric  (CA-14, party_code=100)
+  icpsr=22572  WAHAB, Aisha  (CA-14, party_code=100)
+  icpsr=21981  WALTZ, Michael  (FL-6, party_code=200)
+  icpsr=22562  FINE, Randy  (FL-6, party_code=200)
+  icpsr=20321  SCOTT, David  (GA-13, party_code=100)
+  icpsr=22571  BLAIR, Everton  (GA-13, party_code=100)
+  icpsr=22121  GREENE, Marjorie Taylor  (GA-14, party_code=200)
+  icpsr=22568  FULLER, Clay  (GA-14, party_code=200)
+  icpsr=21964  SHERRILL, Mikie  (NJ-11, party_code=100)
+  icpsr=22569  MEJIA, Analilia  (NJ-11, party_code=100)
+  icpsr=21926  GREEN, Mark E.  (TN-7, party_code=200)
+  icpsr=22566  VAN EPPS, MATT  (TN-7, party_code=200)
+  icpsr=22557  TURNER, Sylvester  (TX-18, party_code=100)
+  icpsr=22567  MENEFEE, Christian D.  (TX-18, party_code=100)
+  icpsr=20952  CONNOLLY, Gerald E. (Gerry)  (VA-11, party_code=100)
+  icpsr=22564  WALKINSHAW, James R.  (VA-11, party_code=100)
+
+CONCLUSION: The file identifies DEATHS during the Congress (via 'died').
+It has NO column for resignations or end-of-service dates, so it CANNOT
+identify members who resigned. shared_seat shows a seat changed hands,
+but the file cannot say which member left or why.
+
+======================================================================
+STEP H: PROVISIONAL BASELINE (decisions pending)
+======================================================================
+Every 119th House row with a non-missing nominate_dim1, party_code 100 or 200.
+Nothing removed for duplicates, low votes, or mid-Congress departure.
+  Democrat mean nominate_dim1:   -0.3887   (n = 224)
+  Republican mean nominate_dim1: 0.5226   (n = 227)
+  Gap (R mean - D mean):         0.9112
+
+======================================================================
+STEP I: Write processed file
+======================================================================
+Wrote 452 rows to data/processed/house119_baseline.csv
+  rows flagged duplicate_icpsr: 0
+  rows flagged missing_score: 0
+  rows flagged low_votes: 13
+  rows flagged left_midterm: 4
+  rows flagged shared_seat: 22
+  rows flagged non_dr_party: 1
+  rows with no flags: 424
+
+======================================================================
+STEP J: ROW ACCOUNTING
+======================================================================
+Rows in raw file:                          51064
+  removed: congress != 119:                50507
+Rows after congress == 119:                 557
+  removed: chamber != 'House' (Senate/President): 105
+Rows after chamber == 'House':              452
+  removed after that: 0 (nothing dropped, only flagged)
+Rows in data/processed/house119_baseline.csv: 452
+
+Rows used in the provisional means (step H):
+  Democrats 224 + Republicans 227 = 451
+  not used: missing nominate_dim1: 0
+  not used: scored but party_code not 100/200: 1
+  check: 224 + 227 + 0 + 1 = 452 (should equal 452)

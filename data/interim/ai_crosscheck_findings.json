@@ -1,0 +1,1551 @@
+{
+ "what": "Raw findings of the AI cross-check (decision 20), produced by Claude Code subagents on 2026-11-23. crosscheck_rows: one finding per check_order 1-7 row; files_saved: every source file they kept; adversarial_verdicts: independent re-verification of 30 findings against the saved files.",
+ "crosscheck_rows": [
+  {
+   "icpsr": "20521",
+   "bioname": "FOXX, Virginia Ann",
+   "outcome": "corrected",
+   "source_type": "state",
+   "source_url": "https://er.ncsbe.gov/enr/20261103/data/results_0.txt ; https://dl.ncsbe.gov/Legal/2026%20General%20Election/Recount%20Requests/5th%20Congressional%20District_Foxx_Recount%20Request.pdf",
+   "source_file": "data/sources/2026-11-23_nc-ncsbe-statewide-results-20261103.txt ; data/sources/2026-11-23_nc-ncsbe-foxx-recount-request-cd5.pdf",
+   "quote": "results_0.txt: US HOUSE OF REPRESENTATIVES DISTRICT 05 (VOTE FOR 1) ... \"bnm\":\"Chuck Hubbard\",\"dtx\":\"\",\"pty\":\"DEM\",\"vct\":\"139769\",\"pct\":\"0.4874\",\"prt\":\"230\",\"ptl\":\"230\" | \"bnm\":\"Virginia Foxx\",\"dtx\":\"\",\"pty\":\"REP\",\"vct\":\"139439\",\"pct\":\"0.4862\",\"prt\":\"230\",\"ptl\":\"230\" || recount PDF (Nov 17, 2026): \"Following the completion of the canvasses for all counties in CD05, the margin between me and my opponent, Chuck Hubbard, stands at 331 votes ... I hereby formally request a recount\"",
+   "what_source_says": "NCSBE results data (all 230 of 230 precincts reporting) shows Foxx trailing Hubbard 139,439 to 139,769 (330 votes). The recount request Foxx filed on Nov 17, 2026, posted on the NCSBE site, puts the post-canvass margin at 331 votes and formally requests a recount. The race was in recount and not certified as of the save date.",
+   "proposed_changes": "reason: lost_general -> pending; status: called -> uncalled (decision 12). Add to notes: 'Hubbard (D) leads Foxx by 330 votes per NCSBE results data (331 per Foxx's Nov 17 recount request); recount requested Nov 17, 2026; state certification meeting set for Nov 24, 2026.'",
+   "notes": "No AP call found for the 2026 race. A web-search snippet (not saved, not evidence) said AP had not called it, and the draft's own notes say the results-page timeline has no call entry. The NCSBE results file has no winner or certified flag, and its HTTP Last-Modified header was 2026-11-23 23:00 GMT. Unsaved context: an NCSBE press release (Nov 20) sets the canvass/certification of the Nov 3 election for the Nov 24 board meeting. If the orchestrator wants that as evidence it should be saved separately. Do not treat Foxx as a departure until certification.",
+   "group": "NC+CT"
+  },
+  {
+   "icpsr": "21987",
+   "bioname": "MURPHY, Gregory Francis",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://er.ncsbe.gov/enr/20261103/data/results_0.txt",
+   "source_file": "data/sources/2026-11-23_nc-ncsbe-statewide-results-20261103.txt",
+   "quote": "US HOUSE OF REPRESENTATIVES DISTRICT 03 (VOTE FOR 1) ... \"bnm\":\"Raymond Smith\",\"dtx\":\"\",\"pty\":\"DEM\",\"vct\":\"118434\",\"pct\":\"0.4943\",\"prt\":\"190\",\"ptl\":\"190\" | \"bnm\":\"Greg Murphy\",\"dtx\":\"\",\"pty\":\"REP\",\"vct\":\"118176\",\"pct\":\"0.4932\",\"prt\":\"190\",\"ptl\":\"190\"",
+   "what_source_says": "NCSBE results data, NC-3 general, 190 of 190 precincts reporting: Raymond Smith (DEM) 118,434 (49.43%), Greg Murphy (REP) 118,176 (49.32%). Murphy trails by 258 votes.",
+   "proposed_changes": "",
+   "notes": "Very close margin (0.11%, within NC's 1% recount threshold). These are NCSBE results-page totals and carry no certified or winner flag. Statewide certification is scheduled for Nov 24. Unsaved observation: the NCSBE 'Recount Requests' folder listing showed requests for CD5 (Foxx) and CD10 (Bell) but none for CD3. A search snippet (not evidence) said Murphy conceded. Suggest the orchestrator flag this row as close and unofficial pending Nov 24 certification.",
+   "group": "NC+CT"
+  },
+  {
+   "icpsr": "22538",
+   "bioname": "MCDOWELL, Addison P.",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://er.ncsbe.gov/enr/20261103/data/results_0.txt",
+   "source_file": "data/sources/2026-11-23_nc-ncsbe-statewide-results-20261103.txt",
+   "quote": "US HOUSE OF REPRESENTATIVES DISTRICT 06 (VOTE FOR 1) ... \"bnm\":\"Cyril Jefferson\",\"dtx\":\"\",\"pty\":\"DEM\",\"vct\":\"140707\",\"pct\":\"0.5120\",\"prt\":\"195\",\"ptl\":\"195\" | \"bnm\":\"Addison McDowell\",\"dtx\":\"\",\"pty\":\"REP\",\"vct\":\"134103\",\"pct\":\"0.4880\",\"prt\":\"195\",\"ptl\":\"195\"",
+   "what_source_says": "NCSBE results data, NC-6 general, 195 of 195 precincts reporting: Cyril Jefferson (DEM) 140,707 (51.20%), Addison McDowell (REP) 134,103 (48.80%). McDowell lost by 6,604 votes.",
+   "proposed_changes": "",
+   "notes": "Unofficial NCSBE results totals (no certified or winner field). Statewide certification is set for Nov 24, 2026. The margin is above the 1% recount threshold.",
+   "group": "NC+CT"
+  },
+  {
+   "icpsr": "21346",
+   "bioname": "HUDSON, Richard",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://er.ncsbe.gov/enr/20261103/data/results_0.txt",
+   "source_file": "data/sources/2026-11-23_nc-ncsbe-statewide-results-20261103.txt",
+   "quote": "US HOUSE OF REPRESENTATIVES DISTRICT 09 (VOTE FOR 1) ... \"bnm\":\"Richard N. Ojeda II\",\"dtx\":\"\",\"pty\":\"DEM\",\"vct\":\"139456\",\"pct\":\"0.5115\",\"prt\":\"169\",\"ptl\":\"169\" | \"bnm\":\"Richard Hudson\",\"dtx\":\"\",\"pty\":\"REP\",\"vct\":\"133197\",\"pct\":\"0.4885\",\"prt\":\"169\",\"ptl\":\"169\"",
+   "what_source_says": "NCSBE results data, NC-9 general, 169 of 169 precincts reporting: Richard N. Ojeda II (DEM) 139,456 (51.15%), Richard Hudson (REP) 133,197 (48.85%). Hudson lost by 6,259 votes.",
+   "proposed_changes": "",
+   "notes": "Unofficial NCSBE results totals (no certified or winner field). Statewide certification is set for Nov 24, 2026. The margin is above the 1% recount threshold.",
+   "group": "NC+CT"
+  },
+  {
+   "icpsr": "22530",
+   "bioname": "KNOTT, Brad",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://er.ncsbe.gov/enr/20261103/data/results_0.txt",
+   "source_file": "data/sources/2026-11-23_nc-ncsbe-statewide-results-20261103.txt",
+   "quote": "US HOUSE OF REPRESENTATIVES DISTRICT 13 (VOTE FOR 1) ... \"bnm\":\"Paul Barringer\",\"dtx\":\"\",\"pty\":\"DEM\",\"vct\":\"160860\",\"pct\":\"0.5055\",\"prt\":\"140\",\"ptl\":\"140\" | \"bnm\":\"Brad Knott\",\"dtx\":\"\",\"pty\":\"REP\",\"vct\":\"152865\",\"pct\":\"0.4804\",\"prt\":\"140\",\"ptl\":\"140\"",
+   "what_source_says": "NCSBE results data, NC-13 general, 140 of 140 precincts reporting: Paul Barringer (DEM) 160,860 (50.55%), Brad Knott (REP) 152,865 (48.04%). Knott lost by 7,995 votes.",
+   "proposed_changes": "",
+   "notes": "Unofficial NCSBE results totals (no certified or winner field). Statewide certification is set for Nov 24, 2026. The margin is above the 1% recount threshold.",
+   "group": "NC+CT"
+  },
+  {
+   "icpsr": "22542",
+   "bioname": "MOORE, Tim",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://er.ncsbe.gov/enr/20261103/data/results_0.txt",
+   "source_file": "data/sources/2026-11-23_nc-ncsbe-statewide-results-20261103.txt",
+   "quote": "US HOUSE OF REPRESENTATIVES DISTRICT 14 (VOTE FOR 1) ... \"bnm\":\"Lakesha Womack\",\"dtx\":\"\",\"pty\":\"DEM\",\"vct\":\"147920\",\"pct\":\"0.5114\",\"prt\":\"142\",\"ptl\":\"142\" | \"bnm\":\"Tim Moore\",\"dtx\":\"\",\"pty\":\"REP\",\"vct\":\"141353\",\"pct\":\"0.4886\",\"prt\":\"142\",\"ptl\":\"142\"",
+   "what_source_says": "NCSBE results data, NC-14 general, 142 of 142 precincts reporting: Lakesha Womack (DEM) 147,920 (51.14%), Tim Moore (REP) 141,353 (48.86%). Moore lost by 6,567 votes.",
+   "proposed_changes": "",
+   "notes": "Unofficial NCSBE results totals (no certified or winner field). Statewide certification is set for Nov 24, 2026. The margin is above the 1% recount threshold.",
+   "group": "NC+CT"
+  },
+  {
+   "icpsr": "29908",
+   "bioname": "LARSON, John B.",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://electionhistory.ct.gov/api/download_search.csv?search=%7B%22global%22%3A%7B%22years%22%3A%7B%22from%22%3A2026%2C%22to%22%3A2026%7D%7D%2C%22contests%22%3A%7B%22candidates%22%3A%5B%5D%2C%22offices%22%3A%5B%7B%22id%22%3A330%7D%5D%2C%22divisions%22%3A%5B%5D%7D%2C%22voterStats%22%3Afalse%2C%22stages%22%3A%5B%5D%2C%22specialElectionsOnly%22%3Afalse%7D",
+   "source_file": "data/sources/2026-11-23_ct-electionhistory-2026-rep-in-congress.csv",
+   "quote": "44060,599,2026-08-11T00:00:00Z,Primary,Democratic,,,330,Representative in Congress,,4245,Representative in Congress District,1,2487,Luke Bronin,,,672,City/Town,Hartford,Election Day,true,1,1,Democratic,2602\n44060,599,2026-08-11T00:00:00Z,Primary,Democratic,,,330,Representative in Congress,,4245,Representative in Congress District,1,9483,John B. Larson,,,672,City/Town,Hartford,Election Day,false,1,1,Democratic,1500",
+   "what_source_says": "The CT Secretary of the State election database (electionhistory.ct.gov) export has town-by-town rows for the Aug 11, 2026 Democratic primary for Representative in Congress, District 1. Summed over City/Town rows: Luke Bronin 29,219; John B. Larson 18,221; Jillian Gilchrest 4,468; Ruth Fortune 2,568 (total 54,476). Larson lost the primary.",
+   "proposed_changes": "",
+   "notes": "The quoted lines are per-town rows, so the is_winner field is per division. The district-wide totals were computed by summing the City/Town rows of the saved CSV (Polling Place rows duplicate the same votes). The CSV holds only the 2026 primary (no general-election rows yet).",
+   "group": "NC+CT"
+  },
+  {
+   "icpsr": "22167",
+   "bioname": "FINSTAD, Brad",
+   "outcome": "confirmed",
+   "source_type": "news_reporting_ap",
+   "source_url": "https://www.kttc.com/2026/11/09/why-ap-has-not-called-minnesotas-1st-congressional-district-race/",
+   "source_file": "data/sources/2026-11-23_mn-kttc-why-ap-has-not-called-cd1.html",
+   "quote": "Why the AP has not called Minnesota's 1st Congressional District race AP estimates 99% of votes counted as DFL challenger Jake Johnson leads Republican Rep. Brad Finstad by 322 votes ... Published : Nov. 9, 2026 at 4:32 PM CST ... Nearly one week after the midterm election, The Associated Press has not called the race for Minnesota's 1st Congressional District.",
+   "what_source_says": "As of Nov 9, 2026 the AP had not called MN-1; Johnson (DFL) led incumbent Finstad (R) by 322 votes with about 99% counted. The state results file (data/sources/2026-11-23_mn-sos-ushouse-results.txt) shows the current count: 'U.S. Representative District 1;1;0401;Jake Johnson;;;DFL;750;750;163065;49.99' and '...0302;Brad Finstad;;;R;750;750;162741;49.89', a 324-vote margin with all 750 precincts reporting. The state file has no call or certification marker.",
+   "proposed_changes": "none (reason=pending, status=uncalled stays)",
+   "notes": "I used the AP-reporting news article because the saved state file gives vote totals but says nothing about whether the race is called or certified. The SOS recount-updates page (sos.mn.gov) returned a Radware CAPTCHA, so I deleted it. The AP article is dated Nov 9, 14 days before this check, so the call status could have changed since. News from Nov 19 (KTTC, Fox 9, MPR) that I did not save as evidence because it does not cite AP reports that the canvassing board certified Johnson ahead by 324 and that Finstad requested a recount, expected the week of Nov 30. So it is still pending in practice. Finstad trails in every saved source, so if the result stands this becomes lost_general.",
+   "group": "CA+MN"
+  },
+  {
+   "icpsr": "22336",
+   "bioname": "KILEY, Kevin",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://api.sos.ca.gov/returns/us-rep/district/6",
+   "source_file": "data/sources/2026-11-23_ca-sos-api-usrep-district-6.json",
+   "quote": "\"raceTitle\": \"U.S. House of Representatives District 6 - Districtwide Results\", \"Reporting\": \"100% (309 of 309) precincts reporting\", \"ReportingTime\": \"November 23, 2026, 1:20 p.m.\" ... \"Name\": \"Richard Pan\", \"Party\": \"Dem\", \"Votes\": \"161,427\", \"Percent\": \"58.8\" ... \"Name\": \"Kevin Kiley\", \"Party\": \"NPP\", \"Votes\": \"112,919\", \"Percent\": \"41.2\"",
+   "what_source_says": "In CA-6 (2026 map), Kevin Kiley (NPP) trails Richard Pan (Dem) 41.2% to 58.8% with 100% of precincts reporting.",
+   "proposed_changes": "none",
+   "notes": "These are California SOS semi-official returns; the state certifies on Dec 11, 2026, per search results. The JSON sets \"incumbent\": false for every candidate, which is an API quirk. The ballot district (6) and party label (NPP) match the draft notes.",
+   "group": "CA+MN"
+  },
+  {
+   "icpsr": "22570",
+   "bioname": "GALLAGHER, James",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://api.sos.ca.gov/returns/us-rep/district/1",
+   "source_file": "data/sources/2026-11-23_ca-sos-api-usrep-district-1.json",
+   "quote": "\"raceTitle\": \"U.S. House of Representatives District 1 - Districtwide Results\", \"Reporting\": \"100% (788 of 788) precincts reporting\", \"ReportingTime\": \"November 23, 2026, 1:20 p.m.\" ... \"Name\": \"Mike McGuire\", \"Party\": \"Dem\", \"Votes\": \"170,937\", \"Percent\": \"59.0\" ... \"Name\": \"James Gallagher\", \"Party\": \"Rep\", \"Votes\": \"118,879\", \"Percent\": \"41.0\"",
+   "what_source_says": "In CA-1, James Gallagher (Rep) trails Mike McGuire (Dem) 41.0% to 59.0% with 100% of precincts reporting.",
+   "proposed_changes": "none",
+   "notes": "These are California SOS semi-official returns, not yet certified (certification is Dec 11, 2026).",
+   "group": "CA+MN"
+  },
+  {
+   "icpsr": "29901",
+   "bioname": "THOMPSON, Michael",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://api.sos.ca.gov/returns/us-rep/district/4",
+   "source_file": "data/sources/2026-11-23_ca-sos-api-usrep-district-4.json",
+   "quote": "\"raceTitle\": \"U.S. House of Representatives District 4 - Districtwide Results\", \"Reporting\": \"100% (500 of 500) precincts reporting\", \"ReportingTime\": \"November 23, 2026, 1:20 p.m.\" ... \"Name\": \"Eric Jones\", \"Party\": \"Dem\", \"Votes\": \"135,357\", \"Percent\": \"52.5\" ... \"Name\": \"Mike Thompson\", \"Party\": \"Dem\", \"Votes\": \"122,432\", \"Percent\": \"47.5\"",
+   "what_source_says": "In CA-4, a same-party (Dem vs Dem) general, Mike Thompson trails Eric Jones 47.5% to 52.5% with 100% of precincts reporting.",
+   "proposed_changes": "none",
+   "notes": "These are California SOS semi-official returns, not yet certified. The file names him 'Mike Thompson', which matches Michael Thompson (CA-4, Dem). The 12,925-vote margin is the narrowest of the CA rows.",
+   "group": "CA+MN"
+  },
+  {
+   "icpsr": "21307",
+   "bioname": "VALADAO, David G.",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://api.sos.ca.gov/returns/us-rep/district/22",
+   "source_file": "data/sources/2026-11-23_ca-sos-api-usrep-district-22.json",
+   "quote": "\"raceTitle\": \"U.S. House of Representatives District 22 - Districtwide Results\", \"Reporting\": \"100% (575 of 575) precincts reporting\", \"ReportingTime\": \"November 23, 2026, 1:20 p.m.\" ... \"Name\": \"Randy Villegas\", \"Party\": \"Dem\", \"Votes\": \"103,271\", \"Percent\": \"68.1\" ... \"Name\": \"David G. Valadao\", \"Party\": \"Rep\", \"Votes\": \"48,267\", \"Percent\": \"31.9\"",
+   "what_source_says": "In CA-22, David G. Valadao (Rep) trails Randy Villegas (Dem) 31.9% to 68.1% with 100% of precincts reporting.",
+   "proposed_changes": "none",
+   "notes": "These are California SOS semi-official returns, not yet certified (certification is Dec 11, 2026).",
+   "group": "CA+MN"
+  },
+  {
+   "icpsr": "21754",
+   "bioname": "GOMEZ, Jimmy",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://api.sos.ca.gov/returns/us-rep/district/34",
+   "source_file": "data/sources/2026-11-23_ca-sos-api-usrep-district-34.json",
+   "quote": "\"raceTitle\": \"U.S. House of Representatives District 34 - Districtwide Results\", \"Reporting\": \"100% (116 of 116) precincts reporting\", \"ReportingTime\": \"November 23, 2026, 1:20 p.m.\" ... \"Name\": \"Jimmy Gomez\", \"Party\": \"Dem\", \"Votes\": \"66,091\", \"Percent\": \"37.8\" ... \"Name\": \"Angela Gonzales-Torres\", \"Party\": \"Dem\", \"Votes\": \"108,765\", \"Percent\": \"62.2\"",
+   "what_source_says": "In CA-34, a same-party (Dem vs Dem) general, Jimmy Gomez trails Angela Gonzales-Torres 37.8% to 62.2% with 100% of precincts reporting.",
+   "proposed_changes": "none",
+   "notes": "These are California SOS semi-official returns, not yet certified (certification is Dec 11, 2026).",
+   "group": "CA+MN"
+  },
+  {
+   "icpsr": "22129",
+   "bioname": "KIM, Young",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://api.sos.ca.gov/returns/us-rep/district/40",
+   "source_file": "data/sources/2026-11-23_ca-sos-api-usrep-district-40.json",
+   "quote": "\"raceTitle\": \"U.S. House of Representatives District 40 - Districtwide Results\", \"Reporting\": \"100% (558 of 558) precincts reporting\", \"ReportingTime\": \"November 23, 2026, 1:20 p.m.\" ... \"Name\": \"Ken Calvert\", \"Party\": \"Rep\", \"Votes\": \"131,834\", \"Percent\": \"52.5\" ... \"Name\": \"Young Kim\", \"Party\": \"Rep\", \"Votes\": \"119,261\", \"Percent\": \"47.5\"",
+   "what_source_says": "In CA-40, a same-party (Rep vs Rep) general and a member-vs-member race, Young Kim trails Ken Calvert 47.5% to 52.5% with 100% of precincts reporting.",
+   "proposed_changes": "none",
+   "notes": "These are California SOS semi-official returns, not yet certified (certification is Dec 11, 2026). The file confirms the draft's member_vs_member note (opponent Ken Calvert) and same_party_general.",
+   "group": "CA+MN"
+  },
+  {
+   "icpsr": "20529",
+   "bioname": "GREEN, Al",
+   "outcome": "confirmed",
+   "source_type": "news_reporting_ap",
+   "source_url": "https://abc13.com/post/rep-christian-menefee-wins-democratic-primary-18th-house-district-texas-defeating-al-green-ap-projects/19177923/",
+   "source_file": "data/sources/2026-11-23_tx-abc13-green-runoff-ap.html",
+   "quote": "Rep. Menefee wins Democratic primary for 18th House District in Texas, beats Rep. Green, AP projects By Pooja Lodhia Wednesday, May 27, 2026 ... HOUSTON, Texas (KTRK) -- The Associated Press has projected that Christian Menefee has won the District 18 Congressional seat, defeating longtime Congressman Al Green in a race shaped by redistricting and defined by age and experience.",
+   "what_source_says": "AP projected Christian Menefee defeated Rep. Al Green in the 2026 Democratic primary (runoff) for the redrawn TX-18. The Texas SOS general page (data/sources/2026-11-23_tx-sos-general-results.html) also shows District 18 general was Whitfield (R) vs Christian Dashaun Menefee (D), with Green on no Nov ballot.",
+   "proposed_changes": "none",
+   "notes": "State source attempted first: electionresults.sos.state.tx.us/results.html now shows only the Nov 3 general (same URL earlier held the May 26 runoff); results.texas-election.com static data stops at 2024; the SOS archive page links 2025-current results to goelect.txelections.civixapps.com (non-.gov vendor host, JS app), so not used. Harris County results host is not .gov. AP fallback used per decision 22.",
+   "group": "TX+IN"
+  },
+  {
+   "icpsr": "22151",
+   "bioname": "SPARTZ, Victoria",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://enr.indianavoters.in.gov/site/data/OffCatC_1005_B.json",
+   "source_file": "data/sources/2026-11-23_in-enr-ushouse-general.json",
+   "quote": "\"OFFICE_TITLE\":\"United States Representative, Fifth District\",\"NumofSeats\":\"1\",\"BALLOT_ORDER\":\"100\",\"Candidates\":{\"Candidate\":[{\"NAME_ON_BALLOT\":\"J.D. Ford\",\"isWinner\":\"T\",\"POLITICALPARTYID\":\"1021\",\"PARTY\":\"D\",...\"TOTAL\":134511,...},{\"NAME_ON_BALLOT\":\"Victoria Spartz\",\"isWinner\":\"F\",\"POLITICALPARTYID\":\"1022\",\"PARTY\":\"R\",...\"TOTAL\":125884,...}]}",
+   "what_source_says": "Indiana Election Division ENR statewide summary for the Nov 3, 2026 general: IN-5 J.D. Ford (D) 134,511 marked winner; Victoria Spartz (R) 125,884 not winner.",
+   "proposed_changes": "none",
+   "notes": "This is the raw JSON data file behind the JS app at enr.indianavoters.in.gov (state .gov host). WriteTime 2026-11-19T10:02:55; site settings.json shows CurrentElection 11/03/2026 and Certified \"F\" (unofficial, not yet certified), but winner flag is set.",
+   "group": "TX+IN"
+  },
+  {
+   "icpsr": "22315",
+   "bioname": "DE LA CRUZ, Monica",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://electionresults.sos.state.tx.us/results.html",
+   "source_file": "data/sources/2026-11-23_tx-sos-general-results.html",
+   "quote": "2026 NOVEMBER GENERAL ELECTION (Updated 11/04/2026 04:59 PM) ... U. S. REPRESENTATIVE DISTRICT 15 Polling Locations Reporting: 100% Party Candidate Ballots Cast REPUBLICAN MONICA DE LA CRUZ (I) 76,305 DEMOCRATIC BOBBY PULIDO 126,204",
+   "what_source_says": "Texas SOS results for the Nov 3, 2026 general: TX-15 incumbent Monica De La Cruz (R) 76,305 vs Bobby Pulido (D) 126,204, 100% of polling locations reporting.",
+   "proposed_changes": "none",
+   "notes": "Page has no explicit winner mark; loss inferred from vote totals at 100% reporting (about 50k-vote margin). Unofficial election-night totals updated 11/04/2026.",
+   "group": "TX+IN"
+  },
+  {
+   "icpsr": "21911",
+   "bioname": "CRENSHAW, Daniel",
+   "outcome": "confirmed",
+   "source_type": "news_reporting_ap",
+   "source_url": "https://www.yahoo.com/news/articles/rep-dan-crenshaw-loses-gop-065643307.html",
+   "source_file": "data/sources/2026-11-23_tx-usatoday-yahoo-crenshaw-primary-ap.html",
+   "quote": "Rep. Dan Crenshaw loses to GOP primary challenger Steve Toth in Texas Terry Collins, USA TODAY Updated Wed, March 4, 2026 ... Texas state Rep. Steve Toth pulled off an upset win in the Republican congressional primary over four-term Rep. Dan Crenshaw , NBC News and the Associated Press reported ... Toth declared victory on March 3 over the incumbent Crenshaw in Texas' newly mapped 2nd Congressional District.",
+   "what_source_says": "USA Today (syndicated on Yahoo) reports, citing NBC News and the Associated Press, that Steve Toth defeated Rep. Dan Crenshaw in the March 3, 2026 TX-2 Republican primary. Texas SOS general page shows TX-2 general was Steve Toth (R) vs Shaun Finnie (D); Crenshaw on no Nov ballot.",
+   "proposed_changes": "none",
+   "notes": "No .gov state primary results page obtainable (same SOS issues as Green row). The article names AP (jointly with NBC) as reporting the result; reviewer may judge whether 'NBC News and the Associated Press reported' satisfies decision 22's 'naming AP as the caller'.",
+   "group": "TX+IN"
+  },
+  {
+   "icpsr": "22528",
+   "bioname": "JOHNSON, Julie",
+   "outcome": "confirmed",
+   "source_type": "news_reporting_ap",
+   "source_url": "https://www.texastribune.org/2026/05/26/texas-colin-allred-julie-johnson-congress-district-33-democratic-primary-runoff/",
+   "source_file": "data/sources/2026-11-23_tx-txtribune-johnson-runoff-ap.html",
+   "quote": "Colin Allred tops Julie Johnson in redistricting-driven runoff battle of Dallas Democrats by Olivia Borgula, The Texas Tribune May 26, 2026 Former Rep. Colin Allred defeated his successor in Congress, Rep. Julie Johnson, in the Democratic runoff to represent Texas' Dallas-centered congressional district, according to the Associated Press.",
+   "what_source_says": "Per AP, Colin Allred defeated Rep. Julie Johnson in the May 26, 2026 Democratic primary runoff (redrawn TX-33). Texas SOS general page shows TX-33 general was Gillespie (R) vs Colin Allred (D); Julie Johnson on no Nov ballot.",
+   "proposed_changes": "none",
+   "notes": "119th district 32; 2026 ballot district was TX-33 (redistricting). No .gov state primary-runoff page obtainable (see Green row). AP fallback per decision 22.",
+   "group": "TX+IN"
+  },
+  {
+   "icpsr": "20530",
+   "bioname": "MCCAUL, Michael T.",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://www.burlesoncountytx.gov/page/open/2806/0/REP%20ELECTION-UNOFFICIAL-RESULT-REPORT_52622_1772604900723.pdf",
+   "source_file": "data/sources/2026-11-23_tx-burleson-county-rep-primary.pdf",
+   "quote": "Election Unofficial Results Report | 2026 REPUBLICAN PRIMARY ELECTION | March 03, 2026 | Texas Secretary of State ... U. S. REPRESENTATIVEDISTRICT 10 | CHRIS GOBER ... | JENNY GARCIA SHARON ... | SCOTT MACLEOD ... | ROB ALTMAN ... | BRANDON HAWBAKER ... | JEREMY STORY ... | KARA KING ... | JESSICA KARLSRUHER ... | BEN BIUS ... | ROBERT BROWN ...",
+   "what_source_says": "The 2026 Republican primary ballot for U.S. Representative District 10 (Texas SOS-format report, Burleson County) lists ten candidates, and McCaul is not among them. The Texas SOS Nov 3 general page (data/sources/2026-11-23_tx-sos-general-results.html) shows District 10 as Chris Gober (R) 161,425 vs Caitlin Rourk (D) 138,832, and the name MCCAUL appears nowhere on that statewide page.",
+   "proposed_changes": "none",
+   "notes": "The primary PDF is on a county .gov host, in the Texas SOS report format. It is not on the SOS site itself. I extracted its text by decoding the PDF streams with python -I because no PDF tool is installed, so the quote's spacing comes from that decoding. Taken together, the two files show he did not run for the House in 2026. Neither file states a reason (retirement), and no news source was used.",
+   "group": "TX+IN"
+  },
+  {
+   "icpsr": "22119",
+   "bioname": "GONZALES, Tony",
+   "outcome": "confirmed",
+   "source_type": "federal_gov",
+   "source_url": "https://clerk.house.gov/Members/ViewVacancies",
+   "source_file": "data/sources/2026-11-23_tx-clerk-house-vacancies.html",
+   "quote": "Vacancies of the 119th Congress Session 2 ... Texas – 23rd District Office of the Twenty-Third Congressional District of Texas Resigned April 14, 2026 Rep. Tony Gonzales Special Election Date TBD Texas Secretary of State",
+   "what_source_says": "House Clerk vacancy list: TX-23, Rep. Tony Gonzales resigned April 14, 2026, and no special election date has been set.",
+   "proposed_changes": "none",
+   "notes": "federal_gov is allowed for resigned_died rows. The Texas SOS Nov 3 general page shows the TX-23 regular general as Herrera (R) vs Padilla Stout (D) vs Mendoza (I), with no unexpired-term special on it.",
+   "group": "TX+IN"
+  },
+  {
+   "icpsr": "22337",
+   "bioname": "LALOTA, Nicholas",
+   "outcome": "did_not_leave",
+   "source_type": "news_reporting_ap",
+   "source_url": "https://www.heraldbulletin.com/news/nation_world/republican-nicholas-lalota-wins-reelection-to-u-s-house-in-new-yorks-1st-congressional-district/article_dc4b5dd0-b662-5494-8c00-969cee5a7254.html",
+   "source_file": "data/sources/2026-11-23_ny-heraldbulletin-ny1-lalota-ap-racecall.html",
+   "quote": "AP Republican Nicholas LaLota wins reelection to U.S. House in New York's 1st Congressional District AP Nov 5, 2026 ... WASHINGTON (AP) — Republican Nicholas LaLota wins reelection to U.S. House in New York's 1st Congressional District. Copyright 2026 The Associated Press. All rights reserved.",
+   "what_source_says": "AP's race-call bulletin, dated Nov 5, 2026 and carried by the Herald Bulletin, says LaLota (R) won re-election in NY-1. So the race was called, and the incumbent won.",
+   "proposed_changes": "Remove LaLota from the departures list (did_not_leave). He won re-election per AP's race call of Nov 5, 2026. The row's reason=pending / status=uncalled no longer applies.",
+   "notes": "Please review the attribution. The bulletin is AP's own wire item: AP byline, 'WASHINGTON (AP)' dateline and AP copyright line. It does not contain the words 'AP declared' or 'called'. The NY state sites (elections.ny.gov, nyenr.elections.ny.gov, publicreporting.elections.ny.gov) all returned a Cloudflare 403 JS challenge, so no state page could be saved. An NBC NY page dated Nov 4 described the race as uncalled by NBC's Decision Desk. That is not an AP source and was not kept. Gallant's concession was reported by the Advocate (not AP, not kept).",
+   "group": "NY+MA+MT"
+  },
+  {
+   "icpsr": "22117",
+   "bioname": "GARBARINO, Andrew R.",
+   "outcome": "did_not_leave",
+   "source_type": "news_reporting_ap",
+   "source_url": "https://www.longislandpress.com/2026/11/06/halpin-refuses-to-concede-cd2-race-to-garbarino/",
+   "source_file": "data/sources/2026-11-23_ny-longislandpress-ny2-garbarino-ap.html",
+   "quote": "U.S. Rep. Andrew Garbarino (R-Sayville) declared victory on election night, but Halpin wants to make sure every paper ballot is counted, despite the fact that the Associated Press declared the incumbent the winner in New York's 2nd Congressional District, which runs along the South Shore from Mastic Beach to Massapequa.",
+   "what_source_says": "Long Island Press (Nov 6, 2026) says the Associated Press declared incumbent Garbarino the winner in NY-2. Halpin had not conceded.",
+   "proposed_changes": "Remove Garbarino from the departures list (did_not_leave). He won re-election per the AP call. The row's reason=pending / status=uncalled no longer applies.",
+   "notes": "The NY state election sites returned a Cloudflare 403 challenge, so no state source could be saved. A matching AP wire bulletin also exists, dated Nov 5, 2026 12:03 PM ('WASHINGTON (AP) — Republican Andrew Garbarino wins reelection...', wtop.com/national/2026/11/...). It was not kept, because the LI Press article names AP as the caller more explicitly. Halpin has not conceded, and certification is still pending.",
+   "group": "NY+MA+MT"
+  },
+  {
+   "icpsr": "22340",
+   "bioname": "LAWLER, Michael",
+   "outcome": "confirmed",
+   "source_type": "news_reporting_ap",
+   "source_url": "https://www.ottumwacourier.com/news/national_news/democrat-cait-conley-wins-election-to-u-s-house-in-new-yorks-17th-congressional-district/article_e7784190-9881-5d34-bcb5-2f8943109a65.html",
+   "source_file": "data/sources/2026-11-23_ny-ottumwacourier-ny17-conley-ap-racecall.html",
+   "quote": "Democrat Cait Conley won election Thursday to the U.S. House of Representatives representing New York's 17th Congressional District, defeating Republican incumbent Mike Lawler. ... The Associated Press declared Conley the winner at 6:12 p.m. EST.",
+   "what_source_says": "AP race call (By The Associated Press, Nov 5, 2026): Conley (D) defeated incumbent Mike Lawler (R) in NY-17, and AP declared Conley the winner.",
+   "proposed_changes": "none",
+   "notes": "The NY state sites were blocked by a Cloudflare 403 challenge. The same AP race call on ktar.com returned 403 to curl. Lawler conceded on election night.",
+   "group": "NY+MA+MT"
+  },
+  {
+   "icpsr": "22324",
+   "bioname": "GOLDMAN, Daniel",
+   "outcome": "confirmed",
+   "source_type": "news_reporting_ap",
+   "source_url": "https://justthenews.com/politics-policy/holdx-wins-contentious-ny-dem-house-primary-ap",
+   "source_file": "data/sources/2026-11-23_ny-justthenews-ny10-goldman-ap.html",
+   "quote": "Mamdani-backed Lander projected to boot Rep. Dan Goldman: AP ... Published: June 23, 2026 9:06pm ... Rep. Dan Goldman, D-N.Y., on Tuesday was projected to lose a primary challenge from a progressive challenger backed by New York City Mayor Zohran Mamdani. The Associated Press called the race for the Mamdani-backed Brad Lander at 9:05 p.m., with 34% of precincts reporting. As of press time, Goldman held 37.8% of the vote",
+   "what_source_says": "AP called the June 23, 2026 NY-10 Democratic primary for Brad Lander over incumbent Dan Goldman.",
+   "proposed_changes": "none",
+   "notes": "No state .gov source could be saved: elections.ny.gov returned a Cloudflare 403 challenge. The NYC Board of Elections posts official recap PDFs for this primary on vote.nyc, a .nyc host rather than .gov/.us, so they were not saved. The NY-10 recap URL appeared in search results. The source is news_reporting_ap, used for a primary race call.",
+   "group": "NY+MA+MT"
+  },
+  {
+   "icpsr": "21715",
+   "bioname": "ESPAILLAT, Adriano J.",
+   "outcome": "confirmed",
+   "source_type": "news_reporting_ap",
+   "source_url": "https://justthenews.com/politics-policy/holdx-mamdani-backed-challenger-faces-incumbent-ap",
+   "source_file": "data/sources/2026-11-23_ny-justthenews-ny13-espaillat-ap.html",
+   "quote": "Congressional Hispanic Caucus leader ousted in Dem primary: AP ... Published: June 23, 2026 10:41pm ... Rep. Adriano Espaillat, D-N.Y., was projected to lose his primary to a progressive challenger backed by New York City Mayor Zohran Mamdani on Tuesday evening. The Associated Press called the race for Darializa Avila Chevalier at 10:40 p.m., with 87% of precincts reporting. As of press time, Chevalier led with 49.4% to Espaillat's 45.9%.",
+   "what_source_says": "AP called the June 23, 2026 NY-13 Democratic primary for Darializa Avila Chevalier over incumbent Adriano Espaillat.",
+   "proposed_changes": "none",
+   "notes": "No state .gov source could be saved, because elections.ny.gov returned a Cloudflare 403 challenge. NYC BOE recap PDFs on vote.nyc (not a .gov/.us host) were not saved.",
+   "group": "NY+MA+MT"
+  },
+  {
+   "icpsr": "21525",
+   "bioname": "MOULTON, Seth",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://electionstats.state.ma.us/elections/search/year_from:2026/year_to:2026/office_id:6/stage:Primaries",
+   "source_file": "data/sources/2026-11-23_ma-electionstats-2026-senate-primaries.html",
+   "quote": "2026 U.S. Senate Statewide Democratic Primary Edward J. Markey won (65%) against 1 opponent. Candidates » Candidate Vote Count % Edward J. Markey 580,628 64.7% Seth W. Moulton 314,198 35.0% All Others 2,225 0.2% Blanks 16,717 Total Votes Cast 913,768",
+   "what_source_says": "The MA Secretary of the Commonwealth's electionstats page shows Seth W. Moulton ran in the 2026 Democratic primary for U.S. Senate and lost to Markey. A second saved state page (the 2026 U.S. House primaries) lists the MA-6 Democratic primary as Dan Koh (winner), Tram T. Nguyen, John A. Beccia III, Jamie M. Belsito, Mariah L. Lancaster and Bethany Andres-Beck. Moulton's name does not appear anywhere in that file (grep count 0), so he did not run for re-election to the House.",
+   "proposed_changes": "none",
+   "notes": "Supporting file: data/sources/2026-11-23_ma-electionstats-2026-house-primaries.html (https://electionstats.state.ma.us/elections/search/year_from:2026/year_to:2026/office_id:5/stage:Primaries). Quote from it: '2026 U.S. House 6th Congressional Democratic Primary Dan Koh won (41%) against 5 opponents. Candidates » Candidate Vote Count % Dan Koh 47,835 40.9% Tram T. Nguyen 34,324 29.4% ...'. The pages show no date, so page_date is unknown.",
+   "group": "NY+MA+MT"
+  },
+  {
+   "icpsr": "21532",
+   "bioname": "ZINKE, Ryan",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://sosmt.gov/wp-content/uploads/wpfd/preview_files/2026-Primary-State-Canvass(f0627306086b974f9ac2e416bb8125c9).pdf",
+   "source_file": "data/sources/2026-11-23_mt-primary-state-canvass.pdf",
+   "quote": "[decoded PDF text, p5] Republican | RAY CURTIS | AARON FLINT | CHRISTI JACOBSEN | AL 'DOC' OLSZEWSKI ... [p6] UNITED STATES REPRESENTATIVE 1ST CONGRESSIONAL Libertarian | NICK SHEEDY",
+   "what_source_says": "The Montana Secretary of State's 2026 primary state canvass (PDF title 'ReportStateCanvass', created 2026-06-29) lists the 1st Congressional District Republican primary candidates as Ray Curtis, Aaron Flint, Christi Jacobsen and Al 'Doc' Olszewski, and the Democratic candidates as Ryan Busse, Russell Cleveland, Sam Forstag and Matt Rains. Zinke appears nowhere in the 15-page canvass (0 matches), so he did not run for re-election or for any other office on the 2026 primary ballot.",
+   "proposed_changes": "none",
+   "notes": "No PDF tools were installed, so the PDF was decoded with a stdlib python -I script: FlateDecode streams, then glyph IDs +29 to ASCII. The page 5 race heading did not decode; it is probably in a separate drawing object. That page's county list (Beaverhead, Deer Lodge, Flathead, Gallatin ... Silver Bow) is the western/1st-district set, and the page 6 continuation carries the heading 'UNITED STATES REPRESENTATIVE 1ST CONGRESSIONAL'. The PDF's CreationDate is D:20260629134238-06'00'.",
+   "group": "NY+MA+MT"
+  },
+  {
+   "icpsr": "22309",
+   "bioname": "CISCOMANI, Juan",
+   "outcome": "confirmed",
+   "source_type": "news_reporting_ap",
+   "source_url": "https://www.kjzz.org/elections/2026-11-05/mendoza-ousts-ciscomani-in-arizonas-cd6-expanding-the-democratic-majority-in-congress-elex",
+   "source_file": "data/sources/2026-11-23_az-kjzz-mendoza-ousts-ciscomani.html",
+   "quote": "Democrat Joanna Mendoza has ousted Republican Congressman Juan Ciscomani in a southern Arizona swing district, according to a race call by the Associated Press. Mendoza led the incumbent Republican with 53% of the vote as of Thursday at 12:38 p.m., when the AP determined her lead was insurmountable.",
+   "what_source_says": "KJZZ (published 2026-11-05) reports the AP called AZ-6 for Democrat JoAnna Mendoza over incumbent Juan Ciscomani, at 12:38 p.m. Thursday, with Mendoza at 53%.",
+   "proposed_changes": "",
+   "notes": "I tried state sources first. results.arizona.vote, azsos.gov/elections/results-data, apps.azsos.gov/election/2026/canvass/ and azsos.gov 2026 election-information all returned a Cloudflare HTTP 403, both to curl and in a headless browser, so nothing from the state could be saved. Fell back to news_reporting_ap under decision 22. A KOLD article with an equivalent AP attribution was also downloaded and then deleted as redundant.",
+   "group": "PA+AZ+NJ"
+  },
+  {
+   "icpsr": "91980",
+   "bioname": "VAN DREW, Jefferson",
+   "outcome": "confirmed",
+   "source_type": "news_reporting_ap",
+   "source_url": "https://www.inquirer.com/politics/new-jersey/zack-mullock-jeff-van-drew-results-official-20261105.html",
+   "source_file": "data/sources/2026-11-23_nj-inquirer-mullock-van-drew-official.html",
+   "quote": "Cape May Mayor Zack Mullock's shocking victory over incumbent Republican U.S. Rep. Jeff Van Drew in South Jersey is official, according to the Associated Press. Van Drew conceded to Mullock two hours after the polls closed Tuesday, much to the surprise of supporters of both candidates. The AP officially called the race two days later, at 4:29 p.m. Thursday, with a difference of just over 7,000 votes and 2.5 percentage points",
+   "what_source_says": "The Inquirer (published Nov. 5, 2026) reports the AP called NJ-2 for Democrat Zack Mullock over incumbent Jeff Van Drew at 4:29 p.m. Thursday, and that Van Drew conceded on election night. Per the AP, Mullock had 137,166 votes (49.2%) to Van Drew's 130,084 (46.7%) with 97% tabulated.",
+   "proposed_changes": "",
+   "notes": "No usable state source. The NJ Division of Elections 2026 page (nj.gov/state/elections/election-information-2026.shtml) links per-district official general results PDFs, but every one returns HTTP 404 (not yet posted; certification is pending). nj.gov/state/elections/election-night-results.shtml says: 'The Division of Elections does not post any official or unofficial results on Election Night.' It points to county sites, which are not state sources. Fell back to news_reporting_ap.",
+   "group": "PA+AZ+NJ"
+  },
+  {
+   "icpsr": "22334",
+   "bioname": "KEAN, Thomas",
+   "outcome": "confirmed",
+   "source_type": "news_reporting_ap",
+   "source_url": "https://www.fox5ny.com/news/nj-rebecca-bennett-new-jersey-7th-congressional-district",
+   "source_file": "data/sources/2026-11-23_nj-fox5ny-bennett-wins-7th-ap-projects.html",
+   "quote": "Democrat Rebecca Bennett wins New Jersey's 7th District, AP projects ... NEW JERSEY - Democrat Rebecca Bennett has won election to the U.S. House in New Jersey's 7th Congressional District, defeating Republican incumbent U.S. Rep. Tom Kean Jr., The Associated Press projects.",
+   "what_source_says": "FOX 5 NY (published Nov. 3, 2026, 9:50 PM EST) reports the AP projected NJ-7 for Democrat Rebecca Bennett, defeating incumbent Tom Kean Jr.",
+   "proposed_changes": "",
+   "notes": "No usable state source, for the same reasons as the NJ-2 row: the NJ official per-district result PDFs return 404 and the Division posts no unofficial results. The article's wording is 'AP projects', with the headline ending ', AP projects', which names AP as the caller. A separate FOX 5 NY live-results page was downloaded and deleted because it only said 'includes live results from the Associated Press' and did not attribute the call to AP.",
+   "group": "PA+AZ+NJ"
+  },
+  {
+   "icpsr": "21718",
+   "bioname": "FITZPATRICK, Brian K.",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://www.electionreturns.pa.gov/api/ElectionReturn/GetOfficeData?officeId=11&methodName=GetOfficeDetails&electionid=117&electiontype=G&isactive=1",
+   "source_file": "data/sources/2026-11-23_pa-electionreturns-us-house-general-2026.json",
+   "quote": "{\"DistrictId\":\"2\",\"District\":\"1st Congressional District\",\"Candidates\": [{\"ID\":\"3\",\"ElectionYear\":\"2026\",\"OfficeName\":\"Representative in Congress\",\"PartyName\":\"DEM\",\"CandidateName\":\"BOB HARVIE\",\"Votes\":\"189926\",...\"Percentage\":\"52.88\" ... \"PartyName\":\"REP\",\"CandidateName\":\"BRIAN FITZPATRICK\",\"Votes\":\"169255\" ... \"Percentage\":\"47.12\" (JSON unescaped)",
+   "what_source_says": "The PA Department of State election returns (2026 general, Representative in Congress) show PA-1: Bob Harvie (DEM) 189,926 (52.88%) and Brian Fitzpatrick (REP) 169,255 (47.12%).",
+   "proposed_changes": "",
+   "notes": "This is the JSON the electionreturns.pa.gov results app loads; I found the endpoint from the page's own network requests. The companion file data/sources/2026-11-23_pa-electionreturns-election-status-2026.json labels the election '2026 General Election,Unofficial' and reports 8,932 of 9,065 districts (98.53%). These are unofficial state returns, not certified. The margin is 20,671 votes.",
+   "group": "PA+AZ+NJ"
+  },
+  {
+   "icpsr": "22533",
+   "bioname": "MACKENZIE, Ryan",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://www.electionreturns.pa.gov/api/ElectionReturn/GetOfficeData?officeId=11&methodName=GetOfficeDetails&electionid=117&electiontype=G&isactive=1",
+   "source_file": "data/sources/2026-11-23_pa-electionreturns-us-house-general-2026.json",
+   "quote": "\"District\":\"7th Congressional District\" ... \"PartyName\":\"DEM\",\"CandidateName\":\"BOB BROOKS\",\"Votes\":\"166671\" ... \"Percentage\":\"56.29\" ... \"PartyName\":\"REP\",\"CandidateName\":\"RYAN MACKENZIE\",\"Votes\":\"129431\" ... \"Percentage\":\"43.71\" (JSON unescaped)",
+   "what_source_says": "The PA DOS 2026 general returns show PA-7: Bob Brooks (DEM) 166,671 (56.29%) and Ryan Mackenzie (REP) 129,431 (43.71%).",
+   "proposed_changes": "",
+   "notes": "Unofficial state returns ('2026 General Election,Unofficial', 98.53% of districts reporting, per data/sources/2026-11-23_pa-electionreturns-election-status-2026.json). The margin is about 37,000 votes.",
+   "group": "PA+AZ+NJ"
+  },
+  {
+   "icpsr": "22506",
+   "bioname": "BRESNAHAN, Robert P., Jr.",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://www.electionreturns.pa.gov/api/ElectionReturn/GetOfficeData?officeId=11&methodName=GetOfficeDetails&electionid=117&electiontype=G&isactive=1",
+   "source_file": "data/sources/2026-11-23_pa-electionreturns-us-house-general-2026.json",
+   "quote": "\"District\":\"8th Congressional District\" ... \"PartyName\":\"DEM\",\"CandidateName\":\"PAIGE COGNETTI\",\"Votes\":\"154060\" ... \"Percentage\":\"54.48\" ... \"PartyName\":\"REP\",\"CandidateName\":\"ROB BRESNAHAN JR\",\"Votes\":\"128739\" ... \"Percentage\":\"45.52\" (JSON unescaped)",
+   "what_source_says": "The PA DOS 2026 general returns show PA-8: Paige Cognetti (DEM) 154,060 (54.48%) and Rob Bresnahan Jr (REP) 128,739 (45.52%).",
+   "proposed_changes": "",
+   "notes": "Unofficial state returns (98.53% of districts reporting, per the election-status file). The margin is about 25,000 votes.",
+   "group": "PA+AZ+NJ"
+  },
+  {
+   "icpsr": "21356",
+   "bioname": "PERRY, Scott",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://www.electionreturns.pa.gov/api/ElectionReturn/GetOfficeData?officeId=11&methodName=GetOfficeDetails&electionid=117&electiontype=G&isactive=1",
+   "source_file": "data/sources/2026-11-23_pa-electionreturns-us-house-general-2026.json",
+   "quote": "\"District\":\"10th Congressional District\" ... \"PartyName\":\"DEM\",\"CandidateName\":\"JANELLE STELSON\",\"Votes\":\"175175\" ... \"Percentage\":\"55.19\" ... \"PartyName\":\"REP\",\"CandidateName\":\"SCOTT PERRY\",\"Votes\":\"142253\" ... \"Percentage\":\"44.81\" (JSON unescaped)",
+   "what_source_says": "The PA DOS 2026 general returns show PA-10: Janelle Stelson (DEM) 175,175 (55.19%) and Scott Perry (REP) 142,253 (44.81%).",
+   "proposed_changes": "",
+   "notes": "Unofficial state returns (98.53% of districts reporting, per the election-status file). The margin is about 33,000 votes.",
+   "group": "PA+AZ+NJ"
+  },
+  {
+   "icpsr": "21566",
+   "bioname": "EVANS, Dwight",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://www.electionreturns.pa.gov/api/ElectionReturn/GetOfficeData?officeId=11&methodName=GetOfficeDetails&electionid=117&electiontype=P&isactive=0",
+   "source_file": "data/sources/2026-11-23_pa-electionreturns-us-house-primary-2026.json",
+   "quote": "\"District\": \"3rd Congressional District\", \"Candidates\": [{\"Democratic\": [{... \"CandidateName\": \"ALA STANFORD\", \"Votes\": \"35452\" ...}, {... \"CandidateName\": \"SHARIF STREET\", \"Votes\": \"43137\" ...}, {... \"CandidateName\": \"CHRIS RABB\", \"Votes\": \"65782\", \"Percentage\": \"44.62\" ...}, {... \"CandidateName\": \"SHAUN GRIFFITH\", \"Votes\": \"3042\" ...}]}] (JSON unescaped)",
+   "what_source_says": "The PA DOS 2026 General Primary (May 19, 2026) returns for PA-3 list Ala Stanford, Sharif Street, Chris Rabb (winner, 44.62%) and Shaun Griffith as candidates. Dwight Evans is not among them. The 2026 general returns file (data/sources/2026-11-23_pa-electionreturns-us-house-general-2026.json) shows PA-3 as Chris Rabb (DEM) 258,437 against Dennis Mahoney (TIP) 17,628, again without Evans.",
+   "proposed_changes": "",
+   "notes": "A grep for 'EVANS' finds no match in either PA file. Evans did not run for re-election in the primary or the general, which is consistent with reason=retired. These state pages show only that he did not run; the retirement announcement itself is not on a state page.",
+   "group": "PA+AZ+NJ"
+  },
+  {
+   "icpsr": "22103",
+   "bioname": "BOEBERT, Lauren",
+   "outcome": "confirmed",
+   "source_type": "news_reporting_ap",
+   "source_url": "https://www.kunc.org/politics/2026-11-13/eileen-laubacher-wins-4th-congressional-district-seat-ousts-lauren-boebert",
+   "source_file": "data/sources/2026-11-23_co-cd4-kunc-laubacher-wins.html",
+   "quote": "Eileen Laubacher wins 4th Congressional District seat, ousts Lauren Boebert | ... In a stunning upset, Democratic challenger Eileen Laubacher defeated Republican Rep. Lauren Boebert to win the 4th Congressional District seat. ... The Associated Press called the race at 1 p.m. on Friday.",
+   "what_source_says": "KUNC article (published 2026-11-13) reports that Democrat Eileen Laubacher defeated Rep. Lauren Boebert in CO-4 and that the Associated Press called the race at 1 p.m. Friday.",
+   "proposed_changes": "",
+   "notes": "I found no state .gov general-election source. The Colorado SOS general results are on results.enr.clarityelections.com, which is not a .gov host and is a JavaScript app. coloradosos.gov Results/Archives.html lists only the 2026 primary files. So I used the news_reporting_ap fallback.",
+   "group": "CO+KY"
+  },
+  {
+   "icpsr": "22509",
+   "bioname": "CRANK, Jeff",
+   "outcome": "confirmed",
+   "source_type": "news_reporting_ap",
+   "source_url": "https://www.coloradopolitics.com/2026/11/05/ap-declares-jessica-killin-winner-in-5th-district-election/",
+   "source_file": "data/sources/2026-11-23_co-cd5-coloradopolitics-ap-killin.html",
+   "quote": "AP declares Jessica Killin winner in 5th District election | ... after she was declared the winner in Colorado's 5th Congressional District over Republican Jeff Crank. ... The AP called the Killin victory shortly after 12:30 p.m. Thursday. Killin received 50.6% of the votes in the latest release, while Crank had 46%.",
+   "what_source_says": "Colorado Politics article (published 2026-11-05) reports that the AP called CO-5 for Democrat Jessica Killin over incumbent Republican Jeff Crank (50.6% to 46%), and that Crank conceded.",
+   "proposed_changes": "",
+   "notes": "No state .gov general source for the same reason as CO-4: the SOS general results are on Clarity (not .gov, JavaScript). So I used the news_reporting_ap fallback.",
+   "group": "CO+KY"
+  },
+  {
+   "icpsr": "22513",
+   "bioname": "EVANS, Gabe",
+   "outcome": "confirmed",
+   "source_type": "news_reporting_ap",
+   "source_url": "https://www.coloradopolitics.com/2026/11/03/gabe-evans-manny-rutinel-colorado-cd8-election-results/",
+   "source_file": "data/sources/2026-11-23_co-cd8-coloradopolitics-rutinel.html",
+   "quote": "Manny Rutinel defeats incumbent Gabe Evans in battleground 8th CD | ... In updated results posted by 1:30 p.m. Thursday, Rutinel had 55% of the vote to Evans' 42%. ... After the Associated Press called the race late Tuesday, Rutinel said, \"Tonight, Colorado showed that in America...\"",
+   "what_source_says": "Colorado Politics article (published 2026-11-04, updated 2026-11-05) reports that Manny Rutinel defeated incumbent Gabe Evans in CO-8 (55% to 42% in updated results) and that the Associated Press called the race late Tuesday.",
+   "proposed_changes": "",
+   "notes": "No state .gov general source (SOS general results on Clarity only). The newsfromthestates.com Colorado Newsline page returned HTTP 403, so I did not keep it. A Denver7 page I saved was deleted as unused.",
+   "group": "CO+KY"
+  },
+  {
+   "icpsr": "29710",
+   "bioname": "DEGETTE, Diana",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://www.coloradosos.gov/pubs/elections/Results/2026/2026PrimaryElectionStateResults.xlsx",
+   "source_file": "data/sources/2026-11-23_co-2026-primary-state-results.xlsx",
+   "quote": "United States Representative - District 1\tDemocratic Party\tMelat Kiros Total Votes\t\t83855 | United States Representative - District 1\tDemocratic Party\tDiana DeGette Total Votes\t\t62715 | United States Representative - District 1\tDemocratic Party\tWanda James Total Votes\t\t11075",
+   "what_source_says": "Colorado SOS 2026 State Primary Election results spreadsheet: in the CD-1 Democratic primary, Melat Kiros had 83,855 votes and Diana DeGette 62,715, so DeGette lost the primary.",
+   "proposed_changes": "",
+   "notes": "The xlsx is linked from coloradosos.gov/pubs/elections/Results/Archives.html as '2026 State Primary Election results (XLSX)'. Rows were read with a stdlib zip/XML parser, and the quote is the spreadsheet rows joined with tabs.",
+   "group": "CO+KY"
+  },
+  {
+   "icpsr": "31102",
+   "bioname": "MASSIE, Thomas",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://elect.ky.gov/Documents/2026%20Primary%20Certification%20of%20Vote%20Totals%20Final.pdf",
+   "source_file": "data/sources/2026-11-23_ky-2026-primary-certification.pdf",
+   "quote": "Commonwealth of Kentucky | Michael G. Adams, Secretary of State | 2026 Primary Election Results | US Representative | 4th Congressional District | Republican Party | Ed GALLREIN | Thomas MASSIE | ... | Total Votes | 57,822 | 47,539",
+   "what_source_says": "Kentucky official 2026 primary certification of vote totals: in the KY-4 Republican primary, Ed Gallrein had 57,822 votes and Thomas Massie 47,539, so Massie lost the primary.",
+   "proposed_changes": "",
+   "notes": "No poppler or pypdf was available, so I decoded the PDF text with a stdlib script (zlib plus a fixed glyph offset of +29). The decoded text matches the document's own headers ('Official 2026 Primary Election Results', 'May 19, 2026'). Fragments are joined with ' | ' in the column order the PDF stores them.",
+   "group": "CO+KY"
+  },
+  {
+   "icpsr": "21333",
+   "bioname": "BARR, Garland H. (Andy), IV",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://elect.ky.gov/Documents/2026%20Primary%20Certification%20of%20Vote%20Totals%20Final.pdf",
+   "source_file": "data/sources/2026-11-23_ky-2026-primary-certification.pdf",
+   "quote": "2026 Primary Election Results | United States Senator | Republican Party | Andy BARR | Daniel CAMERON | Michael James FARIS | ... | Total Votes | 283,833 | 144,592 | ... ; and the KY-6 Republican primary lists only: US Representative | 6th Congressional District | Republican Party | Ralph ALVARADO | Ryan DOTSON | Gregory George PLUCINSKI | Steve SHANNON | Adam Perez ARQUETTE",
+   "what_source_says": "The Kentucky official 2026 primary certification lists Andy Barr as a candidate in the U.S. Senate Republican primary (283,833 votes, ahead of Daniel Cameron's 144,592). He does not appear among the 6th Congressional District candidates of either party. So he ran for the Senate, not for re-election to the House.",
+   "proposed_changes": "",
+   "notes": "In the decoded text, 'BARR' appears only in the U.S. Senate streams. The KY-6 Democratic list is Dembo, Stevenson, Petrey, Kloiber, Edwards, Carroll Jr., Ausbrooks. The PDF was decoded the same way as for the Massie row.",
+   "group": "CO+KY"
+  },
+  {
+   "icpsr": "21142",
+   "bioname": "HUIZENGA, Bill",
+   "outcome": "confirmed",
+   "source_type": "news_reporting_ap",
+   "source_url": "https://www.fox17online.com/news/national-politics/america-votes/sean-mccann-wins-election-in-4th-congressional-district-ap-projects-unseating-bill-huizenga",
+   "source_file": "data/sources/2026-11-23_mi-fox17-mccann-huizenga-ap.html",
+   "quote": "Sean McCann wins election in 4th Congressional District, AP projects, unseating Bill Huizenga ... Democrat Sean McCann has won the election in Michigan's Fourth Congressional District, unseating incumbent Rep. Bill Huizenga and flipping the seat from red to blue, the Associated Press projects.",
+   "what_source_says": "FOX 17 (published 2026-11-04) reports that the AP projected Democrat Sean McCann the winner in MI-4, unseating incumbent Bill Huizenga.",
+   "proposed_changes": "",
+   "notes": "I tried the Michigan state results host (mielections.us). It timed out on every attempt (TCP connect timeout), so no state page could be saved. michigan.gov SOS pages link only to county sites. I fell back to news_reporting_ap; the headline and body both name AP as the caller.",
+   "group": "MI+MO"
+  },
+  {
+   "icpsr": "22501",
+   "bioname": "BARRETT, Tom",
+   "outcome": "confirmed",
+   "source_type": "news_reporting_ap",
+   "source_url": "https://www.michiganpublic.org/politics-government/2026-11-04/barrett-concedes-to-lawrence-as-democrats-net-another-battleground-victory-in-se-michigan",
+   "source_file": "data/sources/2026-11-23_mi-michpublic-barrett-concedes.html",
+   "quote": "Republican U.S. Rep. Tom Barrett conceded Michigan's 7th Congressional District to U.S. Democrat William Lawrence during an overnight phone call amid a string of Democratic victories in battlegrounds throughout the country. Speaking to reporters Wednesday afternoon in Lansing shortly after the Associated Press projected Lawrence as the winner, Lawrence said he thanked Barrett for his service",
+   "what_source_says": "Michigan Public (2026-11-04) reports that the AP projected Democrat William Lawrence the winner in MI-7 and that incumbent Tom Barrett conceded.",
+   "proposed_changes": "",
+   "notes": "The Michigan state results host (mielections.us) could not be reached because the connection timed out, so no state source was saved. I also downloaded Michigan Public's AP-bylined 'who won' story and deleted it, because it did not explicitly name AP as the caller.",
+   "group": "MI+MO"
+  },
+  {
+   "icpsr": "21337",
+   "bioname": "WAGNER, Ann",
+   "outcome": "unresolved",
+   "source_type": "none",
+   "source_url": "",
+   "source_file": "",
+   "quote": "",
+   "what_source_says": "",
+   "proposed_changes": "",
+   "notes": "no second source obtained. The Missouri ENR site (enr.sos.mo.gov) returned a Cloudflare 403. The SOS results index lists no November 2026 results PDF yet; only the Aug 2026 primary and the certified-candidate list are posted. I saved six news pages and deleted them all: STLPR x2, KCUR, St. Louis Magazine, Missouri Independent (403) and NewsFromTheStates (403). They report that Wellman defeated Wagner and that Wagner conceded, but none names AP as the caller of the race. St. Louis Magazine cites AP only for the vote count ('with 96 percent of the vote counted ... according to the Associated Press'), which does not meet decision 22. ABC17's 'AP Race Call' page for this district is from 2024 (Wagner won), so I deleted it.",
+   "group": "MI+MO"
+  },
+  {
+   "icpsr": "22368",
+   "bioname": "THANEDAR, Shri",
+   "outcome": "confirmed",
+   "source_type": "news_reporting_ap",
+   "source_url": "https://bridgemi.com/michigan-politics/michigan-congressional-primary-results-races-to-watch-as-votes-are-tallied/",
+   "source_file": "data/sources/2026-11-23_mi-bridge-congressional-primary-results.html",
+   "quote": "LANSING — Progressive Democrat Donavan McKinney has beaten incumbent US Rep. Shri Thanedar of Detroit in Michigan's 13th Congressional District, according to the Associated Press. Unofficial results from Wayne County show McKinney beat Thanedar by 4,200 votes out of 112,000 cast, a roughly 4 percentage point margin.",
+   "what_source_says": "Bridge Michigan (August 5, 2026) reports that, according to the AP, Donavan McKinney beat incumbent Shri Thanedar in the MI-13 Democratic primary (Aug 4, 2026).",
+   "proposed_changes": "",
+   "notes": "The Michigan state primary results host (mielections.us) was unreachable because the connection timed out. The AP attribution is explicit. Michigan Public separately stated 'The race was called Wednesday by the Associated Press at 9:55 a.m.'; I downloaded that page as well and deleted it to avoid duplication.",
+   "group": "MI+MO"
+  },
+  {
+   "icpsr": "22332",
+   "bioname": "JAMES, John",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://www.michigan.gov/sos/-/media/Project/Websites/sos/BSC-Announcements/2026/20260528-Meeting-Agenda.pdf",
+   "source_file": "data/sources/2026-11-23_mi-bsc-20260528-agenda-governor-petitions.pdf",
+   "quote": "Board of State Canvassers May 28, 2026 ... 2. Report on review of nominating petitions for Governor and U.S. Senate, filed with the Secretary of State for the August 4, 2026 Primary Election. ... 4. Consideration of the sufficiency of the nominating petitions submitted by John James for the office of Governor.",
+   "what_source_says": "The Michigan Board of State Canvassers agenda (michigan.gov, May 28, 2026) lists consideration of the nominating petitions John James submitted for the office of Governor for the August 4, 2026 primary.",
+   "proposed_changes": "",
+   "notes": "Caveat for the reviewer: this state document shows James filed for Governor in the 2026 primary. It is not a House candidate list, so it does not itself show his absence from the MI-10 ballot. Michigan's candidate listings and results are on mielections.us, which was unreachable (connection timeout). If an explicit House-ballot absence is required, downgrade this row to unresolved. Text was extracted from the PDF with a stdlib parser, so spacing is normalized.",
+   "group": "MI+MO"
+  },
+  {
+   "icpsr": "20124",
+   "bioname": "GRAVES, Samuel",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://www.sos.mo.gov/CMSImages/ElectionResultsStatistics/2026PrimaryElection.pdf",
+   "source_file": "data/sources/2026-11-23_mo-2026-primary-grand-totals.pdf",
+   "quote": "Official Election Returns State of Missouri - Primary Election, August 04, 2026 ... As announced by the Board of State Canvassers on Tuesday, August 25, 2026 ... U.S. REPRESENTATIVE - DISTRICT 6 (393 of 393 Precincts Reported) Jim Ingram Republican 8,841 9.0% Chris Stigall Republican 43,307 44.1% Nathan Hall Willett Republican 33,664 34.3% Cody J. Oshel Republican 3,828 3.9% Nathanael Schultz Republican 8,494 8.7% ... Josh Smead Democratic 25,513 47.7% ... Andy Maidment Libertarian 968 100.0%",
+   "what_source_says": "Missouri SOS official primary returns (canvassed Aug 25, 2026) list every MO-6 candidate in all parties. Sam Graves is not among them, so he did not seek re-election. Chris Stigall leads the Republican field.",
+   "proposed_changes": "",
+   "notes": "Evidence is absence: a search of the whole decoded PDF text for 'GRAVES' returned no match. The PDF uses CID fonts; I decoded it with a stdlib ToUnicode parser, which emitted characters without spaces, and I restored the spaces in the quote. I also downloaded the SOS 2026 General Election Certified Candidates PDF (it lists 'District 6, Chris Stigall' as the Republican nominee) and deleted it, since the primary returns are stronger evidence.",
+   "group": "MI+MO"
+  },
+  {
+   "icpsr": "21179",
+   "bioname": "DESJARLAIS, Scott",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://www.elections.tn.gov/categories/congressional/offices",
+   "source_file": "data/sources/2026-11-23_tn-nov2026-congressional-results.html",
+   "quote": "United States House of Representatives District 4 Final Unofficial Results 11 of 11 Counties Completed ... data-race=\"United_States_House_of_Representatives_District_4\" data-candidates=\"[{\"name\":\"Victoria Broderick\",\"party\":\"Democratic\",\"votes\":95585},{\"name\":\"Scott DesJarlais\",\"party\":\"Republican\",\"votes\":95305},{\"name\":\"Jacob Kristopher Anders\",\"party\":\"Independent\",\"votes\":2833},...",
+   "what_source_says": "TN Secretary of State election-night dashboard (Nov 3, 2026 election) labels TN-4 'Final Unofficial Results', 11 of 11 counties, with Broderick (D) 95,585 vs DesJarlais (R) 95,305 (a 280-vote lead for the challenger). The page shows results only. It does not certify or call the race.",
+   "proposed_changes": "none (status stays pending/uncalled). If the parent treats this state page as sufficient to call the race, the change would be reason=lost_general, status=called, but the state page says the results are unofficial.",
+   "notes": "No AP-attributed article found after 3 searches. The only AP race-call items were from 2024 (DesJarlais reelected) and were not used. Search snippets, which were NOT saved (tennesseelookout.com returned 403 Cloudflare), said DesJarlais conceded on Nov 16 and that AP had not declared a winner as of then. A concession is not a call under decision 11/22. WKRN article was saved to scratch, has no AP attribution, and was not kept. Recheck after TN certification: county certification deadline is reportedly Nov 23; the state certified results PDF for the August election was dated about 4 weeks later. The draft notes mention a Ballotpedia timeline saying Broderick won Nov 19; that is not corroborated by a usable source.",
+   "group": "TN+WI"
+  },
+  {
+   "icpsr": "21970",
+   "bioname": "STEIL, Bryan",
+   "outcome": "confirmed",
+   "source_type": "news_reporting_ap",
+   "source_url": "https://www.wpr.org/news/democrat-mitchell-berman-defeats-republican-bryan-steil-2026",
+   "source_file": "data/sources/2026-11-23_wi-wpr-berman-defeats-steil.html",
+   "quote": "Democrat Mitchell Berman has defeated incumbent Republican U.S. Rep. Bryan Steil to win Wisconsin's 1st Congressional District. Berman, an emergency room nurse who lives in Racine County , will be the first Democrat to represent the seat in more than 30 years. Steil conceded at around 11:30 p.m. The Associated Press called the race at 11:48 p.m.",
+   "what_source_says": "WPR (Wisconsin Public Radio) reports that Berman (D) defeated incumbent Steil (R) in WI-1 and that the Associated Press called the race at 11:48 p.m.",
+   "proposed_changes": "none",
+   "notes": "I tried state sources first. elections.wi.gov results pages (election-results, results-all) returned HTTP 403 (Cloudflare 'Just a moment'). A site-restricted search found only the Aug 2026 primary canvass and the Nov 2026 candidates-on-ballot PDF; no WEC Nov 3 canvass is posted yet (WI canvass is not complete). The saved WEC candidates-on-ballot PDF (data/sources/2026-11-23_wi-wec-candidates-on-ballot-nov2026.pdf) shows 'REPRESENTATIVE IN CONGRESS DISTRICT 1 | Incumbent: | Bryan Steil | 1 | Bryan Steil | Republican | 2 | Mitchell Berman | Democratic', which confirms the matchup but not the result. 2026 ballot district = WI-1.",
+   "group": "TN+WI"
+  },
+  {
+   "icpsr": "22370",
+   "bioname": "VAN ORDEN, Derrick",
+   "outcome": "confirmed",
+   "source_type": "news_reporting_ap",
+   "source_url": "https://www.wpr.org/news/democrat-rebecca-cooke-defeats-gop-derrick-van-orden-congress-midterms",
+   "source_file": "data/sources/2026-11-23_wi-wpr-cooke-defeats-van-orden.html",
+   "quote": "Eau Claire Democrat Rebecca Cooke defeated Republican incumbent Derrick Van Orden in one of the nation's most closely watched congressional races. Cooke said around 10:30 p.m. that Van Orden had called to concede the race. The Associated Press called the race at 11:48 p.m. Tuesday.",
+   "what_source_says": "WPR reports that Cooke (D) defeated incumbent Van Orden (R) in WI-3 and that the Associated Press called the race at 11:48 p.m. Tuesday (Nov 3).",
+   "proposed_changes": "none",
+   "notes": "I tried state sources first, as for Steil: WEC results pages returned 403 and no Nov 3 WEC canvass is posted. The WEC candidates-on-ballot PDF (data/sources/2026-11-23_wi-wec-candidates-on-ballot-nov2026.pdf) lists 'REPRESENTATIVE IN CONGRESS DISTRICT 3 | Incumbent: | Derrick Van Orden | ... | 1 | Derrick Van Orden | Republican | 2 | Rebecca Cooke | Democratic', which confirms the matchup only. Same 11:48 p.m. AP call time as WI-1 in the separate WPR article; that is reported as found.",
+   "group": "TN+WI"
+  },
+  {
+   "icpsr": "22357",
+   "bioname": "OGLES, Andy",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://sos-prod.tnsosgovfiles.com/s3fs-public/document/20260806RepublicanPrimarybyCounty.pdf",
+   "source_file": "data/sources/2026-11-23_tn-aug2026-gop-primary-by-county.pdf",
+   "quote": "August 6, 2026 | Republican Primary | State of Tennessee | ... | United States House of Representatives District 5 | Andy Ogles | 2. | Charlie Hatcher | 1. | 1 | 1,585 | 1,503 | Benton | ... | Williamson | 36,546 | 32,096 | DISTRICT TOTALS | September 3, 2026",
+   "what_source_says": "TN Secretary of State results PDF for the Aug 6, 2026 Republican primary, TN-5: Charlie Hatcher is listed as candidate 1 and Andy Ogles as candidate 2. District totals are 36,546 (Hatcher) to 32,096 (Ogles), so Ogles lost the primary. The saved Nov 3 state dashboard (data/sources/2026-11-23_tn-nov2026-congressional-results.html) lists Charlie Hatcher as the Republican nominee in District 5 (110,408 votes), which is consistent.",
+   "proposed_changes": "none",
+   "notes": "HOST FLAG: the PDF is served from sos-prod.tnsosgovfiles.com, the TN Secretary of State's file store. It is linked from the official .gov results index, saved as data/sources/2026-11-23_tn-sos-election-results-index.html (link text 'Republican Primary By County' under '2026 Election Results August 6, 2026'). The host itself is not .gov/.us; the parent should decide whether this meets the 'state' rule. I extracted the quote from the PDF's text streams with a stdlib-only parser, because no PDF renderer is installed. I matched columns to candidates by their order (1., 2.); the governor table's last write-in column (1 vote) confirms that ordering. 2026 ballot district = TN-5.",
+   "group": "TN+WI"
+  },
+  {
+   "icpsr": "21959",
+   "bioname": "ROSE, John",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://sos-prod.tnsosgovfiles.com/s3fs-public/document/20260806RepublicanPrimarybyCounty.pdf",
+   "source_file": "data/sources/2026-11-23_tn-aug2026-gop-primary-by-county.pdf",
+   "quote": "August 6, 2026 | Republican Primary | State of Tennessee | 2 | 3 | 4 | Governor | Monty Fritts | John Rose | Write-In - David Fey | 2. | 3. | 4. | Marsha Blackburn | 1. ... | 311,392 | 168,004 | 235,561 | 1 | STATE TOTALS | ... United States House of Representatives District 6 | Johnny Garrett | Jon Henry | Van Hilleary | 2. | 3. | 4. | Natisha Brooks | 1.",
+   "what_source_says": "The TN SOS Aug 6, 2026 Republican primary PDF lists John Rose as a candidate for Governor; Blackburn is candidate 1 with 311,392 votes statewide. Rose is not among the TN-6 Republican primary candidates (Garrett, Henry, Hilleary, Brooks). So he ran for governor and not for re-election to the House. The saved Nov 3 state dashboard shows Johnny Garrett (R) as the TN-6 nominee and Blackburn as the R governor nominee.",
+   "proposed_changes": "none",
+   "notes": "Same HOST FLAG as Ogles: the PDF is on sos-prod.tnsosgovfiles.com, linked from the .gov index saved as data/sources/2026-11-23_tn-sos-election-results-index.html. By column order, Rose's statewide total appears to be the third column, 235,561, with Fritts at 168,004. Vote totals are not needed for this row.",
+   "group": "TN+WI"
+  },
+  {
+   "icpsr": "21989",
+   "bioname": "TIFFANY, Thomas P.",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://elections.wi.gov/sites/default/files/documents/Candidates%20on%20Ballot%20By%20Election_November%203%202026%20General%20Election.pdf",
+   "source_file": "data/sources/2026-11-23_wi-wec-candidates-on-ballot-nov2026.pdf",
+   "quote": "Wisconsin Elections Commission | Candidates on Ballot by Election | 2026 General Election - 11/3/2026 | ... GOVERNOR | Incumbent: | Tony Evers (Filed Notification of Noncandidacy) | 1 | 0104212 | Tom Tiffany / David Varnam | Republican | ... REPRESENTATIVE IN CONGRESS DISTRICT 7 | Incumbent: | Tom Tiffany | 1 | Michael Alfonso | Republican | 2 | Fred Clark | Democratic",
+   "what_source_says": "The WEC candidates-on-ballot list for the Nov 3, 2026 general shows Tom Tiffany as the Republican nominee for Governor. In Congressional District 7, Tiffany is the listed incumbent, but the candidates are Michael Alfonso (R) and Fred Clark (D). So Tiffany ran for governor and not for re-election to the House.",
+   "proposed_changes": "none",
+   "notes": "The PDF was printed 8/25/2026. I extracted the text from the PDF's streams with a stdlib-only parser.",
+   "group": "TN+WI"
+  },
+  {
+   "icpsr": "22139",
+   "bioname": "MILLER-MEEKS, Mariannette",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://electionresults.iowa.gov/IA/127077/387397/json/en/summary.json",
+   "source_file": "data/sources/2026-11-23_ia-sos-general-results-summary.json",
+   "quote": "United States Representative District 1 ... \"CH\" : [ \"Mariannette Miller-Meeks\",\"Christina Bohannan\",\"Michael Bridgford\",\"Write-in\" ] ... \"P\" : [ \"REP\",\"DEM\",\"\",\"\" ] ... \"V\" : [ 150720,184011,12376,287 ] ... \"W\" : [ 0,1,0,0 ]",
+   "what_source_says": "The Iowa statewide results feed (electionresults.iowa.gov, the state's 2026 General Election, EID 127077) for 'United States Representative District 1' shows Mariannette Miller-Meeks (REP) with 150,720 votes and Christina Bohannan (DEM) with 184,011. The winner flag W marks Bohannan as the winner.",
+   "proposed_changes": "",
+   "notes": "This is the JSON data file behind the state's JavaScript results app (the HTML page is an empty shell). It does not say whether the results are canvassed or certified. The winner flag is set for Bohannan, and the electionsettings winnerlist for contest 1100 also names Christina Bohannan.",
+   "group": "OH+IA"
+  },
+  {
+   "icpsr": "22356",
+   "bioname": "NUNN, Zach",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://electionresults.iowa.gov/IA/127077/387397/json/en/summary.json",
+   "source_file": "data/sources/2026-11-23_ia-sos-general-results-summary.json",
+   "quote": "United States Representative District 3 ... \"CH\" : [ \"Zach Nunn\",\"Sarah Trone Garriott\",\"Write-in\" ] ... \"P\" : [ \"REP\",\"DEM\",\"\" ] ... \"V\" : [ 163687,189435,869 ] ... \"W\" : [ 0,1,0 ]",
+   "what_source_says": "The Iowa statewide results feed for 'United States Representative District 3' shows Zach Nunn (REP) with 163,687 votes and Sarah Trone Garriott (DEM) with 189,435. The winner flag marks Trone Garriott as the winner.",
+   "proposed_changes": "",
+   "notes": "Same state JSON file as the IA-1 row. The electionsettings winnerlist for contest 1300 also names Sarah Trone Garriott. The file does not show whether the results are certified.",
+   "group": "OH+IA"
+  },
+  {
+   "icpsr": "22349",
+   "bioname": "MILLER, Max",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://liveresults.ohiosos.gov/Api/v1/download?filename=VSSC1622XmlFileBlob",
+   "source_file": "data/sources/2026-11-23_oh-sos-general-results-nist.xml",
+   "quote": "Issuer=\"Ohio Secretary of State Frank LaRose\" ... Status=\"UnofficialComplete\" | <Contest ... Name=\"Representative to Congress - District 07\"> | <LanguageString Language=\"en\">Max Miller</LanguageString> (Candidate _55A742EA571B09A3E0633390EE0AE290, Republican) | <BallotSelection ... ObjectId=\"_BS55A742EA571B09A3E0633390EE0AE290\"> <VoteCounts Type=\"Total\" Count=\"148177\"> | <BallotSelection ... ObjectId=\"_BS55A742EA626809A3E0633390EE0AE290\"> (Brian Poindexter) <VoteCounts Type=\"Total\" Count=\"180614\">",
+   "what_source_says": "The Ohio Secretary of State's NIST 1500-100 results XML (generated 2026-11-13, status UnofficialComplete) for 'Representative to Congress - District 07' gives Max Miller (Republican) 148,177 votes and Brian Poindexter (Democratic) 180,614 for Congressional District 7. Miller lost.",
+   "proposed_changes": "",
+   "notes": "The results are unofficial but complete; Ohio certifies about three weeks after the election. Names and vote counts sit in separate XML elements, linked by candidate ObjectId (BallotSelection _BS<id> = Candidate <id>). The XML came from the official 'Election Results XML Feed' link on liveresults.ohiosos.gov.",
+   "group": "OH+IA"
+  },
+  {
+   "icpsr": "20342",
+   "bioname": "TURNER, Michael R.",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://liveresults.ohiosos.gov/Api/v1/download?filename=VSSC1622XmlFileBlob",
+   "source_file": "data/sources/2026-11-23_oh-sos-general-results-nist.xml",
+   "quote": "Status=\"UnofficialComplete\" | <Contest ... Name=\"Representative to Congress - District 10\"> | <LanguageString Language=\"en\">Mike Turner</LanguageString> (Candidate _55A742EA571109A3E0633390EE0AE290, Republican) | <BallotSelection ... ObjectId=\"_BS55A742EA571109A3E0633390EE0AE290\"> <VoteCounts Type=\"Total\" Count=\"144086\"> | <BallotSelection ... ObjectId=\"_BS55A742EA628509A3E0633390EE0AE290\"> (Kristina Knickerbocker) <VoteCounts Type=\"Total\" Count=\"149024\">",
+   "what_source_says": "The Ohio SOS results XML for 'Representative to Congress - District 10' gives Mike Turner (Republican) 144,086 votes, Kristina Knickerbocker (Democratic) 149,024 and Thomas McMasters (Libertarian) 8,906. Turner lost.",
+   "proposed_changes": "",
+   "notes": "The results are unofficial but complete (generated 2026-11-13), not yet certified. The margin is about 4,900 votes. The draft's Ballotpedia call agrees with the state count.",
+   "group": "OH+IA"
+  },
+  {
+   "icpsr": "22162",
+   "bioname": "CAREY, Mike",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://liveresults.ohiosos.gov/Api/v1/download?filename=VSSC1622XmlFileBlob",
+   "source_file": "data/sources/2026-11-23_oh-sos-general-results-nist.xml",
+   "quote": "Status=\"UnofficialComplete\" | <Contest ... Name=\"Representative to Congress - District 15\"> | <LanguageString Language=\"en\">Mike Carey</LanguageString> (Candidate _55A742EA570309A3E0633390EE0AE290, Republican) | <BallotSelection ... ObjectId=\"_BS55A742EA570309A3E0633390EE0AE290\"> <VoteCounts Type=\"Total\" Count=\"130225\"> | <BallotSelection ... ObjectId=\"_BS55A742EA62C509A3E0633390EE0AE290\"> (Don Leonard) <VoteCounts Type=\"Total\" Count=\"149287\">",
+   "what_source_says": "The Ohio SOS results XML for 'Representative to Congress - District 15' gives Mike Carey (Republican) 130,225 votes, Don Leonard (Democratic) 149,287 and Brennan Barrington (Libertarian) 8,135. Carey lost.",
+   "proposed_changes": "",
+   "notes": "The results are unofficial but complete (generated 2026-11-13), not yet certified.",
+   "group": "OH+IA"
+  },
+  {
+   "icpsr": "22113",
+   "bioname": "FEENSTRA, Randy",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://electionresults.iowa.gov/IA/127077/387397/json/en/summary.json",
+   "source_file": "data/sources/2026-11-23_ia-sos-general-results-summary.json",
+   "quote": "United States Representative District 4 ... \"CH\" : [ \"Chris McGowan\",\"Dave Dawson\",\"Write-in\" ] ... \"V\" : [ 178960,124128,402 ] ... \"W\" : [ 1,0,0 ]  || Monona County official primary PDF: \"OFFICIAL RESULTS ... Date: 6/8/2026 ... United States Representative District 4 - Rep. ... Chris McGowan 642 99.53% ... Governor - Rep. ... Eddie Andrews 15 2.02% Randy Feenstra 305 41.11% Zach Lahn 318 42.86% Brad Sherman 54 7.28% Adam Steen 47 6.33%\"",
+   "what_source_says": "The Iowa state general results for 'United States Representative District 4' list only Chris McGowan (REP) and Dave Dawson (DEM), so Feenstra was not on the House general ballot. Feenstra is also absent from the general-election Governor contest, where Zach Lahn is the Republican nominee. The official Monona County June 2, 2026 primary report lists Randy Feenstra as a candidate in 'Governor - Rep.' and Chris McGowan as the only candidate in the 'United States Representative District 4 - Rep.' primary.",
+   "proposed_changes": "",
+   "notes": "Only the 'did not run for re-election to the House' part rests on the state source (electionresults.iowa.gov). The 'ran for governor' part rests on a county .gov official report (Monona County, in IA-4), not a secretary of state page. The Iowa SOS candidate lists and canvass PDFs on sos.iowa.gov return a Cloudflare 403 challenge to curl, so they could not be saved. The county PDF uses glyph-coded fonts with no PDF text tool available, so I decoded it with python -I and a fixed glyph offset; the decoded text is coherent ('Election Summary Report', 'OFFICIAL RESULTS', 'Date: 6/8/2026'). The county PDF is kept as supporting evidence. The reason ran_other_office still holds: Feenstra ran for governor and lost the GOP primary.",
+   "group": "OH+IA"
+  },
+  {
+   "icpsr": "22571",
+   "bioname": "BLAIR, Everton",
+   "outcome": "corrected",
+   "source_type": "state",
+   "source_url": "https://results.sos.ga.gov/results/public/api/elections/Georgia/GeneralPrimary51926/data",
+   "source_file": "data/sources/2026-11-23_ga-sos-results-GeneralPrimary51926-data.json",
+   "quote": "\"isOfficialResults\":true ... \"text\":\"US House of Representatives - District 13 - Dem\" ... \"text\":\"Everton \\\"EJ\\\" Blair\"}],\"voteCount\":12733 ... \"text\":\"Jasmine Clark\"}],\"voteCount\":61504",
+   "what_source_says": "GA Secretary of State official results (isOfficialResults true, as of 2026-06-05) for the May 19, 2026 General Primary, US House District 13 Democratic primary: Jasmine Clark 61,504 of 109,581 total (56.1%, an outright majority, so no runoff); Everton \"EJ\" Blair 12,733 (11.6%); Heavenly Kimes 23,537; Emanuel D Jones 8,204; others. Blair lost the regular Democratic primary for GA-13.",
+   "proposed_changes": "reason=lost_primary, status=called, party=Democrat, icpsr=22571",
+   "notes": "Clark's majority means there was no GA-13 Democratic runoff, so the June 16 runoff file was not kept. The primary was May 19, 2026, before Blair won the special election (decided in the Aug 25 runoff) for the rest of David Scott's term, so he was not yet the incumbent when he lost. The JSON came from the state's Enhanced Voting results API (results.sos.ga.gov), the same endpoint the official results page loads. sos.ga.gov PDFs returned Cloudflare 403 to curl.",
+   "group": "FL+VA+GA"
+  },
+  {
+   "icpsr": "20756",
+   "bioname": "WITTMAN, Robert J.",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://enr.elections.virginia.gov/results/public/api/elections/virginia/2026-November-General/data",
+   "source_file": "data/sources/2026-11-23_va-elections-enr-2026-november-general-data.json",
+   "quote": "\"text\":\"Member, House of Representatives (1st District)\" ... \"reportingStatus\":{\"reportingUnits\":18,\"totalUnits\":18 ... \"text\":\"Shannon L. Taylor\"}],\"voteCount\":212154 ... \"text\":\"Robert J. \\\"Rob\\\" Wittman\"}],\"voteCount\":200047",
+   "what_source_says": "Virginia Department of Elections results for the 2026 November General, VA-1: Shannon L. Taylor (D) 212,154 and Robert J. \"Rob\" Wittman (R) 200,047, with 18 of 18 localities reporting. Wittman trails by 12,107 votes (about 2.9 points). isCloseRace is false.",
+   "proposed_changes": "",
+   "notes": "These results are UNOFFICIAL: the file has \"isOfficialResults\":false, asOf 2026-11-23T21:34Z. All localities have reported, but the state page does not make a 'call'. It supports lost_general on the complete unofficial count. The 2026 ballot district is VA-1, the same as the 119th-Congress district. The JSON is the data endpoint that the state's ENR page (enr.elections.virginia.gov, linked from elections.virginia.gov/results) loads.",
+   "group": "FL+VA+GA"
+  },
+  {
+   "icpsr": "22335",
+   "bioname": "KIGGANS, Jennifer",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://enr.elections.virginia.gov/results/public/api/elections/virginia/2026-November-General/data",
+   "source_file": "data/sources/2026-11-23_va-elections-enr-2026-november-general-data.json",
+   "quote": "\"text\":\"Member, House of Representatives (2nd District)\" ... \"reportingStatus\":{\"reportingUnits\":8,\"totalUnits\":8 ... \"text\":\"Elaine G. Luria\"}],\"voteCount\":182933 ... \"text\":\"Jen A. Kiggans\"}],\"voteCount\":152130",
+   "what_source_says": "Virginia Department of Elections results for the 2026 November General, VA-2: Elaine G. Luria (D) 182,933 and Jen A. Kiggans (R) 152,130, with 8 of 8 localities reporting. Kiggans lost.",
+   "proposed_changes": "",
+   "notes": "These results are UNOFFICIAL (\"isOfficialResults\":false). All localities have reported and the margin is about 30,800 votes. The 2026 ballot district is VA-2, the same as the 119th-Congress district. This is the same file as the Wittman row.",
+   "group": "FL+VA+GA"
+  },
+  {
+   "icpsr": "22350",
+   "bioname": "MILLS, Cory",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://results.elections.myflorida.com/SummaryRpt.asp?ElectionDate=8/18/2026&Race=FED&Party=REP&DATAMODE=",
+   "source_file": "data/sources/2026-11-23_fl-dos-2026-rep-primary-federal-summary.html",
+   "quote": "August 18, 2026 Primary Election Republican Primary Official Results ... District: 7   Ryan Elijah Michael Don Johnson Cory Lee Mills Sarah Ulrich Total 31,558 5,411 22,753 7,010 % Votes 47.3% 8.1% 34.1% 10.5%",
+   "what_source_says": "Florida Department of State Division of Elections, official results of the August 18, 2026 Republican primary for U.S. Representative District 7: Ryan Elijah 31,558 (47.3%), Cory Lee Mills 22,753 (34.1%), Sarah Ulrich 7,010 (10.5%), Michael Don Johnson 5,411 (8.1%). Mills lost the primary. Florida has no primary runoff.",
+   "proposed_changes": "",
+   "notes": "Quote taken with tags stripped. Also, the saved FL general-election page (2026-11-23_fl-electionwatch-us-representative-general.html) lists Ryan Elijah (REP) as the District 7 general-election candidate, and Mills does not appear on it.",
+   "group": "FL+VA+GA"
+  },
+  {
+   "icpsr": "21116",
+   "bioname": "WEBSTER, Daniel A.",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+   "source_file": "data/sources/2026-11-23_fl-electionwatch-us-representative-general.html",
+   "quote": "Representative in Congress, District 11 General Contest Results by County Compare State to County Candidate Party Votes Received Joe Strada REP 193,595 52.92% James Pericola DEM 168,246 45.99% Ralph Groves LPF 3,961 1.08% Total 365,802",
+   "what_source_says": "The Florida Division of Elections 2026 general results for U.S. Representative list Joe Strada (REP), James Pericola (DEM) and Ralph Groves (LPF) in District 11. 'Webster' appears nowhere on the statewide U.S. Representative page (grep count 0). It also appears nowhere in the official August 18, 2026 Republican federal primary results (data/sources/2026-11-23_fl-dos-2026-rep-primary-federal-summary.html), where the District 11 primary was Carey Baker, Ivette Palomo, Nizam Razack, Joe Strada and Tim Wilkins.",
+   "proposed_changes": "",
+   "notes": "This is evidence by absence: Webster was not a candidate for any U.S. House seat in the 2026 Florida primary or general. The state source shows he did not run for re-election. It cannot show why (retirement) or rule out a run for a non-federal office. The page header reads 'Official Election Results'. Quote taken with tags stripped.",
+   "group": "FL+VA+GA"
+  },
+  {
+   "icpsr": "20709",
+   "bioname": "BUCHANAN, Vernon G.",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+   "source_file": "data/sources/2026-11-23_fl-electionwatch-us-representative-general.html",
+   "quote": "Representative in Congress, District 16 General Contest Results by County Compare State to County Candidate Party Votes Received Sydney Gruters REP 175,656 51.2% Kelly Kirschner DEM 161,159 46.97% Mark Davis NPA 6,283 1.83% Total 343,098",
+   "what_source_says": "The Florida Division of Elections 2026 general results list Sydney Gruters (REP), Kelly Kirschner (DEM) and Mark Davis (NPA) in District 16. 'Buchanan' appears nowhere on the statewide U.S. Representative page (grep count 0). It also appears nowhere in the official Aug 18, 2026 Republican federal primary results, where the District 16 primary was Sydney Gruters, Ed Pope and Eddie Speir.",
+   "proposed_changes": "",
+   "notes": "This is evidence by absence: Buchanan did not run for any U.S. House seat in 2026 in Florida. The source cannot confirm that the reason was retirement. Quote taken with tags stripped.",
+   "group": "FL+VA+GA"
+  },
+  {
+   "icpsr": "21513",
+   "bioname": "CARTER, Buddy",
+   "outcome": "confirmed",
+   "source_type": "state",
+   "source_url": "https://results.sos.ga.gov/results/public/api/elections/Georgia/GeneralPrimary51926/data",
+   "source_file": "data/sources/2026-11-23_ga-sos-results-GeneralPrimary51926-data.json",
+   "quote": "\"isOfficialResults\":true ... \"text\":\"US Senate - Rep\" ... \"text\":\"Earl L. \\\"Buddy\\\" Carter\"}],\"voteCount\":229223",
+   "what_source_says": "GA Secretary of State official May 19, 2026 General Primary results: Earl L. \"Buddy\" Carter was a candidate in the Republican primary for US Senate (229,223 votes, third behind Mike Collins 369,642 and Derek Dooley 275,534). He does not appear in the US House District 1 Republican primary, whose candidates were Pat Farrell, James \"Jim\" Kingston, Brian Montgomery, Krista Penn, Kandiss Taylor and Eugene Yu. No other US House contest in the file lists him.",
+   "proposed_changes": "",
+   "notes": "This supports ran_other_office (U.S. Senate) and shows he did not seek re-election to the House. He also lost the Senate primary, but the row's reason stays ran_other_office.",
+   "group": "FL+VA+GA"
+  },
+  {
+   "icpsr": "20952",
+   "bioname": "CONNOLLY, Gerald E. (Gerry)",
+   "outcome": "confirmed",
+   "source_type": "federal_gov",
+   "source_url": "https://clerk.house.gov/member_info/vacancies/vacant-office-press-release-VA11.pdf",
+   "source_file": "data/sources/2026-11-23_va-clerk-house-va11-vacancy-press-release.pdf",
+   "quote": "Washington, DC—The Washington, DC, office and the district offices of former Representative Gerald E. Connolly will continue to serve the people of the Eleventh Congressional District of Virginia under the supervision of the Clerk of the House of Representatives. Representative Connolly passed away on May 21, 2025.",
+   "what_source_says": "A Clerk of the House press release dated May 21, 2025 says Representative Gerald E. Connolly (VA-11) died on May 21, 2025 and that his office is under the Clerk's supervision. It calls this the fifth vacancy of the 119th Congress.",
+   "proposed_changes": "",
+   "notes": "federal_gov is allowed for resigned_died rows. The quote was read from the PDF with the Read tool. As context, the saved VA 2026 general file shows James R. Walkinshaw (D) as the VA-11 candidate.",
+   "group": "FL+VA+GA"
+  }
+ ],
+ "files_saved": [
+  {
+   "file": "data/sources/2026-11-23_nc-ncsbe-statewide-results-20261103.txt",
+   "url": "https://er.ncsbe.gov/enr/20261103/data/results_0.txt",
+   "bytes": 197630,
+   "sha256": "b24cba0d337cb45e9c1d98d70a9b42908a3333f998aaeea0451a2b1a37bdb773",
+   "page_date": "unknown",
+   "purpose": "NCSBE statewide results data (JSON) for the Nov 3, 2026 general election; NC-3, 5, 6, 9, 13, 14 US House vote totals with all precincts reporting (HTTP Last-Modified 2026-11-23 23:00 GMT)"
+  },
+  {
+   "file": "data/sources/2026-11-23_nc-ncsbe-foxx-recount-request-cd5.pdf",
+   "url": "https://dl.ncsbe.gov/Legal/2026%20General%20Election/Recount%20Requests/5th%20Congressional%20District_Foxx_Recount%20Request.pdf",
+   "bytes": 168304,
+   "sha256": "4079645ce094368ccaaaa4b169b514594c967fa89a2cd9275ec31f4f0b273084",
+   "page_date": "2026-11-17",
+   "purpose": "Foxx's NC CD5 recount request (331-vote post-canvass margin) as posted by NCSBE; shows the race was not final"
+  },
+  {
+   "file": "data/sources/2026-11-23_ct-electionhistory-2026-rep-in-congress.csv",
+   "url": "https://electionhistory.ct.gov/api/download_search.csv?search=%7B%22global%22%3A%7B%22years%22%3A%7B%22from%22%3A2026%2C%22to%22%3A2026%7D%7D%2C%22contests%22%3A%7B%22candidates%22%3A%5B%5D%2C%22offices%22%3A%5B%7B%22id%22%3A330%7D%5D%2C%22divisions%22%3A%5B%5D%7D%2C%22voterStats%22%3Afalse%2C%22stages%22%3A%5B%5D%2C%22specialElectionsOnly%22%3Afalse%7D",
+   "bytes": 2636953,
+   "sha256": "d2fe3b7b8e0ee3dc0d49bfeca74c870d23d3165d20d950d47b7918536c89e09a",
+   "page_date": "unknown",
+   "purpose": "CT Secretary of the State election database export: Aug 11, 2026 Representative in Congress primaries by town and polling place; CD1 Democratic primary Bronin over Larson"
+  },
+  {
+   "file": "data/sources/2026-11-23_ca-sos-api-usrep-district-1.json",
+   "url": "https://api.sos.ca.gov/returns/us-rep/district/1",
+   "bytes": 498,
+   "sha256": "e6efd5a1e5c1e8be8c84b91d01b9fd79efbaf7f456c560dbf909281ebb708bc7",
+   "page_date": "2026-11-23 (ReportingTime: November 23, 2026, 1:20 p.m.)",
+   "purpose": "CA SOS semi-official CA-1 returns: Gallagher (R) trails McGuire (D)"
+  },
+  {
+   "file": "data/sources/2026-11-23_ca-sos-api-usrep-district-4.json",
+   "url": "https://api.sos.ca.gov/returns/us-rep/district/4",
+   "bytes": 494,
+   "sha256": "18768b4d3dfc5ce8876c50150325e843dc4681459722e4ac7914af0c495b4852",
+   "page_date": "2026-11-23 (ReportingTime: November 23, 2026, 1:20 p.m.)",
+   "purpose": "CA SOS semi-official CA-4 returns: Mike Thompson (D) trails Eric Jones (D)"
+  },
+  {
+   "file": "data/sources/2026-11-23_ca-sos-api-usrep-district-6.json",
+   "url": "https://api.sos.ca.gov/returns/us-rep/district/6",
+   "bytes": 493,
+   "sha256": "8651fc330ea57e98065edbe2296403e2c00e605d5979fbdb278eaca04eb5b72b",
+   "page_date": "2026-11-23 (ReportingTime: November 23, 2026, 1:20 p.m.)",
+   "purpose": "CA SOS semi-official CA-6 returns: Kiley (NPP) trails Pan (D)"
+  },
+  {
+   "file": "data/sources/2026-11-23_ca-sos-api-usrep-district-22.json",
+   "url": "https://api.sos.ca.gov/returns/us-rep/district/22",
+   "bytes": 501,
+   "sha256": "1b7246bf69c16dc4d5824dd4c3ae58cc589d0c760b9e720d218c7cb361bee53a",
+   "page_date": "2026-11-23 (ReportingTime: November 23, 2026, 1:20 p.m.)",
+   "purpose": "CA SOS semi-official CA-22 returns: Valadao (R) trails Villegas (D)"
+  },
+  {
+   "file": "data/sources/2026-11-23_ca-sos-api-usrep-district-34.json",
+   "url": "https://api.sos.ca.gov/returns/us-rep/district/34",
+   "bytes": 504,
+   "sha256": "e4092a69f95c71a07cbe7c81a030f81ddb28372d0cbc5debaade70115e6c491c",
+   "page_date": "2026-11-23 (ReportingTime: November 23, 2026, 1:20 p.m.)",
+   "purpose": "CA SOS semi-official CA-34 returns: Gomez (D) trails Gonzales-Torres (D)"
+  },
+  {
+   "file": "data/sources/2026-11-23_ca-sos-api-usrep-district-40.json",
+   "url": "https://api.sos.ca.gov/returns/us-rep/district/40",
+   "bytes": 492,
+   "sha256": "55e77f82e37e5d2591400e41ba2427c52cd40ecac30dffbeb32ac626abfe7bc3",
+   "page_date": "2026-11-23 (ReportingTime: November 23, 2026, 1:20 p.m.)",
+   "purpose": "CA SOS semi-official CA-40 returns: Young Kim (R) trails Ken Calvert (R)"
+  },
+  {
+   "file": "data/sources/2026-11-23_mn-sos-ushouse-results.txt",
+   "url": "https://electionresultsfiles.sos.mn.gov/20261103/ushouse.txt",
+   "bytes": 2318,
+   "sha256": "69cc9e24e88147ae4ebd1cb279cc18235a042a2237ae4a6952fde9ac43ebf4c7",
+   "page_date": "unknown",
+   "purpose": "MN SOS U.S. House results file: MN-1 Johnson 163,065 vs Finstad 162,741, all 750 precincts (vote totals only, no call or certification marker)"
+  },
+  {
+   "file": "data/sources/2026-11-23_mn-kttc-why-ap-has-not-called-cd1.html",
+   "url": "https://www.kttc.com/2026/11/09/why-ap-has-not-called-minnesotas-1st-congressional-district-race/",
+   "bytes": 213866,
+   "sha256": "22804d689df5a9a5256c14e7b783a25fd248bd5504077b326a8d8cb56107ce0d",
+   "page_date": "2026-11-09",
+   "purpose": "news_reporting_ap: KTTC reports The Associated Press has not called MN-1 (Johnson leads Finstad by 322)"
+  },
+  {
+   "file": "data/sources/2026-11-23_in-enr-ushouse-general.json",
+   "url": "https://enr.indianavoters.in.gov/site/data/OffCatC_1005_B.json",
+   "bytes": 116491,
+   "sha256": "d64516c03966cbca709547eec110a873d4c45a5c8cdfea1b83c4a95b93f5dcae",
+   "page_date": "2026-11-19",
+   "purpose": "Indiana ENR US House Nov 3 2026 general results (Spartz IN-5)"
+  },
+  {
+   "file": "data/sources/2026-11-23_tx-sos-general-results.html",
+   "url": "https://electionresults.sos.state.tx.us/results.html",
+   "bytes": 291802,
+   "sha256": "e5e098d343789bcd38e0366920ee7887c9072931bd92ce1e5244b55b180eacdc",
+   "page_date": "2026-11-04",
+   "purpose": "Texas SOS Nov 3 2026 general results (De La Cruz TX-15 loss; corroborates Green/Johnson/Crenshaw/McCaul absent from Nov ballot)"
+  },
+  {
+   "file": "data/sources/2026-11-23_tx-abc13-green-runoff-ap.html",
+   "url": "https://abc13.com/post/rep-christian-menefee-wins-democratic-primary-18th-house-district-texas-defeating-al-green-ap-projects/19177923/",
+   "bytes": 309527,
+   "sha256": "dc563f50bf87d6113468c860ba903a929439730b9b41f1fa728d9d724d138070",
+   "page_date": "2026-05-27",
+   "purpose": "AP call: Menefee defeats Al Green, TX-18 Democratic runoff"
+  },
+  {
+   "file": "data/sources/2026-11-23_tx-txtribune-johnson-runoff-ap.html",
+   "url": "https://www.texastribune.org/2026/05/26/texas-colin-allred-julie-johnson-congress-district-33-democratic-primary-runoff/",
+   "bytes": 391923,
+   "sha256": "bdb72865968e2e6391debaefbcb5977002a87a785ef7bc7e059a25cd95f74006",
+   "page_date": "2026-05-26",
+   "purpose": "AP call: Allred defeats Julie Johnson, TX-33 Democratic runoff"
+  },
+  {
+   "file": "data/sources/2026-11-23_tx-usatoday-yahoo-crenshaw-primary-ap.html",
+   "url": "https://www.yahoo.com/news/articles/rep-dan-crenshaw-loses-gop-065643307.html",
+   "bytes": 571908,
+   "sha256": "2e5862d51b5aff1389ab74b952eaa13b42c1df1f0818329ca1e895ce17f7c97c",
+   "page_date": "2026-03-04",
+   "purpose": "AP (with NBC) reported Toth defeats Crenshaw, TX-2 Republican primary"
+  },
+  {
+   "file": "data/sources/2026-11-23_tx-clerk-house-vacancies.html",
+   "url": "https://clerk.house.gov/Members/ViewVacancies",
+   "bytes": 29423,
+   "sha256": "b9a5fd352c1c74c8f740ec3857767647046539521a8bf3bc0c8b0668df10f469",
+   "page_date": "unknown",
+   "purpose": "House Clerk vacancy list: Gonzales TX-23 resigned April 14, 2026"
+  },
+  {
+   "file": "data/sources/2026-11-23_tx-burleson-county-rep-primary.pdf",
+   "url": "https://www.burlesoncountytx.gov/page/open/2806/0/REP%20ELECTION-UNOFFICIAL-RESULT-REPORT_52622_1772604900723.pdf",
+   "bytes": 86982,
+   "sha256": "c0dc80af5a53df0d03ea23fd46239d05942b81aff83a2560f7118aadeba949ed",
+   "page_date": "2026-03-03",
+   "purpose": "TX-10 2026 Republican primary candidate list (McCaul not a candidate)"
+  },
+  {
+   "file": "data/sources/2026-11-23_ny-heraldbulletin-ny1-lalota-ap-racecall.html",
+   "url": "https://www.heraldbulletin.com/news/nation_world/republican-nicholas-lalota-wins-reelection-to-u-s-house-in-new-yorks-1st-congressional-district/article_dc4b5dd0-b662-5494-8c00-969cee5a7254.html",
+   "bytes": 212541,
+   "sha256": "ee695ecbf17237dade6ca46dbc3d4bb375b993d13607e2e8844c11504db67b27",
+   "page_date": "2026-11-05",
+   "purpose": "AP race-call bulletin: LaLota (R) wins re-election in NY-1 (news_reporting_ap)"
+  },
+  {
+   "file": "data/sources/2026-11-23_ny-longislandpress-ny2-garbarino-ap.html",
+   "url": "https://www.longislandpress.com/2026/11/06/halpin-refuses-to-concede-cd2-race-to-garbarino/",
+   "bytes": 135403,
+   "sha256": "a17dc327b9bffbbf83a7cc2213e57bc4bc2e6bae9b9fb3e5292b39b27fbf7437",
+   "page_date": "2026-11-06",
+   "purpose": "Reports that the Associated Press declared incumbent Garbarino the winner in NY-2 (news_reporting_ap)"
+  },
+  {
+   "file": "data/sources/2026-11-23_ny-ottumwacourier-ny17-conley-ap-racecall.html",
+   "url": "https://www.ottumwacourier.com/news/national_news/democrat-cait-conley-wins-election-to-u-s-house-in-new-yorks-17th-congressional-district/article_e7784190-9881-5d34-bcb5-2f8943109a65.html",
+   "bytes": 256557,
+   "sha256": "dc864b14702317d01a409d4b72429e549fcbfcfdf3e294b965b48b8a1c92e7d1",
+   "page_date": "2026-11-05",
+   "purpose": "AP race call: Conley defeats incumbent Lawler in NY-17; AP declared Conley the winner (news_reporting_ap)"
+  },
+  {
+   "file": "data/sources/2026-11-23_ny-justthenews-ny10-goldman-ap.html",
+   "url": "https://justthenews.com/politics-policy/holdx-wins-contentious-ny-dem-house-primary-ap",
+   "bytes": 109590,
+   "sha256": "a0b980309a25bbeba30dd8999a5d230985bf421e24ef6219b75d9318418fbf0b",
+   "page_date": "2026-06-23",
+   "purpose": "AP called the NY-10 Democratic primary for Lander over incumbent Goldman (news_reporting_ap)"
+  },
+  {
+   "file": "data/sources/2026-11-23_ny-justthenews-ny13-espaillat-ap.html",
+   "url": "https://justthenews.com/politics-policy/holdx-mamdani-backed-challenger-faces-incumbent-ap",
+   "bytes": 109287,
+   "sha256": "3890b56b36b58e419d7893acb14580ebc3104fd4ad636fc8a7c62cfe2da1febc",
+   "page_date": "2026-06-23",
+   "purpose": "AP called the NY-13 Democratic primary for Avila Chevalier over incumbent Espaillat (news_reporting_ap)"
+  },
+  {
+   "file": "data/sources/2026-11-23_ma-electionstats-2026-senate-primaries.html",
+   "url": "https://electionstats.state.ma.us/elections/search/year_from:2026/year_to:2026/office_id:6/stage:Primaries",
+   "bytes": 325556,
+   "sha256": "578011151521710aba7d10bfbbaec86dda126b455514958b36170252f67a24c4",
+   "page_date": "unknown",
+   "purpose": "MA state results: Moulton ran in (and lost) the 2026 Democratic U.S. Senate primary (state)"
+  },
+  {
+   "file": "data/sources/2026-11-23_ma-electionstats-2026-house-primaries.html",
+   "url": "https://electionstats.state.ma.us/elections/search/year_from:2026/year_to:2026/office_id:5/stage:Primaries",
+   "bytes": 359259,
+   "sha256": "2677fa2710544a59bec2d2f1f47fdef4b8d0de9ab9e51283a487b9e2b70ea439",
+   "page_date": "unknown",
+   "purpose": "MA state results: the 2026 MA-6 House primary candidates do not include Moulton (state, supporting)"
+  },
+  {
+   "file": "data/sources/2026-11-23_mt-primary-state-canvass.pdf",
+   "url": "https://sosmt.gov/wp-content/uploads/wpfd/preview_files/2026-Primary-State-Canvass(f0627306086b974f9ac2e416bb8125c9).pdf",
+   "bytes": 272889,
+   "sha256": "2006b0cf5650593790dbaaa894e61238b8faaef888f46a1e72f445cf12f333c4",
+   "page_date": "2026-06-29",
+   "purpose": "MT SOS 2026 primary state canvass: the MT-1 candidates do not include Zinke (state)"
+  },
+  {
+   "file": "data/sources/2026-11-23_pa-electionreturns-us-house-general-2026.json",
+   "url": "https://www.electionreturns.pa.gov/api/ElectionReturn/GetOfficeData?officeId=11&methodName=GetOfficeDetails&electionid=117&electiontype=G&isactive=1",
+   "bytes": 24152,
+   "sha256": "cd7bbd67c4a540ddf5b8293b2126d5b2f660c2d743787d8969202758dc324b93",
+   "page_date": "unknown",
+   "purpose": "PA DOS unofficial 2026 general returns, Representative in Congress, all districts (PA-1, 3, 7, 8, 10 rows)"
+  },
+  {
+   "file": "data/sources/2026-11-23_pa-electionreturns-us-house-primary-2026.json",
+   "url": "https://www.electionreturns.pa.gov/api/ElectionReturn/GetOfficeData?officeId=11&methodName=GetOfficeDetails&electionid=117&electiontype=P&isactive=0",
+   "bytes": 26259,
+   "sha256": "f46d755f639e19b312a858eefeaaa7a372da766a228a01cfd6efaae0bad56286",
+   "page_date": "unknown",
+   "purpose": "PA DOS 2026 General Primary returns, Representative in Congress (Evans not a PA-3 candidate)"
+  },
+  {
+   "file": "data/sources/2026-11-23_pa-electionreturns-election-status-2026.json",
+   "url": "https://www.electionreturns.pa.gov/api/ElectionReturn/GetOfficeNames?countyName=&methodName=GetOfficeNames&electionid=undefined&electiontype=G&isactive=1",
+   "bytes": 1490,
+   "sha256": "dca35b4c15f17461348f8bb59f8a105e22fadab484ce1de7880d6a6a2dfd6b52",
+   "page_date": "unknown",
+   "purpose": "PA DOS election metadata: '2026 General Election,Unofficial', 8,932 of 9,065 districts reporting (98.53%)"
+  },
+  {
+   "file": "data/sources/2026-11-23_nj-inquirer-mullock-van-drew-official.html",
+   "url": "https://www.inquirer.com/politics/new-jersey/zack-mullock-jeff-van-drew-results-official-20261105.html",
+   "bytes": 1090811,
+   "sha256": "7b6069eabc4b48fa1b460e9e368336f9abda9356b860591a3b8d84fac9f81f74",
+   "page_date": "2026-11-05",
+   "purpose": "news_reporting_ap: AP called NJ-2 for Mullock over Van Drew"
+  },
+  {
+   "file": "data/sources/2026-11-23_nj-fox5ny-bennett-wins-7th-ap-projects.html",
+   "url": "https://www.fox5ny.com/news/nj-rebecca-bennett-new-jersey-7th-congressional-district",
+   "bytes": 176473,
+   "sha256": "ed858d4831bb28394df352668953b0a44013eb7ba4c810607bedca27b7530fcc",
+   "page_date": "2026-11-03",
+   "purpose": "news_reporting_ap: AP projects Bennett defeated Kean in NJ-7"
+  },
+  {
+   "file": "data/sources/2026-11-23_az-kjzz-mendoza-ousts-ciscomani.html",
+   "url": "https://www.kjzz.org/elections/2026-11-05/mendoza-ousts-ciscomani-in-arizonas-cd6-expanding-the-democratic-majority-in-congress-elex",
+   "bytes": 205435,
+   "sha256": "a6b3d12f34b529644be51395dc3156bf999042e4cc8900bf983fb155de2cfebb",
+   "page_date": "2026-11-05",
+   "purpose": "news_reporting_ap: AP race call for Mendoza over Ciscomani in AZ-6"
+  },
+  {
+   "file": "data/sources/2026-11-23_ky-2026-primary-certification.pdf",
+   "url": "https://elect.ky.gov/Documents/2026%20Primary%20Certification%20of%20Vote%20Totals%20Final.pdf",
+   "bytes": 221811,
+   "sha256": "e69458bae9bcce14f4aa22b3394ff0d47f9c5c9f8bd2915be1650519fdd8cd9c",
+   "page_date": "2026-05-19",
+   "purpose": "KY official 2026 primary vote totals: Massie lost the KY-4 GOP primary; Barr ran in the U.S. Senate GOP primary, not KY-6"
+  },
+  {
+   "file": "data/sources/2026-11-23_co-2026-primary-state-results.xlsx",
+   "url": "https://www.coloradosos.gov/pubs/elections/Results/2026/2026PrimaryElectionStateResults.xlsx",
+   "bytes": 86721,
+   "sha256": "273a18a7b89044f1569119c1aa3193a856b9a7f8463fae9df2520a34a5d2240f",
+   "page_date": "unknown",
+   "purpose": "CO SOS 2026 primary results: DeGette lost the CD-1 Democratic primary to Kiros"
+  },
+  {
+   "file": "data/sources/2026-11-23_co-cd4-kunc-laubacher-wins.html",
+   "url": "https://www.kunc.org/politics/2026-11-13/eileen-laubacher-wins-4th-congressional-district-seat-ousts-lauren-boebert",
+   "bytes": 176362,
+   "sha256": "6e12e7521d1ca823ec3cb8731e1ea5d53daaf9f9c248bf51faeac23566856df5",
+   "page_date": "2026-11-13",
+   "purpose": "news_reporting_ap: AP called CO-4 for Laubacher over Boebert"
+  },
+  {
+   "file": "data/sources/2026-11-23_co-cd5-coloradopolitics-ap-killin.html",
+   "url": "https://www.coloradopolitics.com/2026/11/05/ap-declares-jessica-killin-winner-in-5th-district-election/",
+   "bytes": 194830,
+   "sha256": "8bbde9c579c2159dfa8ff0d4d60f77855f5c17c99bb07fa90e6a7380a1294ad7",
+   "page_date": "2026-11-05",
+   "purpose": "news_reporting_ap: AP called CO-5 for Killin over Crank"
+  },
+  {
+   "file": "data/sources/2026-11-23_co-cd8-coloradopolitics-rutinel.html",
+   "url": "https://www.coloradopolitics.com/2026/11/03/gabe-evans-manny-rutinel-colorado-cd8-election-results/",
+   "bytes": 188409,
+   "sha256": "4dadae2a61d75df3002728ec97b4d4ee820739a7b74eb994d45a5fcdce1a0b55",
+   "page_date": "2026-11-04",
+   "purpose": "news_reporting_ap: AP called CO-8 for Rutinel over Evans"
+  },
+  {
+   "file": "data/sources/2026-11-23_mi-fox17-mccann-huizenga-ap.html",
+   "url": "https://www.fox17online.com/news/national-politics/america-votes/sean-mccann-wins-election-in-4th-congressional-district-ap-projects-unseating-bill-huizenga",
+   "bytes": 87236,
+   "sha256": "689f0a76d56022cffb8ebd4fec25cb7b62d3ca061bee9f599b524caba5ab61db",
+   "page_date": "2026-11-04",
+   "purpose": "news_reporting_ap second source for HUIZENGA lost_general (MI-4)"
+  },
+  {
+   "file": "data/sources/2026-11-23_mi-michpublic-barrett-concedes.html",
+   "url": "https://www.michiganpublic.org/politics-government/2026-11-04/barrett-concedes-to-lawrence-as-democrats-net-another-battleground-victory-in-se-michigan",
+   "bytes": 191957,
+   "sha256": "cfef8882a4ef820f973f2b1b4ff785b89da67081546129c548a300083956a2e9",
+   "page_date": "2026-11-04",
+   "purpose": "news_reporting_ap second source for BARRETT lost_general (MI-7)"
+  },
+  {
+   "file": "data/sources/2026-11-23_mi-bridge-congressional-primary-results.html",
+   "url": "https://bridgemi.com/michigan-politics/michigan-congressional-primary-results-races-to-watch-as-votes-are-tallied/",
+   "bytes": 265578,
+   "sha256": "cac1848f9ec815641c1eb0e2590902639ad27c2bd2788a4a986680ddd74cdb90",
+   "page_date": "2026-08-05",
+   "purpose": "news_reporting_ap second source for THANEDAR lost_primary (MI-13)"
+  },
+  {
+   "file": "data/sources/2026-11-23_mi-bsc-20260528-agenda-governor-petitions.pdf",
+   "url": "https://www.michigan.gov/sos/-/media/Project/Websites/sos/BSC-Announcements/2026/20260528-Meeting-Agenda.pdf",
+   "bytes": 115440,
+   "sha256": "d5525877d3bce5ad0a27c5703e9bbbde9b75832930ef1f407830ea17708601b5",
+   "page_date": "2026-05-28",
+   "purpose": "state source for JAMES ran_other_office (Governor petitions, Aug 4 2026 primary)"
+  },
+  {
+   "file": "data/sources/2026-11-23_mo-2026-primary-grand-totals.pdf",
+   "url": "https://www.sos.mo.gov/CMSImages/ElectionResultsStatistics/2026PrimaryElection.pdf",
+   "bytes": 957562,
+   "sha256": "1061f3ed30c0019071810a94d39847a707a159cb412e46e39c7b9d94a5150a14",
+   "page_date": "2026-08-25",
+   "purpose": "state source for GRAVES retired (not on MO-6 Aug 4 2026 primary ballot)"
+  },
+  {
+   "file": "data/sources/2026-11-23_tn-nov2026-congressional-results.html",
+   "url": "https://www.elections.tn.gov/categories/congressional/offices",
+   "bytes": 49945,
+   "sha256": "4c2fae03feccd4c07ae3409c8a71e4e09b26c171d33646553f7db6d5a6d03600",
+   "page_date": "unknown",
+   "purpose": "TN SOS Nov 3, 2026 dashboard: TN-4 final unofficial results (DesJarlais, pending). Also supports TN-5/TN-6 nominees (Ogles, Rose)."
+  },
+  {
+   "file": "data/sources/2026-11-23_tn-sos-election-results-index.html",
+   "url": "https://sos.tn.gov/elections/results",
+   "bytes": 264958,
+   "sha256": "81f9a529c15e8fc71ad05656e15174ea30208987f31787bd63fc49b97522ff4c",
+   "page_date": "unknown",
+   "purpose": "Provenance: official .gov TN SOS results index that links the Aug 6, 2026 Republican Primary By County PDF on sos-prod.tnsosgovfiles.com"
+  },
+  {
+   "file": "data/sources/2026-11-23_tn-aug2026-gop-primary-by-county.pdf",
+   "url": "https://sos-prod.tnsosgovfiles.com/s3fs-public/document/20260806RepublicanPrimarybyCounty.pdf",
+   "bytes": 311100,
+   "sha256": "24c91d86a3174cf0cd3164ce58bb68a3d55f306cae92429d075adb4709e55a41",
+   "page_date": "2026-09-03",
+   "purpose": "TN Aug 6, 2026 Republican primary results by county: Ogles lost TN-5 primary to Hatcher; Rose ran in governor primary and not in TN-6"
+  },
+  {
+   "file": "data/sources/2026-11-23_wi-wec-candidates-on-ballot-nov2026.pdf",
+   "url": "https://elections.wi.gov/sites/default/files/documents/Candidates%20on%20Ballot%20By%20Election_November%203%202026%20General%20Election.pdf",
+   "bytes": 129865,
+   "sha256": "eb38fde2afac1096c5b1076c662cf40e1a4cdc8dd05d8009c77549ea0a0bd50f",
+   "page_date": "2026-08-25",
+   "purpose": "WEC Nov 3, 2026 candidates on ballot: Tiffany is the R nominee for governor and not on the CD7 ballot. Also shows the WI-1 and WI-3 matchups."
+  },
+  {
+   "file": "data/sources/2026-11-23_wi-wpr-berman-defeats-steil.html",
+   "url": "https://www.wpr.org/news/democrat-mitchell-berman-defeats-republican-bryan-steil-2026",
+   "bytes": 293550,
+   "sha256": "87b1cf5a9199db1f32e38b5a5fd6f6ddf170322ea1981a7eccb47ba8a516ffde",
+   "page_date": "2026-11-04",
+   "purpose": "news_reporting_ap for Steil (WI-1): 'The Associated Press called the race at 11:48 p.m.'"
+  },
+  {
+   "file": "data/sources/2026-11-23_wi-wpr-cooke-defeats-van-orden.html",
+   "url": "https://www.wpr.org/news/democrat-rebecca-cooke-defeats-gop-derrick-van-orden-congress-midterms",
+   "bytes": 294334,
+   "sha256": "69e7b15e85525ad2695c04a5f2d688a3a1197253724b15e7824d6fafc928194d",
+   "page_date": "2026-11-04",
+   "purpose": "news_reporting_ap for Van Orden (WI-3): 'The Associated Press called the race at 11:48 p.m. Tuesday.'"
+  },
+  {
+   "file": "data/sources/2026-11-23_oh-sos-general-results-nist.xml",
+   "url": "https://liveresults.ohiosos.gov/Api/v1/download?filename=VSSC1622XmlFileBlob",
+   "bytes": 1234749,
+   "sha256": "8ef7b9e193f3b37301a312b03917f3227a07c4b56b75c268f1a91cfa9db768be",
+   "page_date": "2026-11-13",
+   "purpose": "Ohio SOS NIST 1500-100 results XML for Nov 3, 2026 general (UnofficialComplete): OH-7 Miller, OH-10 Turner, OH-15 Carey results"
+  },
+  {
+   "file": "data/sources/2026-11-23_ia-sos-general-results-summary.json",
+   "url": "https://electionresults.iowa.gov/IA/127077/387397/json/en/summary.json",
+   "bytes": 235293,
+   "sha256": "118fc6521025dda6c6c0dcb4d664faf560d93c0396a64ebee303556cc1732a01",
+   "page_date": "unknown",
+   "purpose": "Iowa statewide 2026 General Election results data (state results app JSON): IA-1 Miller-Meeks, IA-3 Nunn losses, and IA-4 and Governor candidates without Feenstra"
+  },
+  {
+   "file": "data/sources/2026-11-23_ia-monona-county-primary-official.pdf",
+   "url": "https://mononacountyiowa.gov/files/election_results/2026_primary_election_2026_06_02_89173.pdf",
+   "bytes": 111883,
+   "sha256": "4c2fe0d4394c24def6a0a517631615186116d8b18efc0b962381c8bcb52efa30",
+   "page_date": "2026-06-08",
+   "purpose": "Monona County (IA-4) official June 2, 2026 primary results: Feenstra on GOP governor primary ballot, McGowan sole GOP IA-4 candidate (supporting evidence for ran_other_office; county, not SOS)"
+  },
+  {
+   "file": "data/sources/2026-11-23_fl-dos-2026-rep-primary-federal-summary.html",
+   "url": "https://results.elections.myflorida.com/SummaryRpt.asp?ElectionDate=8/18/2026&Race=FED&Party=REP&DATAMODE=",
+   "bytes": 25231,
+   "sha256": "04355dd45496c5608a1530c6a5e2d973f5bbe5f8336b6ce4675f9237f62b2638",
+   "page_date": "2026-08-18",
+   "purpose": "FL Division of Elections official results of the Aug 18, 2026 Republican federal primary: Mills lost the FL-7 primary, and Webster and Buchanan are absent from the House primaries"
+  },
+  {
+   "file": "data/sources/2026-11-23_fl-electionwatch-us-representative-general.html",
+   "url": "https://floridaelectionwatch.gov/FederalOffices/USRepresentative",
+   "bytes": 178796,
+   "sha256": "3e969eca69b83a0831460d4376307061f5106870749d5cbadf44c9f93b24ccbe",
+   "page_date": "2026-11-03",
+   "purpose": "FL Division of Elections 2026 general results for U.S. Representative: Webster (FL-11) and Buchanan (FL-16) are not candidates, and Mills is not the FL-7 nominee"
+  },
+  {
+   "file": "data/sources/2026-11-23_ga-sos-results-GeneralPrimary51926-data.json",
+   "url": "https://results.sos.ga.gov/results/public/api/elections/Georgia/GeneralPrimary51926/data",
+   "bytes": 1770295,
+   "sha256": "62fc8588053c74cefa5c71a52838184d71a5d082c09c2c819240c9eda54a9a69",
+   "page_date": "2026-06-05",
+   "purpose": "GA Secretary of State official May 19, 2026 primary results: Blair lost the GA-13 Democratic primary, and Carter ran in the U.S. Senate Republican primary rather than for GA-1"
+  },
+  {
+   "file": "data/sources/2026-11-23_va-clerk-house-va11-vacancy-press-release.pdf",
+   "url": "https://clerk.house.gov/member_info/vacancies/vacant-office-press-release-VA11.pdf",
+   "bytes": 170254,
+   "sha256": "b9d1eed63c27413b6605a7e76e8e20940730ad19cd9d98a325fbb4904ca5b4c0",
+   "page_date": "2025-05-21",
+   "purpose": "Clerk of the House vacancy press release: Connolly died May 21, 2025"
+  },
+  {
+   "file": "data/sources/2026-11-23_va-elections-enr-2026-november-general-data.json",
+   "url": "https://enr.elections.virginia.gov/results/public/api/elections/virginia/2026-November-General/data",
+   "bytes": 1959391,
+   "sha256": "c253234074c4ea1bdec2eee38759f1b352efe7da137a48c41491533a1e7a90a3",
+   "page_date": "2026-11-23",
+   "purpose": "VA Department of Elections unofficial complete 2026 general results: Wittman lost VA-1 to Taylor and Kiggans lost VA-2 to Luria"
+  }
+ ],
+ "adversarial_verdicts": [
+  {
+   "icpsr": "20521",
+   "verdict": "supported",
+   "own_quote": "NCSBE txt (JSON): {'cnm': 'US HOUSE OF REPRESENTATIVES DISTRICT 05 (VOTE FOR 1)', 'bnm': 'Chuck Hubbard', 'pty': 'DEM', 'vct': '139769', 'prt': '230', 'ptl': '230'} ; {'bnm': 'Virginia Foxx', 'pty': 'REP', 'vct': '139439', 'prt': '230', 'ptl': '230'}. PDF (Nov 17, 2026, to NCSBE Exec. Dir. Sam Hayes): \"Following the completion of the canvasses for all counties in CD05, the margin between me and my opponent, Chuck Hubbard, stands at 331 votes ... I hereby formally request a recount be conducted under the supervision of the North Carolina State Board of Elections throughout all counties for the CD05 race.\"",
+   "ap_attribution": "n/a",
+   "notes": "Vote totals (139,439 vs 139,769; margin 330; 230 of 230 precincts) and the Nov 17 recount request citing a 331-vote post-canvass margin both match. Two caveats. First, the PDF is Foxx's own letter, and nothing in it shows it was posted on the NCSBE site. Second, neither file says a recount is actually underway or that the race is uncertified; the request only implies that. Both points are consistent with pending/uncalled. The results file has no certification field."
+  },
+  {
+   "icpsr": "22337",
+   "verdict": "supported",
+   "own_quote": "<title>Republican Nicholas LaLota wins reelection to U.S. House in New York's 1st Congressional District | Nation &amp; World | heraldbulletin.com</title> ... <meta itemprop=\"datePublished\" content=\"2026-11-05T12:00:43-05:00\"> ... articleBody: \"WASHINGTON (AP) — Republican Nicholas LaLota wins reelection to U.S. House in New York's 1st Congressional District.\" \"Copyright 2026 The Associated Press. All rights reserved.\"",
+   "ap_attribution": "\"WASHINGTON (AP) — Republican Nicholas LaLota wins reelection to U.S. House in New York's 1st Congressional District.\"; <meta name=\"author\" content=\"AP\" />; \"Copyright 2026 The Associated Press.\" These lines name AP as the author of the race-result bulletin. They do not say in so many words that AP 'called' or 'declared' the race (no 'race call' or 'declared' wording found).",
+   "notes": "The one-sentence body is the standard AP race-call bulletin format, dated Nov 5, 2026, and states that LaLota (R) won reelection in NY-1. That supports did_not_leave. The attribution to AP is by dateline, author meta tag and copyright line, not by explicit 'AP declared' wording."
+  },
+  {
+   "icpsr": "22506",
+   "verdict": "supported",
+   "own_quote": "\"District\":\"8th Congressional District\" ... \"ElectionYear\":\"2026\",\"OfficeName\":\"Representative in Congress\",\"PartyName\":\"DEM\",\"CandidateName\":\"PAIGE COGNETTI\",\"Votes\":\"154060\",\"Percentage\":\"54.48\" ... \"PartyName\":\"REP\",\"CandidateName\":\"ROB BRESNAHAN JR\",\"Votes\":\"128739\",\"Percentage\":\"45.52\"",
+   "ap_attribution": "n/a",
+   "notes": "Exact match on names, totals and percentages. The JSON is a double-encoded string with ElectionYear 2026. It has no official/unofficial status field, but the claim does not assert certification."
+  },
+  {
+   "icpsr": "31102",
+   "verdict": "supported",
+   "own_quote": "Commonwealth of Kentucky, Michael G. Adams, Secretary of State, May 19, 2026, Official 2026 Primary Election Results ... US Representative 4th Congressional District Republican Party: Ed GALLREIN / Thomas MASSIE ... Total Votes 57,822 47,539",
+   "ap_attribution": "n/a",
+   "notes": "PDF page 16 shows KY-4 GOP primary totals Gallrein 57,822 and Massie 47,539 in a two-candidate race, so Massie lost. The cover pages are titled 'Official 2026 Primary Election Results'."
+  },
+  {
+   "icpsr": "21179",
+   "verdict": "supported",
+   "own_quote": "\"United States House of Representatives District 4 Final Unofficial Results 11 of 11 Counties Completed\" ... data-race=\"United_States_House_of_Representatives_District_4\" data-candidates=\"[{&quot;name&quot;:&quot;Victoria Broderick&quot;,&quot;party&quot;:&quot;Democratic&quot;,&quot;votes&quot;:95585},{&quot;name&quot;:&quot;Scott DesJarlais&quot;,&quot;party&quot;:&quot;Republican&quot;,&quot;votes&quot;:95305}...",
+   "ap_attribution": "n/a",
+   "notes": "Page title is 'Congressional | Election Night Reporting Dashboard, Tennessee Secretary of State', November 3, 2026 Election. Searches for 'ertif' and 'winner|called|declared' returned 0 hits each, which confirms 'results only, no certification or call'. The row correctly stays pending/uncalled."
+  },
+  {
+   "icpsr": "22349",
+   "verdict": "supported",
+   "own_quote": "<ElectionReport ... GeneratedDate=\"2026-11-13T09:43:04Z\" Issuer=\"Ohio Secretary of State Frank LaRose\" ... Status=\"UnofficialComplete\"> ... <Contest ... Name=\"Representative to Congress - District 07\" ...> ... <VoteCounts Type=\"Total\" Count=\"148177\"> <GpUnitId>_55A742EA509709A3E0633390EE0AE290</GpUnitId> ... <CandidateId>_55A742EA571B09A3E0633390EE0AE290</CandidateId> [Max Miller, PartyId REP] ... <VoteCounts Type=\"Total\" Count=\"180614\"> ... <CandidateId>_55A742EA626809A3E0633390EE0AE290</CandidateId> [Brian Poindexter, PartyId DEM]",
+   "ap_attribution": "n/a",
+   "notes": "I checked that candidate ID _55A742EA571B... has BallotName 'Max Miller' with the Republican party ID, and that _55A742EA6268... is 'Brian Poindexter' with the Democratic party ID. The GpUnit for those totals is 'Congressional District 7'. The only other selections are two write-ins (5 and 237 votes). Miller lost 148,177 to 180,614. Status is UnofficialComplete, not certified."
+  },
+  {
+   "icpsr": "21116",
+   "verdict": "supported",
+   "own_quote": "General (title 'Florida Election Watch - US Representative 2026 General Election November 3, 2026 Official Election Results'): \"Representative in Congress, District 11 ... Joe Strada REP 193,595 52.92% James Pericola DEM 168,246 45.99% Ralph Groves LPF 3,961 1.08% Total 365,802\". Primary ('August 18, 2026 Primary Election Republican Primary Official Results'): \"District: 11 Carey Baker Ivette Palomo Nizam Razack Joe Strada Tim Wilkins Total 26,996 1,838 4,742 27,389 20,810 ... Machine Recount Completed\". Case-insensitive grep -c 'webster': 0 in general file, 0 in primary file.",
+   "ap_attribution": "n/a",
+   "notes": "'Webster' appears nowhere in either file: not in District 11 and not in any other FL House contest in the GOP primary or general. The candidate lists match the claim exactly. This supports 'did not run for re-election' as far as these files can show."
+  },
+  {
+   "icpsr": "22571",
+   "verdict": "supported",
+   "own_quote": "election: {'isOfficialResults': True, 'electionDate': '2026-05-19', 'isPrimary': True, 'asOf': '2026-06-05T12:37:48Z'} ; ballot item 'US House of Representatives - District 13 - Dem': Everton \"EJ\" Blair 12733 DEM; Jasmine Clark 61504 DEM; Jeff Fauntleroy Sr. 1557; Emanuel D Jones 8204; Heavenly Kimes 23537; Joe N. Lester 2046 (sum 109,581)",
+   "ap_attribution": "n/a",
+   "notes": "Clark has 61,504 of 109,581 votes (56.1%), an outright majority, so there is no runoff. Blair got 12,733 and lost the Democratic primary. isOfficialResults is true (160 occurrences, all true)."
+  },
+  {
+   "icpsr": "29908",
+   "verdict": "supported",
+   "own_quote": "44060,599,2026-08-11T00:00:00Z,Primary,Democratic,,,330,Representative in Congress,,4245,Representative in Congress District,1,9483,John B. Larson,,,461,City/Town,Barkhamsted,... | My sum over City/Town rows for district_name=1: Luke Bronin 29219; John B. Larson 18221; Jillian Gilchrest 4468; Ruth Fortune 2568; Total Votes Cast 54476",
+   "ap_attribution": "n/a",
+   "notes": "Summed the 'votes' column with python csv over all City/Town rows of the 2026-08-11 Democratic primary for Representative in Congress District 1. Totals match the claim exactly. Polling Place rows give the same totals, so they duplicate the town rows and must not be added again. The file holds only this primary (11,900 rows, all 2026-08-11 Primary). Bronin leads Larson by 10,998 votes, so Larson lost the primary."
+  },
+  {
+   "icpsr": "21532",
+   "verdict": "supported",
+   "own_quote": "UNITED STATES REPRESENTATIVE 1ST CONGRESSIONAL Democratic RYAN BUSSE RUSSELL CLEVELAND SAM FORSTAG MATT RAINS ... Total 23196 15238 26276 5518 ... UNITED STATES REPRESENTATIVE 1ST CONGRESSIONAL Republican RAY CURTIS AARON FLINT CHRISTI JACOBSEN AL 'DOC' OLSZEWSKI ... Total 5479 41170 18877 16686",
+   "ap_attribution": "n/a",
+   "notes": "Read all 15 pages of the MT SOS '2026 STATEWIDE PRIMARY ELECTION CANVASS'. The MT-1 candidates match the claim, and the MT-1 Libertarian candidate is Nick Sheedy. I searched the extracted text of all pages for 'ZINKE': 0 hits. He is not a candidate for US Senate, MT-1, MT-2 or any other office in the file. This supports that he was not on the 2026 primary ballot. The file itself does not say why."
+  },
+  {
+   "icpsr": "21356",
+   "verdict": "supported",
+   "own_quote": "\"10th Congressional District$$11$$\":[{\"DistrictId\":\"11\",\"District\":\"10th Congressional District\",\"Candidates\": [{\"ID\":\"3\",\"ElectionYear\":\"2026\",\"OfficeName\":\"Representative in Congress\",\"PartyName\":\"DEM\",\"CandidateName\":\"JANELLE STELSON\",\"Votes\":\"175175\",...\"Percentage\":\"55.19\" ... REP SCOTT PERRY 142253 44.81",
+   "ap_attribution": "n/a",
+   "notes": "The file is a double-encoded JSON string. Parsing the 10th Congressional District gave DEM JANELLE STELSON 175175 (55.19%) and REP SCOTT PERRY 142253 (44.81%), with ElectionYear 2026, Representative in Congress. This matches the claim exactly. The file has no certification or official-status field."
+  },
+  {
+   "icpsr": "21333",
+   "verdict": "supported",
+   "own_quote": "United States Senator Republican Party BARR Andy Daniel CAMERON ... Total Votes 283,833 144,592 ... US Representative 6th Congressional District Republican Party Ralph ALVARADO Ryan DOTSON Gregory George PLUCINSKI Steve SHANNON Adam Perez ARQUETTE ... Total Votes 36,217 16,897 5,670 3,980 1,332",
+   "ap_attribution": "n/a",
+   "notes": "Kentucky SOS (Michael G. Adams), 'May 19, 2026 Official 2026 Primary Election Results'. Andy Barr is listed first in the US Senate Republican primary with 283,833 votes. Neither the 6th District Republican primary (Alvarado, Dotson, Plucinski, Shannon, Arquette) nor the Democratic primary (Dembo, Stevenson, Petrey, Kloiber, Edwards, Carroll Jr., Ausbrooks) includes Barr. The only BARR entries are in the Senate table."
+  },
+  {
+   "icpsr": "22357",
+   "verdict": "supported",
+   "own_quote": "United States House of Representatives District 5 1. Charlie Hatcher 2. Andy Ogles ... Williamson 10,145 8,369 DISTRICT TOTALS 36,546 32,096",
+   "ap_attribution": "n/a",
+   "notes": "TN 'State of Tennessee August 6, 2026 Republican Primary' (dated September 3, 2026), page 6 of 39. Charlie Hatcher has 36,546 and Andy Ogles 32,096, so Ogles lost the primary by 4,450 votes. This matches the claim exactly."
+  },
+  {
+   "icpsr": "20342",
+   "verdict": "supported",
+   "own_quote": "<Contest ... Name=\"Representative to Congress - District 10\" ...> selections: Kristina Knickerbocker (DEM) VoteCounts Type=\"Total\" Count=\"149024\"; Thomas McMasters (LIB) Count=\"8906\"; Mike Turner (REP) Count=\"144086\" (all for GpUnit 'Congressional District 10')",
+   "ap_attribution": "n/a",
+   "notes": "I matched the CandidateId and PartyId values in the NIST XML myself. The totals match the claim: Knickerbocker leads Turner by 4,938. Caveat: the file is marked Status=\"UnofficialComplete\" and is titled 'November 3, 2026 General Unofficial Canvass' (generated 2026-11-13), so these are unofficial, not certified, results. There is no winner or certification flag in the file."
+  },
+  {
+   "icpsr": "20709",
+   "verdict": "supported",
+   "own_quote": "Representative in Congress, District 16|General|...|Sydney Gruters|REP|175,656|51.2%|Kelly Kirschner|DEM|161,159|46.97%|Mark Davis|NPA|6,283|1.83%|Total 343,098 ; primary file: District: 16|Sydney Gruters|Ed Pope|Eddie Speir|Total|48,570|11,692|16,291",
+   "ap_attribution": "n/a",
+   "notes": "The Election Watch page is headed '2026 General Election November 3, 2026 Official Election Results'. The DOS primary page is headed 'August 18, 2026 Primary Election ... Republican Primary Official Results'. A case-insensitive grep for 'buchanan' found 0 hits in each file. District 16 candidates match the claim in both files."
+  },
+  {
+   "icpsr": "21987",
+   "verdict": "supported",
+   "own_quote": "{\"cnm\": \"US HOUSE OF REPRESENTATIVES DISTRICT 03 (VOTE FOR 1)\", ... \"bnm\": \"Raymond Smith\", \"dtx\": \"\", \"pty\": \"DEM\", \"vct\": \"118434\", \"pct\": \"0.4943\", \"prt\": \"190\", \"ptl\": \"190\", ...} {... \"bnm\": \"Greg Murphy\", \"pty\": \"REP\", \"vct\": \"118176\", \"pct\": \"0.4932\", \"prt\": \"190\", \"ptl\": \"190\" ...}",
+   "ap_attribution": "n/a",
+   "notes": "The figures match: Smith 118,434 (49.43%), Murphy 118,176 (49.32%), 190 of 190 precincts, so Murphy trails by 258. A third candidate, Daniel Cavender (LIB), has 3,004. On the secondary question: the file has nothing indicating certification, a winner or a recount for District 03. Every one of its 677 records has the same 19 fields (cid, cnm, vfr, gid, lid, bnm, dtx, pty, vct, pct, prt, ptl, evc, ovc, avc, pvc, col, ogl, ref). None of them is a winner, certification or recount field. 'ref' only marks referendum contests and is 0 here, and 'dtx' is empty. A grep for certif|recount|winner|official|canvass found 0 matches. The file reports raw counts with full precinct reporting, so it supports 'trails by 258' but cannot confirm a final or certified outcome. The margin is about 0.11%."
+  },
+  {
+   "icpsr": "22528",
+   "verdict": "supported",
+   "own_quote": "Colin Allred tops Julie Johnson in redistricting-driven runoff battle of Dallas Democrats ... Republican redistricting pushed them into an unusual primary confrontation for the 33rd Congressional District. by Olivia Borgula May 26, 2026 ... Former Rep. Colin Allred defeated his successor in Congress, Rep. Julie Johnson, in the Democratic runoff to represent Texas' Dallas-centered congressional district, according to the Associated Press.",
+   "ap_attribution": "\"Former Rep. Colin Allred defeated his successor in Congress, Rep. Julie Johnson, in the Democratic runoff ... according to the Associated Press.\" Yes, this names AP explicitly as the source of the race result. The article itself is by Olivia Borgula of The Texas Tribune, not by AP.",
+   "notes": "The file is a Texas Tribune article dated May 26, 2026. It names the 33rd District. The file gives no runoff vote totals; it relies on AP for the outcome. It also says Allred will face Patrick Gillespie in November."
+  },
+  {
+   "icpsr": "21718",
+   "verdict": "supported",
+   "own_quote": "\"1st Congressional District\",\"Candidates\": [{... \"PartyName\":\"DEM\",\"CandidateName\":\"BOB HARVIE\",\"Votes\":\"189926\",... \"Percentage\":\"52.88\" ...},{... \"PartyName\":\"REP\",\"CandidateName\":\"BRIAN FITZPATRICK\",\"Votes\":\"169255\",... \"Percentage\":\"47.12\"",
+   "ap_attribution": "n/a",
+   "notes": "The JSON has ElectionYear 2026 and 'Representative in Congress', and its candidate set matches a general election (one DEM and one REP). The vote totals and percentages match exactly, so Fitzpatrick lost. Nothing inside the JSON names PA DOS as the source; that comes from the filename only."
+  },
+  {
+   "icpsr": "21566",
+   "verdict": "supported",
+   "own_quote": "Primary JSON, 3rd Congressional District, Democratic: ALA STANFORD 35452 (24.05), SHARIF STREET 43137 (29.26), CHRIS RABB 65782 (44.62), SHAUN GRIFFITH 3042 (2.06). General JSON, 3rd District: DEM CHRIS RABB 258437 (93.61), TIP DENNIS MAHONEY 17628 (6.39). Case-insensitive search for 'EVANS' gave 0 hits in the primary JSON and 0 in the general JSON.",
+   "ap_attribution": "n/a",
+   "notes": "Evans is absent from both the PA-3 primary and the general. Rabb won the primary. The JSON does not show the May 19 primary date or a PA DOS label, but it does give ElectionYear 2026. Mahoney's party is 'TIP', which the claim leaves out; this does not matter."
+  },
+  {
+   "icpsr": "22332",
+   "verdict": "supported",
+   "own_quote": "Board of State Canvassers May 28, 2026 ... 2. Report on review of nominating petitions for Governor and U.S. Senate, filed with the Secretary of State for the August 4, 2026 Primary Election. ... 4. Consideration of the sufficiency of the nominating petitions submitted by John James for the office of Governor.",
+   "ap_attribution": "n/a",
+   "notes": "The agenda says exactly what the claim says it does. Caveats: it shows only that James filed petitions for Governor, not that the petitions were certified. It does not identify him as the Representative. It does not show directly that he left the MI-10 race; that conclusion is an inference."
+  },
+  {
+   "icpsr": "21959",
+   "verdict": "supported",
+   "own_quote": "State of Tennessee August 6, 2026 Republican Primary Governor 1. Marsha Blackburn 2. Monty Fritts 3. John Rose 4. Write-In - David Fey ... STATE TOTALS 311,392 168,004 235,561 1 ... United States House of Representatives District 6 1. Natisha Brooks 2. Johnny Garrett 3. Jon Henry 4. Van Hilleary ... DISTRICT TOTALS 6,016 37,388 16,792 25,490",
+   "ap_attribution": "n/a",
+   "notes": "I read all 39 pages. John Rose appears as a candidate for Governor. The TN-6 GOP primary lists only Brooks, Garrett, Henry and Hilleary, so Rose is absent from it. Rose also placed second for Governor behind Blackburn. The header reads 'State of Tennessee'; the file does not name the SOS explicitly."
+  },
+  {
+   "icpsr": "22162",
+   "verdict": "supported",
+   "own_quote": "<Contest xsi:type=\"CandidateContest\" ... Name=\"Representative to Congress - District 15\" ... NumberElected=\"1\"> ... district-level Total counts: Brennan Barrington (Libertarian) 8135; Mike Carey (Republican) 130225; Gary Josephson (WI) 4; Don Leonard (Democratic) 149287; Samuel Ronan (WI) 105",
+   "ap_attribution": "n/a",
+   "notes": "The XML says Issuer=\"Ohio Secretary of State Frank LaRose\", GeneratedDate 2026-11-13 and Status=\"UnofficialComplete\". The totals match the claim exactly, and Leonard leads Carey, so Carey lost. The results are unofficial, not certified."
+  },
+  {
+   "icpsr": "20952",
+   "verdict": "supported",
+   "own_quote": "Washington, DC—The Washington, DC, office and the district offices of former Representative Gerald E. Connolly will continue to serve the people of the Eleventh Congressional District of Virginia under the supervision of the Clerk of the House of Representatives. Representative Connolly passed away on May 21, 2025. ... May 21, 2025",
+   "ap_attribution": "n/a",
+   "notes": "The press release is dated May 21, 2025 and names Kevin F. McCumber as Clerk. It says this is the fifth vacancy of the 119th Congress."
+  },
+  {
+   "icpsr": "20530",
+   "verdict": "supported",
+   "own_quote": "Burleson PDF (\"Election Unofficial Results Report / 2026 REPUBLICAN PRIMARY ELECTION / March 03, 2026 / Texas Secretary of State\"): \"U. S. REPRESENTATIVE DISTRICT 10 CHRIS GOBER ... JENNY GARCIA SHARON ... SCOTT MACLEOD ... ROB ALTMAN ... BRANDON HAWBAKER ... JEREMY STORY ... KARA KING ... JESSICA KARLSRUHER ... BEN BIUS ... ROBERT BROWN\". TX SOS HTML: \"2026 NOVEMBER GENERAL ELECTION (Updated 11/04/2026 04:59 PM) ... U. S. REPRESENTATIVE DISTRICT 10 Polling Locations Reporting: 100% Party Candidate Ballots Cast REPUBLICAN CHRIS GOBER 161,425 DEMOCRATIC CAITLIN ROURK 138,832\". Case-insensitive regex search for 'mccaul' in the TX SOS HTML: 0 matches.",
+   "ap_attribution": "n/a",
+   "notes": "Exactly ten District 10 GOP primary candidates listed in Burleson report, none McCaul (all 6 pages read). General page lists only Gober (R) and Rourk (D) for TX-10, with no (I) incumbent marker, while other districts mark incumbents with (I), e.g. 'AUGUST PFLUGER (I)'. Burleson report is county-level and labeled unofficial, but a candidate's absence from the ballot does not depend on the vote totals."
+  },
+  {
+   "icpsr": "22533",
+   "verdict": "supported",
+   "own_quote": "\"7th Congressional District$$8$$\":[{\"DistrictId\":\"8\",\"District\":\"7th Congressional District\",\"Candidates\": [{... \"ElectionYear\":\"2026\",\"OfficeName\":\"Representative in Congress\",\"PartyName\":\"DEM\",\"CandidateName\":\"BOB BROOKS\",\"Votes\":\"166671\",...\"Percentage\":\"56.29\",...},{... \"PartyName\":\"REP\",\"CandidateName\":\"RYAN MACKENZIE\",\"Votes\":\"129431\",...\"Percentage\":\"43.71\"",
+   "ap_attribution": "n/a",
+   "notes": "Names, votes and percentages match exactly. The JSON does not name the election as 'general' anywhere I could find, but it has one DEM and one REP nominee per district with ElectionDay/MailIn breakdowns, which fits a general election. Mackenzie lost."
+  },
+  {
+   "icpsr": "29710",
+   "verdict": "supported",
+   "own_quote": "Rows from xl/worksheets/sheet1.xml: ['United States Representative - District 1', 'Democratic Party', 'Melat Kiros Total Votes', '', '83855'] ; ['United States Representative - District 1', 'Democratic Party', 'Diana DeGette Total Votes', '', '62715'] ; ['United States Representative - District 1', 'Democratic Party', 'Wanda James Total Votes', '', '11075'] ; ['United States Representative - District 1', 'Republican Party', 'Christy Peterson Total Votes', '', '15010']",
+   "ap_attribution": "n/a",
+   "notes": "Kiros 83,855 beat DeGette 62,715 in the CD-1 Democratic contest, so DeGette lost. A third candidate, Wanda James (11,075), is not in the claim but does not change the result. The sheet does not print 'primary' or '2026' in its cells; the primary nature comes from the separate party contests, and the workbook is dated 2026-10-28 in docProps."
+  },
+  {
+   "icpsr": "20124",
+   "verdict": "supported",
+   "own_quote": "\"Official Election Returns State of Missouri - Primary Election, August 04, 2026 ... As announced by the Board of State Canvassers on Tuesday, August 25, 2026 ... U.S. REPRESENTATIVE - DISTRICT 6 (393 of 393 Precincts Reported) Jim Ingram Republican 8,841 9.0% Chris Stigall Republican 43,307 44.1% Nathan Hall Willett Republican 33,664 34.3% Cody J. Oshel Republican 3,828 3.9% Nathanael Schultz Republican 8,494 8.7% Party Total 98,134 Josh Smead Democratic 25,513 ... Scot Pondelick Democratic 11,847 ... Matt Levine Democratic 16,173 ... Andy Maidment Libertarian 968\"",
+   "ap_attribution": "n/a",
+   "notes": "I read all 44 pages. The MO-6 list (5 R, 3 D, 1 L) has no Graves, and the name 'Graves' does not appear anywhere in the document's text. This shows he was not on the 2026 primary ballot, so he did not seek renomination."
+  },
+  {
+   "icpsr": "21989",
+   "verdict": "supported",
+   "own_quote": "\"Wisconsin Elections Commission Candidates on Ballot by Election 2026 General Election - 11/3/2026 ... Office : GOVERNOR Incumbent: Tony Evers (Filed Notification of Noncandidacy) 1 0104212 Tom Tiffany / David Varnam Republican 2 0105751 David Crowley / Sarah Godlewski Democratic ... Office : REPRESENTATIVE IN CONGRESS DISTRICT 7 Incumbent: Tom Tiffany 1 Michael Alfonso Republican 2 Fred Clark Democratic Total Number of REPRESENTATIVE IN CONGRESS DISTRICT 7 Candidates :2\"",
+   "ap_attribution": "n/a",
+   "notes": "I read all 21 pages. Tiffany is the GOP nominee for governor. CD-7 lists Tiffany as the incumbent, but the only candidates are Alfonso (R) and Clark (D). Printed 8/25/2026."
+  },
+  {
+   "icpsr": "22113",
+   "verdict": "supported",
+   "own_quote": "IA JSON: \"C\" : \"United States Representative District 4\" ... \"CH\" : [ \"Chris McGowan\",\"Dave Dawson\",\"Write-in\" ] , \"P\" : [ \"REP\",\"DEM\",\"\" ] ... \"V\" : [ 178960,124128,402 ] ... \"W\" : [ 1,0,0 ]. Case-insensitive search for 'feenstra' in JSON: 0 matches. Monona PDF: \"Primary Election Monona County, Iowa Tuesday, June 2, 2026 ... OFFICIAL RESULTS ... Governor - Rep. (Republican Party) ... Eddie Andrews 15 2.02% Randy Feenstra 305 41.11% Zach Lahn 318 42.86% Brad Sherman 54 7.28% Adam Steen 47 6.33%\"",
+   "ap_attribution": "n/a",
+   "notes": "The Monona primary report also lists only Chris McGowan in the 'United States Representative District 4 - Rep.' primary, which further supports that Feenstra did not seek renomination for the House. The state JSON's governor race lists Zach Lahn (REP) vs Rob Sand (DEM), which fits Feenstra losing the governor primary. The JSON does not literally say 'general', but its REP-vs-DEM contests fit a general election."
+  },
+  {
+   "icpsr": "22117",
+   "verdict": "supported",
+   "own_quote": "\"Halpin refuses to concede CD2 race to Garbarino By Timothy Bolger ... Posted on November 6, 2026 ... U.S. Rep. Andrew Garbarino (R-Sayville) declared victory on election night, but Halpin wants to make sure every paper ballot is counted, despite the fact that the Associated Press declared the incumbent the winner in New York's 2nd Congressional District, which runs along the South Shore from Mastic Beach to Massapequa.\"",
+   "ap_attribution": "\"despite the fact that the Associated Press declared the incumbent the winner in New York's 2nd Congressional District\". This explicitly names the AP as declaring the race for the incumbent, Garbarino. A later line says \"Neither representatives for the AP nor Garbarino responded to requests for comment.\"",
+   "notes": "Metadata matches: published_time 2026-11-06, canonical URL longislandpress.com/2026/11/06/..., modified 2026-11-08. Caveats: Halpin had not conceded, and the article says he 'trails Garbarino by about 8,000 votes in the unofficial early returns.' Certified results are not in this file."
+  }
+ ]
+}

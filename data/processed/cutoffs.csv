@@ -1,0 +1,3 @@
+party,quantile,cutoff,n_party,n_moderate,rule,method,status
+Republican,1/3,0.44866666666666666,219,73,moderate if nominate_dim1 <= cutoff,"pandas Series.quantile, linear interpolation","decision 10: recomputed on decision-1 baseline, 2026-11-23"
+Democrat,2/3,-0.334,214,72,moderate if nominate_dim1 >= cutoff,"pandas Series.quantile, linear interpolation","decision 10: recomputed on decision-1 baseline, 2026-11-23"

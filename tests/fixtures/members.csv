@@ -1,0 +1,19 @@
+icpsr,bioname,state_abbrev,district_code,party_code,party,nominate_dim1,nominate_number_of_votes,flags,bioguide_id,in_baseline,in_party_means,moderate,baseline_status
+101,"SYNTHETIC, Rep One",ZZ,1.0,200,Republican,0.1,400,,T0101,True,True,yes,held_seat_nov3
+102,"SYNTHETIC, Rep Two",ZZ,2.0,200,Republican,0.2,400,,T0102,True,True,yes,held_seat_nov3
+103,"SYNTHETIC, Rep Three",ZZ,3.0,200,Republican,0.3,400,,T0103,True,True,yes,held_seat_nov3
+104,"SYNTHETIC, Rep Four",ZZ,4.0,200,Republican,0.4,50,low_votes,T0104,True,True,no,held_seat_nov3
+105,"SYNTHETIC, Rep Five",ZZ,5.0,200,Republican,0.5,400,,T0105,True,True,no,held_seat_nov3
+106,"SYNTHETIC, Rep Six",ZZ,6.0,200,Republican,0.6,400,,T0106,True,True,no,held_seat_nov3
+107,"SYNTHETIC, Rep Seven",ZZ,7.0,200,Republican,0.7,400,,T0107,True,True,no,held_seat_nov3
+108,"SYNTHETIC, Rep Eight",ZZ,8.0,200,Republican,0.8,400,,T0108,True,True,no,held_seat_nov3
+201,"SYNTHETIC, Dem One",ZZ,11.0,100,Democrat,-0.1,400,,T0201,True,True,yes,held_seat_nov3
+202,"SYNTHETIC, Dem Two",ZZ,12.0,100,Democrat,-0.2,400,,T0202,True,True,yes,held_seat_nov3
+203,"SYNTHETIC, Dem Three",ZZ,13.0,100,Democrat,-0.3,400,,T0203,True,True,no,held_seat_nov3
+204,"SYNTHETIC, Dem Four",ZZ,14.0,100,Democrat,-0.4,400,,T0204,True,True,no,held_seat_nov3
+205,"SYNTHETIC, Dem Five",ZZ,15.0,100,Democrat,-0.5,60,low_votes,T0205,True,True,no,held_seat_nov3
+206,"SYNTHETIC, Dem Six",ZZ,16.0,100,Democrat,-0.6,400,,T0206,True,True,no,held_seat_nov3
+301,"SYNTHETIC, Delegate",YY,0.0,200,Republican,0.9,400,delegate,T0301,True,False,,held_seat_nov3
+302,"SYNTHETIC, Left Early",ZZ,9.0,200,Republican,0.95,400,left_before_nov3,T0302,False,False,,left_before_nov3
+303,"SYNTHETIC, Duplicate",ZZ,10.0,200,Republican,0.05,10,duplicate_dropped,T0303,False,False,,held_seat_nov3
+304,"SYNTHETIC, Third Party",ZZ,17.0,328,Other (code 328),0.0,400,non_dr_party,T0304,True,False,,held_seat_nov3
